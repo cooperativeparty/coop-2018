@@ -247,7 +247,7 @@
                     textarea {
                         @extend .is-invalid;
                     }
-                    label {
+                    .validation-message {
                         @extend .invalid-feedback;
                     }
                 }
