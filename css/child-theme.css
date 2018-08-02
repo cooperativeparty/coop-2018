@@ -12557,10 +12557,6 @@ body .gform_wrapper .ginput_complex {
 body .gform_wrapper .ginput_container_date .clear-multi .ginput_container_date select {
   width: auto !important; }
 
-body .gform_wrapper li.gfield.gfield_error .gfield_label,
-body .gform_wrapper .gfield_error .gfield_label {
-  color: #eb3000; }
-
 body .gform_wrapper .ginput_container_date input:not([type=checkbox]):not([type=radio]),
 body .gform_wrapper .ginput_container_date select,
 body .gform_wrapper .ginput_container_date textarea {

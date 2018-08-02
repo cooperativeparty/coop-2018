@@ -239,19 +239,16 @@
                 }
                 li.gfield.gfield_error,
                 .gfield_error {
-                    .gfield_label {
-                        color: $danger;
-                    }
+
                     input,
                     select,
                     textarea {
                         @extend .is-invalid;
                     }
-
                 }
-                                    .validation-message {
-                        @extend .invalid-feedback;
-                    }
+                .validation-message {
+                    @extend .invalid-feedback;
+                }
                 div.validation_error,
                 .validation_error {
                     @extend .alert;
