@@ -14554,6 +14554,12 @@ body {
   margin-left: -0.642855em;
   margin-right: 0.3214275em; }
 
+.btn,
+.wpcf7 input[type=submit], body .gform_wrapper .gform_button,
+body .gform_wrapper .button, body .gform_wrapper .gform_save_link, .tribe-button--rsvp {
+  text-overflow: ellipsis;
+  overflow: hidden; }
+
 .footer-widget a {
   color: #fff; }
 
