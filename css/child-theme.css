@@ -6458,7 +6458,7 @@ input[type="button"].btn-block {
   font-size: 0.875rem;
   line-height: 1.5; }
 
-.badge {
+.badge, select.gfield_select + .chosen-container-multi .chosen-choices li.search-choice {
   display: inline-block;
   padding: 0.25em 0.4em;
   font-size: 75%;
@@ -6467,10 +6467,10 @@ input[type="button"].btn-block {
   text-align: center;
   white-space: nowrap;
   vertical-align: baseline; }
-  .badge:empty {
+  .badge:empty, select.gfield_select + .chosen-container-multi .chosen-choices li.search-choice:empty {
     display: none; }
 
-.btn .badge, .wpcf7 input[type=submit] .badge, .gform_wrapper .button .badge, .big-blocks .ginput_container_radio li input[type=radio] + label .badge, .tribe-button--rsvp .badge {
+.btn .badge, .wpcf7 input[type=submit] .badge, .gform_wrapper .button .badge, .big-blocks .ginput_container_radio li input[type=radio] + label .badge, .tribe-button--rsvp .badge, .btn select.gfield_select + .chosen-container-multi .chosen-choices li.search-choice, select.gfield_select + .chosen-container-multi .chosen-choices .btn li.search-choice, .wpcf7 input[type=submit] select.gfield_select + .chosen-container-multi .chosen-choices li.search-choice, select.gfield_select + .chosen-container-multi .chosen-choices .wpcf7 input[type=submit] li.search-choice, .gform_wrapper .button select.gfield_select + .chosen-container-multi .chosen-choices li.search-choice, select.gfield_select + .chosen-container-multi .chosen-choices .gform_wrapper .button li.search-choice, .big-blocks .ginput_container_radio li input[type=radio] + label select.gfield_select + .chosen-container-multi .chosen-choices li.search-choice, select.gfield_select + .chosen-container-multi .chosen-choices .big-blocks .ginput_container_radio li input[type=radio] + label li.search-choice, .tribe-button--rsvp select.gfield_select + .chosen-container-multi .chosen-choices li.search-choice, select.gfield_select + .chosen-container-multi .chosen-choices .tribe-button--rsvp li.search-choice {
   position: relative;
   top: -1px; }
 
@@ -6510,10 +6510,10 @@ input[type="button"].btn-block {
     text-decoration: none;
     background-color: #00a4dc; }
 
-.badge-warning {
+.badge-warning, select.gfield_select + .chosen-container-multi .chosen-choices li.search-choice {
   color: #fff;
   background-color: #f9a519; }
-  .badge-warning[href]:hover, .badge-warning[href]:focus {
+  .badge-warning[href]:hover, select.gfield_select + .chosen-container-multi .chosen-choices li.search-choice[href]:hover, .badge-warning[href]:focus, select.gfield_select + .chosen-container-multi .chosen-choices li.search-choice[href]:focus {
     color: #fff;
     text-decoration: none;
     background-color: #d98a06; }
@@ -10168,7 +10168,7 @@ a.text-dark:hover, a.text-dark:focus {
     min-width: 992px !important; }
   .navbar {
     display: none; }
-  .badge {
+  .badge, select.gfield_select + .chosen-container-multi .chosen-choices li.search-choice {
     border: 1px solid #000; }
   .table {
     border-collapse: collapse !important; }
@@ -12932,6 +12932,135 @@ h6, .h6 {
         .big-blocks .ginput_container_radio li input[type=radio] + label .small, .big-blocks .ginput_container_radio li input[type=radio] + label .gform_wrapper .gfield_description, .gform_wrapper .big-blocks .ginput_container_radio li input[type=radio] + label .gfield_description, .big-blocks .ginput_container_radio li input[type=radio] + label .wp-caption-text {
           margin-bottom: 0; }
 
+select.gfield_select + .chosen-container.chosen-container-single .chosen-single {
+  display: block;
+  width: 100%;
+  height: 34px;
+  padding: 6px 12px;
+  font-size: 14px;
+  line-height: 1.428571429;
+  color: #555;
+  vertical-align: middle;
+  background-color: #fff;
+  border: 1px solid #ccc;
+  -webkit-transition: border-color ease-in-out .15s, box-shadow ease-in-out .15s;
+  -webkit-transition: border-color ease-in-out .15s, -webkit-box-shadow ease-in-out .15s;
+  transition: border-color ease-in-out .15s, -webkit-box-shadow ease-in-out .15s;
+  transition: border-color ease-in-out .15s, box-shadow ease-in-out .15s;
+  transition: border-color ease-in-out .15s, box-shadow ease-in-out .15s, -webkit-box-shadow ease-in-out .15s;
+  background-image: none; }
+
+select.gfield_select + .chosen-container.chosen-container-single .chosen-single div {
+  top: 4px;
+  color: #000; }
+
+select.gfield_select + .chosen-container .chosen-drop {
+  background-color: #FFF;
+  border: 1px solid #CCC;
+  border: 1px solid rgba(0, 0, 0, 0.15);
+  margin: -1px 0 0;
+  height: 20vh;
+  overflow-y: scroll; }
+
+select.gfield_select + .chosen-container .chosen-search input[type=text] {
+  display: block;
+  width: 100%;
+  padding: 6px 12px;
+  color: #555;
+  vertical-align: middle;
+  background-color: #FFF;
+  border: 1px solid #CCC;
+  -webkit-transition: border-color ease-in-out 0.15s, box-shadow ease-in-out 0.15s;
+  -webkit-transition: border-color ease-in-out 0.15s, -webkit-box-shadow ease-in-out 0.15s;
+  transition: border-color ease-in-out 0.15s, -webkit-box-shadow ease-in-out 0.15s;
+  transition: border-color ease-in-out 0.15s, box-shadow ease-in-out 0.15s;
+  transition: border-color ease-in-out 0.15s, box-shadow ease-in-out 0.15s, -webkit-box-shadow ease-in-out 0.15s;
+  background-image: none; }
+
+select.gfield_select + .chosen-container .chosen-results {
+  margin: 2px 0 0;
+  padding: 5px 0;
+  font-size: 14px;
+  list-style: none;
+  background-color: #fff;
+  margin-bottom: 5px; }
+
+select.gfield_select + .chosen-container .chosen-results li,
+select.gfield_select + .chosen-container .chosen-results li.active-result {
+  display: block;
+  margin-bottom: 0;
+  white-space: nowrap;
+  background-image: none;
+  padding: .8em 1.2em;
+  -webkit-transition: all 0.5s ease;
+  transition: all 0.5s ease; }
+  @media screen and (prefers-reduced-motion: reduce) {
+    select.gfield_select + .chosen-container .chosen-results li,
+    select.gfield_select + .chosen-container .chosen-results li.active-result {
+      -webkit-transition: none;
+      transition: none; } }
+
+select.gfield_select + .chosen-container .chosen-results li:hover,
+select.gfield_select + .chosen-container .chosen-results li.active-result:hover,
+select.gfield_select + .chosen-container .chosen-results li.highlighted {
+  cursor: pointer;
+  color: #fff;
+  background-color: #711f8e;
+  background-image: none; }
+
+select.gfield_select + .chosen-container-multi .chosen-choices {
+  display: block;
+  width: 100%;
+  min-height: 34px;
+  padding: 6px;
+  color: #555;
+  vertical-align: middle;
+  background-color: #FFF;
+  border: 1px solid #CCC;
+  background-image: none; }
+
+select.gfield_select + .chosen-container-multi .chosen-choices li.search-field {
+  margin-bottom: 0;
+  display: inline-block;
+  margin-left: 0.5em;
+  width: auto; }
+  select.gfield_select + .chosen-container-multi .chosen-choices li.search-field input[type="text"] {
+    height: auto;
+    padding: 5px 0;
+    border: none; }
+
+select.gfield_select + .chosen-container-multi .chosen-choices li.search-choice {
+  font-size: 0.8rem;
+  margin: 0.15rem;
+  padding: 0.6rem;
+  padding-right: 1.6rem;
+  position: relative; }
+
+select.gfield_select + .chosen-container-multi .chosen-choices li.search-choice .search-choice-close {
+  position: absolute;
+  top: 0.6rem;
+  right: 0.6rem;
+  width: 1rem;
+  color: #fddfae;
+  height: 1rem;
+  display: block;
+  cursor: pointer; }
+  select.gfield_select + .chosen-container-multi .chosen-choices li.search-choice .search-choice-close:before {
+    content: "\f00d";
+    font-family: 'FontAwesome'; }
+
+select.gfield_select + .chosen-container-multi.chosen-container-active .chosen-choices,
+select.gfield_select + .chosen-container.chosen-container-single.chosen-container-active .chosen-single,
+select.gfield_select + .chosen-container .chosen-search input[type=text]:focus {
+  border-color: #66AFE9;
+  outline: 0; }
+
+select.gfield_select + .chosen-container-multi .chosen-results li.result-selected {
+  display: list-item;
+  color: #ccc;
+  cursor: default;
+  background-color: white; }
+
 .form-basic {
   position: relative; }
   .form-basic .gform_ajax_spinner {
@@ -13667,7 +13796,7 @@ body {
     .show > .btn-facebook.dropdown-toggle:focus {
       -webkit-box-shadow: 0 0 0 0.2rem rgba(52, 78, 134, 0.5);
               box-shadow: 0 0 0 0.2rem rgba(52, 78, 134, 0.5); }
-  .btn-facebook .badge {
+  .btn-facebook .badge, .btn-facebook select.gfield_select + .chosen-container-multi .chosen-choices li.search-choice, select.gfield_select + .chosen-container-multi .chosen-choices .btn-facebook li.search-choice {
     border-radius: 15%;
     background-color: #4c70ba; }
 
@@ -13917,18 +14046,18 @@ body {
 .post-thumb-wrap {
   position: relative;
   display: block; }
-  .post-thumb-wrap .badge {
+  .post-thumb-wrap .badge, .post-thumb-wrap select.gfield_select + .chosen-container-multi .chosen-choices li.search-choice, select.gfield_select + .chosen-container-multi .chosen-choices .post-thumb-wrap li.search-choice {
     position: absolute;
     top: 0;
     left: 15px;
     font-weight: 300;
     font-size: 1rem; }
-    .post-thumb-wrap .badge a {
+    .post-thumb-wrap .badge a, .post-thumb-wrap select.gfield_select + .chosen-container-multi .chosen-choices li.search-choice a, select.gfield_select + .chosen-container-multi .chosen-choices .post-thumb-wrap li.search-choice a {
       color: #fff;
       font-weight: 600;
       text-decoration: none; }
 
-.single .post-thumb-wrap .badge {
+.single .post-thumb-wrap .badge, .single .post-thumb-wrap select.gfield_select + .chosen-container-multi .chosen-choices li.search-choice, select.gfield_select + .chosen-container-multi .chosen-choices .single .post-thumb-wrap li.search-choice {
   left: 15px;
   font-size: 1.2em; }
 
@@ -14057,7 +14186,7 @@ body {
   opacity: 1;
   mix-blend-mode: hard-light; }
 
-.hover-blocks .hover-block-item .badge {
+.hover-blocks .hover-block-item .badge, .hover-blocks .hover-block-item select.gfield_select + .chosen-container-multi .chosen-choices li.search-choice, select.gfield_select + .chosen-container-multi .chosen-choices .hover-blocks .hover-block-item li.search-choice {
   font-size: 1.2rem;
   left: 0;
   background-color: transparent; }
