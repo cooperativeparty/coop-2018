@@ -1,0 +1,46 @@
+                                                @media print {
+                                                    #fb-root {
+                                                        display: none
+                                                    }
+                                                    a[href]:after {
+                                                        content: "\a (" attr(href) ")";
+                                                        text-decoration: underline;
+                                                        display: block;
+                                                    }
+                                                    a[rel~="tag"]:after,
+                                                    a[rel~="home"]:after {
+                                                        content: none!important;
+                                                    }
+                                                    .imprint {
+                                                        float: none;
+                                                    }
+                                                    .label[rel=date] {
+                                                        border: none;
+                                                    }
+                                                    h1,
+                                                    h2,
+                                                    h3,
+                                                    h4 {
+                                                        page-break-after: avoid;
+                                                        page-break-inside: avoid;
+                                                    }
+                                                    .panel-group>.panel {
+                                                        page-break-inside: avoid
+                                                    }
+                                                    .imprint {
+                                                        position: fixed;
+                                                        bottom: 0;
+                                                    }
+                                                    .text-white {
+                                                        color: unset!important;
+                                                    }
+                                                    .alert {
+                                                        page-break-inside: avoid;
+                                                        .btn {
+                                                            page-break-inside: avoid;
+                                                        }
+                                                    }
+                                                    #main > hr {
+                                                        display: none;
+                                                    }
+                                                }

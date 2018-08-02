@@ -13113,6 +13113,42 @@ h6, .h6 {
       font-size: 1.2rem;
       color: #007ea9; }
 
+@media print {
+  #fb-root {
+    display: none; }
+  a[href]:after {
+    content: "\a(" attr(href) ")";
+    text-decoration: underline;
+    display: block; }
+  a[rel~="tag"]:after,
+  a[rel~="home"]:after {
+    content: none !important; }
+  .imprint {
+    float: none; }
+  .label[rel=date] {
+    border: none; }
+  h1,
+  h2,
+  h3,
+  h4 {
+    page-break-after: avoid;
+    page-break-inside: avoid; }
+  .panel-group > .panel {
+    page-break-inside: avoid; }
+  .imprint {
+    position: fixed;
+    bottom: 0; }
+  .text-white {
+    color: unset !important; }
+  .alert, .validation_error {
+    page-break-inside: avoid; }
+    .alert .btn, .validation_error .btn,
+    .alert .wpcf7 input[type=submit], .wpcf7 .alert input[type=submit],
+    .validation_error .wpcf7 input[type=submit], .wpcf7 .validation_error input[type=submit], .alert .gform_wrapper .button, .gform_wrapper .alert .button, .validation_error .gform_wrapper .button, .gform_wrapper .validation_error .button, .alert .tribe-button--rsvp, .validation_error .tribe-button--rsvp {
+      page-break-inside: avoid; }
+  #main > hr {
+    display: none; } }
+
 .bg-blue {
   background-color: #10c2ff !important; }
 

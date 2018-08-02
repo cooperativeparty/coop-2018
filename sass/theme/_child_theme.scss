@@ -16,6 +16,8 @@
 @import "theme/partials/flex-grid";
 // Accordions
 @import "theme/partials/accordions";
+// Accordions
+@import "theme/partials/print-styles";
 // Generate `.bg-*` color utilities
 @each $color,
 $value in $colors {
@@ -179,27 +181,26 @@ ol.numbering {
 
 // Footer
 .footer-widget {
-        a {
-            color: $white;
+    a {
+        color: $white;
     }
-        .list-group {
-            .list-group-item {
-                border-width: 1px 0;
-                border-color: rgba($white, 0.125);
-                color: $white;
-                @include transition(all 0.5s ease);
-                &:first-child {
-                    border-top: none;
-                }
-                &:last-child {
-                    border-bottom: none;
-                }
-                &:hover {
-                    background-color: darken($purple, 5);
-                }
+    .list-group {
+        .list-group-item {
+            border-width: 1px 0;
+            border-color: rgba($white, 0.125);
+            color: $white;
+            @include transition(all 0.5s ease);
+            &:first-child {
+                border-top: none;
+            }
+            &:last-child {
+                border-bottom: none;
+            }
+            &:hover {
+                background-color: darken($purple, 5);
             }
         }
-
+    }
 }
 
 // Transition mixin
