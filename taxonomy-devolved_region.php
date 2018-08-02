@@ -14,14 +14,12 @@ $term = get_queried_object();
 get_header(); 
 ?>
     <?php get_template_part( 'partials/banner', 'microsite' ); ?>
-        <div class="wrapper" id="archive-wrapper"  data-spy="affix" data-offset-top="166">
-            <div id="content" class="container">
+        <div class="wrapper" id="archive-wrapper">
+            <div id="content" class="container py-5">
                 <div class="row">
-                    <div id="primary" class="col-sm-8 content-area">
+                    <div id="primary" class="col-lg-8 content-area">
                         <main id="main" class="site-main" role="main">
                             <?php if ( have_posts() ) : ?>
-                                <header class="page-header">
-                                    <h2 class="mt-0 text-microsite">Blog</h2></header>
                                 <!-- .page-header -->
                                 <?php /* Start the Loop */ ?>
                                     <?php 
