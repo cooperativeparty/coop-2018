@@ -304,7 +304,7 @@ template {
   display: none !important; }
 
 h1, h2, h3, h4, h5, h6,
-.h1, .h2, body .gform_heading .gform_title, .h3, body .gform_wrapper .gfield_total .ginput_total, .h4, body .gform_wrapper .gsection_title, body .gform_wrapper .gf_progressbar_title, .h5, body .gform_wrapper .gfield.gsection.field_sublabel_above.field_description_above h2, .h6 {
+.h1, .h2, .h3, body .gform_wrapper .gfield_total .ginput_total, .h4, body .gform_wrapper .gf_progressbar_title, .h5, body .gform_wrapper .gfield.gsection.field_sublabel_above.field_description_above h2, .h6 {
   margin-bottom: 1.5rem;
   font-family: inherit;
   font-weight: 700;
@@ -314,13 +314,13 @@ h1, h2, h3, h4, h5, h6,
 h1, .h1 {
   font-size: 2.5rem; }
 
-h2, .h2, body .gform_heading .gform_title {
+h2, .h2 {
   font-size: 2rem; }
 
 h3, .h3, body .gform_wrapper .gfield_total .ginput_total {
   font-size: 1.75rem; }
 
-h4, .h4, body .gform_wrapper .gsection_title, body .gform_wrapper .gf_progressbar_title {
+h4, .h4, body .gform_wrapper .gf_progressbar_title {
   font-size: 1.5rem; }
 
 h5, .h5, body .gform_wrapper .gfield.gsection.field_sublabel_above.field_description_above h2 {
@@ -2826,32 +2826,30 @@ body .gform_wrapper .button, .big-blocks .ginput_container_radio li input[type=r
       -webkit-box-shadow: 0 0 0 0.2rem rgba(113, 31, 142, 0.5);
               box-shadow: 0 0 0 0.2rem rgba(113, 31, 142, 0.5); }
 
-.btn-secondary, body .gform_wrapper .gform_previous_button, .big-blocks .ginput_container_radio li input[type=radio] + label {
+.btn-secondary, body .gform_wrapper .gform_previous_button {
   color: #fff;
   background-color: #6c757d;
   border-color: #6c757d; }
-  .btn-secondary:hover, body .gform_wrapper .gform_previous_button:hover, .big-blocks .ginput_container_radio li input[type=radio] + label:hover {
+  .btn-secondary:hover, body .gform_wrapper .gform_previous_button:hover {
     color: #fff;
     background-color: #5a6268;
     border-color: #545b62; }
-  .btn-secondary:focus, body .gform_wrapper .gform_previous_button:focus, .big-blocks .ginput_container_radio li input[type=radio] + label:focus, .btn-secondary.focus, body .gform_wrapper .focus.gform_previous_button, .big-blocks .ginput_container_radio li input[type=radio] + label.focus {
+  .btn-secondary:focus, body .gform_wrapper .gform_previous_button:focus, .btn-secondary.focus, body .gform_wrapper .focus.gform_previous_button {
     -webkit-box-shadow: 0 0 0 0.2rem rgba(108, 117, 125, 0.5);
             box-shadow: 0 0 0 0.2rem rgba(108, 117, 125, 0.5); }
-  .btn-secondary.disabled, body .gform_wrapper .disabled.gform_previous_button, .big-blocks .ginput_container_radio li input[type=radio] + label.disabled, .btn-secondary:disabled, body .gform_wrapper .gform_previous_button:disabled, .big-blocks .ginput_container_radio li input[type=radio] + label:disabled {
+  .btn-secondary.disabled, body .gform_wrapper .disabled.gform_previous_button, .btn-secondary:disabled, body .gform_wrapper .gform_previous_button:disabled {
     color: #fff;
     background-color: #6c757d;
     border-color: #6c757d; }
-  .btn-secondary:not(:disabled):not(.disabled):active, body .gform_wrapper .gform_previous_button:not(:disabled):not(.disabled):active, .big-blocks .ginput_container_radio li input[type=radio] + label:not(:disabled):not(.disabled):active, .btn-secondary:not(:disabled):not(.disabled).active, body .gform_wrapper .gform_previous_button:not(:disabled):not(.disabled).active, .big-blocks .ginput_container_radio li input[type=radio] + label:not(:disabled):not(.disabled).active,
+  .btn-secondary:not(:disabled):not(.disabled):active, body .gform_wrapper .gform_previous_button:not(:disabled):not(.disabled):active, .btn-secondary:not(:disabled):not(.disabled).active, body .gform_wrapper .gform_previous_button:not(:disabled):not(.disabled).active,
   .show > .btn-secondary.dropdown-toggle,
-  body .gform_wrapper .show > .dropdown-toggle.gform_previous_button,
-  .big-blocks .ginput_container_radio li .show > input[type=radio] + label.dropdown-toggle {
+  body .gform_wrapper .show > .dropdown-toggle.gform_previous_button {
     color: #fff;
     background-color: #545b62;
     border-color: #4e555b; }
-    .btn-secondary:not(:disabled):not(.disabled):active:focus, body .gform_wrapper .gform_previous_button:not(:disabled):not(.disabled):active:focus, .big-blocks .ginput_container_radio li input[type=radio] + label:not(:disabled):not(.disabled):active:focus, .btn-secondary:not(:disabled):not(.disabled).active:focus, body .gform_wrapper .gform_previous_button:not(:disabled):not(.disabled).active:focus, .big-blocks .ginput_container_radio li input[type=radio] + label:not(:disabled):not(.disabled).active:focus,
+    .btn-secondary:not(:disabled):not(.disabled):active:focus, body .gform_wrapper .gform_previous_button:not(:disabled):not(.disabled):active:focus, .btn-secondary:not(:disabled):not(.disabled).active:focus, body .gform_wrapper .gform_previous_button:not(:disabled):not(.disabled).active:focus,
     .show > .btn-secondary.dropdown-toggle:focus,
-    body .gform_wrapper .show > .dropdown-toggle.gform_previous_button:focus,
-    .big-blocks .ginput_container_radio li .show > input[type=radio] + label.dropdown-toggle:focus {
+    body .gform_wrapper .show > .dropdown-toggle.gform_previous_button:focus {
       -webkit-box-shadow: 0 0 0 0.2rem rgba(108, 117, 125, 0.5);
               box-shadow: 0 0 0 0.2rem rgba(108, 117, 125, 0.5); }
 
@@ -2959,28 +2957,30 @@ body .gform_wrapper .button, .big-blocks .ginput_container_radio li input[type=r
       -webkit-box-shadow: 0 0 0 0.2rem rgba(235, 48, 0, 0.5);
               box-shadow: 0 0 0 0.2rem rgba(235, 48, 0, 0.5); }
 
-.btn-light {
+.btn-light, .big-blocks .ginput_container_radio li input[type=radio] + label {
   color: #212529;
   background-color: #f8f9fa;
   border-color: #f8f9fa; }
-  .btn-light:hover {
+  .btn-light:hover, .big-blocks .ginput_container_radio li input[type=radio] + label:hover {
     color: #212529;
     background-color: #e2e6ea;
     border-color: #dae0e5; }
-  .btn-light:focus, .btn-light.focus {
+  .btn-light:focus, .big-blocks .ginput_container_radio li input[type=radio] + label:focus, .btn-light.focus, .big-blocks .ginput_container_radio li input[type=radio] + label.focus {
     -webkit-box-shadow: 0 0 0 0.2rem rgba(248, 249, 250, 0.5);
             box-shadow: 0 0 0 0.2rem rgba(248, 249, 250, 0.5); }
-  .btn-light.disabled, .btn-light:disabled {
+  .btn-light.disabled, .big-blocks .ginput_container_radio li input[type=radio] + label.disabled, .btn-light:disabled, .big-blocks .ginput_container_radio li input[type=radio] + label:disabled {
     color: #212529;
     background-color: #f8f9fa;
     border-color: #f8f9fa; }
-  .btn-light:not(:disabled):not(.disabled):active, .btn-light:not(:disabled):not(.disabled).active,
-  .show > .btn-light.dropdown-toggle {
+  .btn-light:not(:disabled):not(.disabled):active, .big-blocks .ginput_container_radio li input[type=radio] + label:not(:disabled):not(.disabled):active, .btn-light:not(:disabled):not(.disabled).active, .big-blocks .ginput_container_radio li input[type=radio] + label:not(:disabled):not(.disabled).active,
+  .show > .btn-light.dropdown-toggle,
+  .big-blocks .ginput_container_radio li .show > input[type=radio] + label.dropdown-toggle {
     color: #212529;
     background-color: #dae0e5;
     border-color: #d3d9df; }
-    .btn-light:not(:disabled):not(.disabled):active:focus, .btn-light:not(:disabled):not(.disabled).active:focus,
-    .show > .btn-light.dropdown-toggle:focus {
+    .btn-light:not(:disabled):not(.disabled):active:focus, .big-blocks .ginput_container_radio li input[type=radio] + label:not(:disabled):not(.disabled):active:focus, .btn-light:not(:disabled):not(.disabled).active:focus, .big-blocks .ginput_container_radio li input[type=radio] + label:not(:disabled):not(.disabled).active:focus,
+    .show > .btn-light.dropdown-toggle:focus,
+    .big-blocks .ginput_container_radio li .show > input[type=radio] + label.dropdown-toggle:focus {
       -webkit-box-shadow: 0 0 0 0.2rem rgba(248, 249, 250, 0.5);
               box-shadow: 0 0 0 0.2rem rgba(248, 249, 250, 0.5); }
 
@@ -7039,7 +7039,10 @@ body .gform_wrapper .gfield_checkbox::after {
   clear: both;
   content: ""; }
 
-.d-none {
+.d-none, body .gform_wrapper .gf_hidden,
+body .gform_wrapper .gform_hidden,
+body .gform_wrapper input.gform_hidden,
+body .gform_wrapper input[type=hidden] {
   display: none !important; }
 
 .d-inline {
@@ -8110,7 +8113,10 @@ body .gform_wrapper .gfield_checkbox::after {
     top: 0;
     z-index: 1020; } }
 
-.sr-only {
+.sr-only, body .gform_wrapper .gform_validation_container,
+body .gform_wrapper li.gform_validation_container,
+body .gform_wrapper .gform_body ul.gform_fields li.gfield.gform_validation_container,
+body .gform_wrapper ul.gform_fields li.gfield.gform_validation_container {
   position: absolute;
   width: 1px;
   height: 1px;
@@ -8191,7 +8197,7 @@ body .gform_wrapper .gfield_checkbox::after {
 .mx-0 {
   margin-right: 0 !important; }
 
-.mb-0, .card-header h1, .panel .panel-heading h1,
+.mb-0, body .gform_wrapper form, .card-header h1, .panel .panel-heading h1,
 .card-header h2,
 .panel .panel-heading h2,
 .card-header h3,
@@ -8242,7 +8248,8 @@ body .gform_wrapper .gfield_checkbox::after {
   margin: 0.5rem !important; }
 
 .mt-2, body .gform_page_footer,
-.my-2 {
+.my-2,
+.big-blocks {
   margin-top: 0.5rem !important; }
 
 .mr-2, body .gform_wrapper .gfield_total .gfield_label,
@@ -8250,7 +8257,8 @@ body .gform_wrapper .gfield_checkbox::after {
   margin-right: 0.5rem !important; }
 
 .mb-2, .accordion > .card, .accordion > .panel, .accordion > .card:last-child, .accordion > .panel:last-child, ol.numbering li,
-.my-2 {
+.my-2,
+.big-blocks {
   margin-bottom: 0.5rem !important; }
 
 .ml-2,
@@ -8356,29 +8364,25 @@ body .gform_wrapper .gf_progressbar_wrapper {
 .px-1 {
   padding-left: 0.25rem !important; }
 
-.p-2 {
+.p-2, body .gform_heading {
   padding: 0.5rem !important; }
 
 .pt-2, body .gform_page_footer,
 .py-2,
-body .gform_heading,
 body .gform_wrapper .gf_progressbar_wrapper {
   padding-top: 0.5rem !important; }
 
 .pr-2,
-.px-2,
-body .gform_heading {
+.px-2 {
   padding-right: 0.5rem !important; }
 
 .pb-2,
 .py-2,
-body .gform_heading,
 body .gform_wrapper .gf_progressbar_wrapper {
   padding-bottom: 0.5rem !important; }
 
 .pl-2,
-.px-2,
-body .gform_heading {
+.px-2 {
   padding-left: 0.5rem !important; }
 
 .p-3 {
@@ -12263,13 +12267,13 @@ html {
 h1, .h1 {
   font-size: 1.383rem; }
 
-h2, .h2, body .gform_heading .gform_title {
+h2, .h2 {
   font-size: 1.29616rem; }
 
 h3, .h3, body .gform_wrapper .gfield_total .ginput_total {
   font-size: 1.21477rem; }
 
-h4, .h4, body .gform_wrapper .gsection_title, body .gform_wrapper .gf_progressbar_title {
+h4, .h4, body .gform_wrapper .gf_progressbar_title {
   font-size: 1.13849rem; }
 
 h5, .h5, body .gform_wrapper .gfield.gsection.field_sublabel_above.field_description_above h2 {
@@ -12293,11 +12297,11 @@ h6, .h6 {
 @media (min-width: 992px) {
   h1, .h1 {
     font-size: 3.05176rem; }
-  h2, .h2, body .gform_heading .gform_title {
+  h2, .h2 {
     font-size: 2.44141rem; }
   h3, .h3, body .gform_wrapper .gfield_total .ginput_total {
     font-size: 1.95313rem; }
-  h4, .h4, body .gform_wrapper .gsection_title, body .gform_wrapper .gf_progressbar_title {
+  h4, .h4, body .gform_wrapper .gf_progressbar_title {
     font-size: 1.5625rem; }
   h5, .h5, body .gform_wrapper .gfield.gsection.field_sublabel_above.field_description_above h2 {
     font-size: 1.25rem; }
@@ -12315,22 +12319,6 @@ h6, .h6 {
 body .gform_page_footer {
   border-top: 1px #dee2e6 solid; }
 
-body .gform_wrapper .gf_hidden,
-body .gform_wrapper .gform_hidden,
-body .gform_wrapper input.gform_hidden,
-body .gform_wrapper input[type=hidden] {
-  display: none !important;
-  max-height: 1px !important;
-  overflow: hidden; }
-
-body .gform_wrapper .gform_validation_container,
-body .gform_wrapper li.gform_validation_container,
-body .gform_wrapper .gform_body ul.gform_fields li.gfield.gform_validation_container,
-body .gform_wrapper ul.gform_fields li.gfield.gform_validation_container {
-  display: none !important;
-  position: absolute !important;
-  left: -9000px; }
-
 body .gform_wrapper .gf_scroll_text {
   height: 18em;
   overflow-y: scroll;
@@ -12338,9 +12326,6 @@ body .gform_wrapper .gf_scroll_text {
   padding: 1em;
   font-size: 0.85em;
   border: 1px solid #eceeef; }
-
-body .gform_wrapper form {
-  margin-bottom: 0; }
 
 body .gform_wrapper .ginput_container_creditcard {
   border: 1px solid #dee2e6;
@@ -12365,7 +12350,7 @@ body .gform_wrapper .ginput_container_creditcard {
       padding-left: 10px; }
 
 body .gform_wrapper .gf_progressbar_wrapper .gf_progressbar {
-  background-color: #dee2e6; }
+  background-color: #e9ecef; }
   body .gform_wrapper .gf_progressbar_wrapper .gf_progressbar .gf_progressbar_percentage {
     height: 1.5rem;
     line-height: 1.5rem; }
@@ -12514,25 +12499,23 @@ body .gform_wrapper .ui-datepicker {
       display: block;
       padding: 5px; }
 
-.big-blocks {
-  margin: 0.4em 0; }
-  .big-blocks .ginput_container_radio li {
-    margin: 0.2em 0;
-    float: none;
-    width: 100%; }
-    .big-blocks .ginput_container_radio li input[type=radio] {
-      display: none; }
-      .big-blocks .ginput_container_radio li input[type=radio] + label {
-        margin-bottom: 0;
-        text-align: left;
-        cursor: pointer;
-        white-space: normal !important; }
-        .big-blocks .ginput_container_radio li input[type=radio] + label .small, .big-blocks .ginput_container_radio li input[type=radio] + label body .gform_wrapper .ginput_container_creditcard label, body .gform_wrapper .ginput_container_creditcard .big-blocks .ginput_container_radio li input[type=radio] + label label, .big-blocks .ginput_container_radio li input[type=radio] + label body .gform_wrapper .gf_progressbar_wrapper .gf_progressbar_title, body .gform_wrapper .gf_progressbar_wrapper .big-blocks .ginput_container_radio li input[type=radio] + label .gf_progressbar_title, .big-blocks .ginput_container_radio li input[type=radio] + label body .gform_wrapper .gfield.gsection.field_sublabel_above.field_description_above .gsection_description, body .gform_wrapper .gfield.gsection.field_sublabel_above.field_description_above .big-blocks .ginput_container_radio li input[type=radio] + label .gsection_description, .big-blocks .ginput_container_radio li input[type=radio] + label body .gform_wrapper .ginput_complex .ginput_left label, body .gform_wrapper .ginput_complex .ginput_left .big-blocks .ginput_container_radio li input[type=radio] + label label,
-        .big-blocks .ginput_container_radio li input[type=radio] + label body .gform_wrapper .ginput_complex .ginput_right label, body .gform_wrapper .ginput_complex .ginput_right .big-blocks .ginput_container_radio li input[type=radio] + label label,
-        .big-blocks .ginput_container_radio li input[type=radio] + label body .gform_wrapper .ginput_complex .name_first label, body .gform_wrapper .ginput_complex .name_first .big-blocks .ginput_container_radio li input[type=radio] + label label,
-        .big-blocks .ginput_container_radio li input[type=radio] + label body .gform_wrapper .ginput_complex .name_last label, body .gform_wrapper .ginput_complex .name_last .big-blocks .ginput_container_radio li input[type=radio] + label label,
-        .big-blocks .ginput_container_radio li input[type=radio] + label body .gform_wrapper .ginput_complex.gf_name_has_3 .name_prefix label, body .gform_wrapper .ginput_complex.gf_name_has_3 .name_prefix .big-blocks .ginput_container_radio li input[type=radio] + label label, .big-blocks .ginput_container_radio li input[type=radio] + label body .gform_wrapper .gfield_description, body .gform_wrapper .big-blocks .ginput_container_radio li input[type=radio] + label .gfield_description, .big-blocks .ginput_container_radio li input[type=radio] + label body .gform_wrapper .ginput_container_date label, body .gform_wrapper .ginput_container_date .big-blocks .ginput_container_radio li input[type=radio] + label label, .big-blocks .ginput_container_radio li input[type=radio] + label .wp-caption-text {
-          margin-bottom: 0; }
+.big-blocks .ginput_container_radio li {
+  margin: 0.2em 0;
+  float: none;
+  width: 100%; }
+  .big-blocks .ginput_container_radio li input[type=radio] {
+    display: none; }
+    .big-blocks .ginput_container_radio li input[type=radio] + label {
+      margin-bottom: 0;
+      text-align: left;
+      cursor: pointer;
+      white-space: normal !important; }
+      .big-blocks .ginput_container_radio li input[type=radio] + label .small, .big-blocks .ginput_container_radio li input[type=radio] + label body .gform_wrapper .ginput_container_creditcard label, body .gform_wrapper .ginput_container_creditcard .big-blocks .ginput_container_radio li input[type=radio] + label label, .big-blocks .ginput_container_radio li input[type=radio] + label body .gform_wrapper .gf_progressbar_wrapper .gf_progressbar_title, body .gform_wrapper .gf_progressbar_wrapper .big-blocks .ginput_container_radio li input[type=radio] + label .gf_progressbar_title, .big-blocks .ginput_container_radio li input[type=radio] + label body .gform_wrapper .gfield.gsection.field_sublabel_above.field_description_above .gsection_description, body .gform_wrapper .gfield.gsection.field_sublabel_above.field_description_above .big-blocks .ginput_container_radio li input[type=radio] + label .gsection_description, .big-blocks .ginput_container_radio li input[type=radio] + label body .gform_wrapper .ginput_complex .ginput_left label, body .gform_wrapper .ginput_complex .ginput_left .big-blocks .ginput_container_radio li input[type=radio] + label label,
+      .big-blocks .ginput_container_radio li input[type=radio] + label body .gform_wrapper .ginput_complex .ginput_right label, body .gform_wrapper .ginput_complex .ginput_right .big-blocks .ginput_container_radio li input[type=radio] + label label,
+      .big-blocks .ginput_container_radio li input[type=radio] + label body .gform_wrapper .ginput_complex .name_first label, body .gform_wrapper .ginput_complex .name_first .big-blocks .ginput_container_radio li input[type=radio] + label label,
+      .big-blocks .ginput_container_radio li input[type=radio] + label body .gform_wrapper .ginput_complex .name_last label, body .gform_wrapper .ginput_complex .name_last .big-blocks .ginput_container_radio li input[type=radio] + label label,
+      .big-blocks .ginput_container_radio li input[type=radio] + label body .gform_wrapper .ginput_complex.gf_name_has_3 .name_prefix label, body .gform_wrapper .ginput_complex.gf_name_has_3 .name_prefix .big-blocks .ginput_container_radio li input[type=radio] + label label, .big-blocks .ginput_container_radio li input[type=radio] + label body .gform_wrapper .gfield_description, body .gform_wrapper .big-blocks .ginput_container_radio li input[type=radio] + label .gfield_description, .big-blocks .ginput_container_radio li input[type=radio] + label body .gform_wrapper .ginput_container_date label, body .gform_wrapper .ginput_container_date .big-blocks .ginput_container_radio li input[type=radio] + label label, .big-blocks .ginput_container_radio li input[type=radio] + label .wp-caption-text {
+        margin-bottom: 0; }
 
 select.gfield_select + .chosen-container.chosen-container-single .chosen-single {
   display: block;

@@ -1,10 +1,6 @@
         body {
             .gform_heading {
-                @extend .py-2;
-                @extend .px-2;
-                .gform_title {
-                    @extend .h2;
-                }
+                @extend .p-2;
             }
             .gform_page_footer {
                 @extend .pt-2;
@@ -12,24 +8,17 @@
                 @extend .mt-2
             }
             .gform_wrapper {
-                .gsection_title {
-                    @extend .h4;
-                }
                 .gf_hidden,
                 .gform_hidden,
                 input.gform_hidden,
                 input[type=hidden] {
-                    display: none!important;
-                    max-height: 1px!important;
-                    overflow: hidden;
+                    @extend .d-none;
                 }
                 .gform_validation_container,
                 li.gform_validation_container,
                 .gform_body ul.gform_fields li.gfield.gform_validation_container,
                 ul.gform_fields li.gfield.gform_validation_container {
-                    display: none !important;
-                    position: absolute !important;
-                    left: -9000px;
+                    @extend .sr-only;
                 }
                 .gfield_radio,
                 .gfield_checkbox {
@@ -65,7 +54,7 @@
                     @extend .form-group;
                 }
                 form {
-                    margin-bottom: 0;
+                    @extend .mb-0;
                 }
                 .gf_progressbar_title {
                     @extend .h4;
@@ -120,7 +109,7 @@
                     }
                     .gf_progressbar {
                         @extend .progress;
-                        background-color: $gray-300;
+                        background-color: $gray-200;
                         .gf_progressbar_percentage {
                             @extend .progress-bar;
                             @extend .bg-info;
@@ -395,7 +384,7 @@
         
         // Custom 
         .big-blocks {
-            margin: 0.4em 0;
+            @extend .my-2;
             .ginput_container_radio {
                 li {
                     margin: 0.2em 0;
@@ -405,7 +394,7 @@
                         display: none;
                         &+label {
                             @extend .btn;
-                            @extend .btn-secondary;
+                            @extend .btn-light;
                             @extend .btn-lg;
                             @extend .btn-block;
                             margin-bottom: 0;
