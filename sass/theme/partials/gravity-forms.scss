@@ -43,6 +43,10 @@
                     .ginput_total {
                         @extend .h3;
                     }
+                    .gfield_description {
+                        @extend .small;
+                        @extend .d-block;
+                    }
                 }
                 .gform_body {
                     @extend .form-horizontal !optional;
@@ -399,9 +403,11 @@
                 }
             }
         }
-.gfield_visibility_hidden {
-    @extend .d-none;
-}
+        
+        .gfield_visibility_hidden {
+            @extend .d-none;
+        }
+        
         .big-blocks-info {
             .ginput_container_radio {
                 li {
@@ -409,6 +415,9 @@
                         &+label {
                             h2 {
                                 @extend .mb-0;
+                            }
+                            .badge {
+                                border-radius: 25px;
                             }
                         }
                         &:checked+label {
