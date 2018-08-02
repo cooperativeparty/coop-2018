@@ -387,18 +387,11 @@
             @extend .my-2;
             .ginput_container_radio {
                 li {
-                    margin: 0.2em 0;
-                    float: none;
-                    width: 100%;
+                    @extend .my-3;
                     input[type=radio] {
-                        display: none;
+                                            @extend .card;
                         &+label {
-                            @extend .btn;
-                            @extend .btn-light;
-                            @extend .btn-lg;
-                            @extend .btn-block;
-                            margin-bottom: 0;
-                            text-align: left;
+                           @extend .card-body;
                             cursor: pointer;
                             white-space: normal!important;
                             .small {
@@ -406,7 +399,8 @@
                             }
                         }
                         &:checked+label {
-                            @extend .btn-primary;
+                            @extend .bg-primary;
+                            @extend .text-dark;
                         }
                     }
                 }
