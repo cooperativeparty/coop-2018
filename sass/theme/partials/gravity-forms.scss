@@ -173,6 +173,15 @@
                         overflow: visible;
                     }
                 }
+                .gfield_description,
+                .ginput_full,
+                .ginput_complex {
+                    label {
+                        @extend .form-text;
+                        @extend .small;
+                        @extend .text-muted;
+                    }
+                }
                 .ginput_complex {
                     @extend .row;
                     width: auto;
@@ -182,11 +191,6 @@
                     .name_last {
                         @extend .col-12;
                         @extend .col-lg-6;
-                        label {
-                            @extend .form-text;
-                            @extend .small;
-                            @extend .text-muted;
-                        }
                     }
                     .ginput_right {
                         margin-left: 0;
@@ -219,11 +223,6 @@
                         }
                     }
                 }
-                .gfield_description {
-                    @extend .form-text;
-                    @extend .small;
-                    @extend .text-muted;
-                }
                 .gform_button,
                 .button {
                     @extend .btn;
@@ -239,7 +238,6 @@
                 }
                 li.gfield.gfield_error,
                 .gfield_error {
-
                     input,
                     select,
                     textarea {
