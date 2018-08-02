@@ -388,10 +388,12 @@
             .ginput_container_radio {
                 li {
                     @extend .my-3;
+                    @extend .card;
                     input[type=radio] {
-                                            @extend .card;
+                        @extend .sr-only;
                         &+label {
-                           @extend .card-body;
+                            @extend .card-body;
+                            @extend .text-dark;
                             cursor: pointer;
                             white-space: normal!important;
                             .small {
@@ -400,7 +402,7 @@
                         }
                         &:checked+label {
                             @extend .bg-primary;
-                            @extend .text-dark;
+                            @extend .text-white;
                         }
                     }
                 }
