@@ -99,13 +99,11 @@
                 }
                 .gf_progressbar_wrapper {
                     @extend .py-2;
-                    @extend .pb-4;
-                    @extend .col-12;
                     @extend .px-0;
                     .gf_progressbar_title {
-                        @extend .form-text;
                         @extend .small;
                         @extend .text-muted;
+                        @extend .mb-2;
                     }
                     .gf_progressbar {
                         @extend .progress;
@@ -113,9 +111,7 @@
                         .gf_progressbar_percentage {
                             @extend .progress-bar;
                             @extend .bg-info;
-                            height: 1.5rem;
-                            line-height: 1.5rem;
-                            span {}
+                                span {}
                         }
                     }
                 }
@@ -398,14 +394,14 @@
                             @extend .mb-0;
                             .small {
                                 @extend .mb-0;
-                                color: rgba($dark, 30);
+                                color: rgba($dark, 50);
                             }
                         }
                         &:checked+label {
                             @extend .bg-primary;
                             @extend .text-white;
                             .small {
-                                color: rgba($white, 30);
+                                color: rgba($white, 50);
                             }
                         }
                     }
