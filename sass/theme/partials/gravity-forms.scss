@@ -364,6 +364,7 @@ body {
     @extend .my-2;
     .ginput_container_radio {
         li {
+            float: none!important;
             @extend .my-3;
             @extend .card;
             input[type=radio] {
