@@ -82,7 +82,36 @@
 .validation_message {
     display: none;
 }
-
+// Big Blocks
+        .big-blocks {
+            margin: 0.4em 0;
+            .ginput_container_radio {
+                li {
+                    margin: 0.2em 0;
+                    float: none;
+                    width: 100%;
+                    input[type=radio] {
+                        display: none;
+                        &+label {
+                            @extend .btn;
+                            @extend .btn-secondary;
+                            @extend .btn-lg;
+                            @extend .btn-block;
+                            margin-bottom: 0;
+                            text-align: left;
+                            cursor: pointer;
+                            white-space: normal!important;
+                            .small {
+                                margin-bottom: 0;
+                            }
+                        }
+                        &:checked+label {
+                            @extend .btn-primary;
+                        }
+                    }
+                }
+            }
+        }
 // Basic signup form
 .form-basic {
     position: relative;
