@@ -111,7 +111,7 @@
                         .gf_progressbar_percentage {
                             @extend .progress-bar;
                             @extend .bg-info;
-                                span {}
+                            span {}
                         }
                     }
                 }
@@ -239,18 +239,16 @@
                 }
                 li.gfield.gfield_error,
                 .gfield_error {
-                    @extend .alert;
-                    @extend .alert-danger;
                     .gfield_label {
                         color: $danger;
                     }
                     input,
                     select,
                     textarea {
-                        border-color: danger;
-                        background-color: lighten($danger, 60);
-                        color: $danger;
-                        @include form-control-focus();
+                        @extend .is-invalid;
+                    }
+                    label {
+                        @extend .invalid-feedback;
                     }
                 }
                 div.validation_error,
