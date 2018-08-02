@@ -17,7 +17,7 @@ body {
         .gfield_radio {
             li {
                 @extend .form-check;
-                input[type=checkbox] {
+                input[type=radio] {
                     @extend .form-check-input;
                 }
                 label {
