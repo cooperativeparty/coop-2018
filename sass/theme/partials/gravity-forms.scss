@@ -14,10 +14,10 @@ body {
         @extend .text-muted;
     }
     .gfield:not(.big-blocks) {
-        .gfield_radio {
+        .gfield_checkbox, .gfield_radio  {
             li {
                 @extend .form-check;
-                input[type=radio] {
+                input[type=radio],input[type=checkbox] {
                     @extend .form-check-input;
                 }
                 label {
