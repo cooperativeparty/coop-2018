@@ -2108,19 +2108,19 @@ body .gform_wrapper .ginput_complex.gf_name_has_3 .name_last label, body .gform_
     padding-right: 5px;
     padding-left: 5px; }
 
-.form-check {
+.form-check, body .gform_wrapper .ginput_container .gfield_radio li {
   position: relative;
   display: block;
   padding-left: 1.25rem; }
 
-.form-check-input {
+.form-check-input, body .gform_wrapper .ginput_container .gfield_radio li input[type=checkbox] {
   position: absolute;
   margin-top: 0.3rem;
   margin-left: -1.25rem; }
-  .form-check-input:disabled ~ .form-check-label {
+  .form-check-input:disabled ~ .form-check-label, body .gform_wrapper .ginput_container .gfield_radio li input:disabled[type=checkbox] ~ .form-check-label, body .gform_wrapper .ginput_container .gfield_radio li .form-check-input:disabled ~ label, body .gform_wrapper .ginput_container .gfield_radio li input:disabled[type=checkbox] ~ label {
     color: #6c757d; }
 
-.form-check-label {
+.form-check-label, body .gform_wrapper .ginput_container .gfield_radio li label {
   margin-bottom: 0; }
 
 .form-check-inline {
@@ -2132,7 +2132,7 @@ body .gform_wrapper .ginput_complex.gf_name_has_3 .name_last label, body .gform_
           align-items: center;
   padding-left: 0;
   margin-right: 0.75rem; }
-  .form-check-inline .form-check-input {
+  .form-check-inline .form-check-input, .form-check-inline body .gform_wrapper .ginput_container .gfield_radio li input[type=checkbox], body .gform_wrapper .ginput_container .gfield_radio li .form-check-inline input[type=checkbox] {
     position: static;
     margin-top: 0;
     margin-right: 0.3125rem;
@@ -2342,12 +2342,15 @@ body .gform_wrapper .ginput_container_date textarea.is-valid, .was-validated
 .form-control-file.is-valid ~ .valid-tooltip {
   display: block; }
 
-.was-validated .form-check-input:valid ~ .form-check-label, .form-check-input.is-valid ~ .form-check-label {
+.was-validated .form-check-input:valid ~ .form-check-label, .was-validated body .gform_wrapper .ginput_container .gfield_radio li input:valid[type=checkbox] ~ .form-check-label, body .gform_wrapper .ginput_container .gfield_radio li .was-validated input:valid[type=checkbox] ~ .form-check-label, .was-validated body .gform_wrapper .ginput_container .gfield_radio li .form-check-input:valid ~ label, body .gform_wrapper .ginput_container .gfield_radio li .was-validated .form-check-input:valid ~ label, .was-validated body .gform_wrapper .ginput_container .gfield_radio li input:valid[type=checkbox] ~ label, body .gform_wrapper .ginput_container .gfield_radio li .was-validated input:valid[type=checkbox] ~ label, .form-check-input.is-valid ~ .form-check-label, body .gform_wrapper .ginput_container .gfield_radio li input.is-valid[type=checkbox] ~ .form-check-label, body .gform_wrapper .ginput_container .gfield_radio li .form-check-input.is-valid ~ label, body .gform_wrapper .ginput_container .gfield_radio li input.is-valid[type=checkbox] ~ label {
   color: #85bc25; }
 
-.was-validated .form-check-input:valid ~ .valid-feedback,
-.was-validated .form-check-input:valid ~ .valid-tooltip, .form-check-input.is-valid ~ .valid-feedback,
-.form-check-input.is-valid ~ .valid-tooltip {
+.was-validated .form-check-input:valid ~ .valid-feedback, .was-validated body .gform_wrapper .ginput_container .gfield_radio li input:valid[type=checkbox] ~ .valid-feedback, body .gform_wrapper .ginput_container .gfield_radio li .was-validated input:valid[type=checkbox] ~ .valid-feedback,
+.was-validated .form-check-input:valid ~ .valid-tooltip,
+.was-validated body .gform_wrapper .ginput_container .gfield_radio li input:valid[type=checkbox] ~ .valid-tooltip,
+body .gform_wrapper .ginput_container .gfield_radio li .was-validated input:valid[type=checkbox] ~ .valid-tooltip, .form-check-input.is-valid ~ .valid-feedback, body .gform_wrapper .ginput_container .gfield_radio li input.is-valid[type=checkbox] ~ .valid-feedback,
+.form-check-input.is-valid ~ .valid-tooltip,
+body .gform_wrapper .ginput_container .gfield_radio li input.is-valid[type=checkbox] ~ .valid-tooltip {
   display: block; }
 
 .was-validated .custom-control-input:valid ~ .custom-control-label, .custom-control-input.is-valid ~ .custom-control-label {
@@ -2817,12 +2820,18 @@ body .gform_wrapper .gfield_error select.form-control-file ~ .invalid-tooltip,
 body .gform_wrapper .gfield_error textarea.form-control-file ~ .invalid-tooltip {
   display: block; }
 
-.was-validated .form-check-input:invalid ~ .form-check-label, .form-check-input.is-invalid ~ .form-check-label, body .gform_wrapper .gfield_error input.form-check-input ~ .form-check-label, body .gform_wrapper .gfield_error select.form-check-input ~ .form-check-label, body .gform_wrapper .gfield_error textarea.form-check-input ~ .form-check-label {
+.was-validated .form-check-input:invalid ~ .form-check-label, .was-validated body .gform_wrapper .ginput_container .gfield_radio li input:invalid[type=checkbox] ~ .form-check-label, body .gform_wrapper .ginput_container .gfield_radio li .was-validated input:invalid[type=checkbox] ~ .form-check-label, .was-validated body .gform_wrapper .ginput_container .gfield_radio li .form-check-input:invalid ~ label, body .gform_wrapper .ginput_container .gfield_radio li .was-validated .form-check-input:invalid ~ label, .was-validated body .gform_wrapper .ginput_container .gfield_radio li input:invalid[type=checkbox] ~ label, body .gform_wrapper .ginput_container .gfield_radio li .was-validated input:invalid[type=checkbox] ~ label, .form-check-input.is-invalid ~ .form-check-label, body .gform_wrapper .ginput_container .gfield_radio li input.is-invalid[type=checkbox] ~ .form-check-label, body .gform_wrapper .ginput_container .gfield_radio li.gfield.gfield_error input[type=checkbox] ~ .form-check-label, body .gform_wrapper .ginput_container .gfield_radio li .gfield_error input[type=checkbox] ~ .form-check-label, body .gform_wrapper .gfield_error .ginput_container .gfield_radio li input[type=checkbox] ~ .form-check-label, body .gform_wrapper .gfield_error input.form-check-input ~ .form-check-label, body .gform_wrapper .gfield_error select.form-check-input ~ .form-check-label, body .gform_wrapper .gfield_error textarea.form-check-input ~ .form-check-label, body .gform_wrapper .ginput_container .gfield_radio li .form-check-input.is-invalid ~ label, body .gform_wrapper .ginput_container .gfield_radio li input.is-invalid[type=checkbox] ~ label, body .gform_wrapper .ginput_container .gfield_radio li.gfield.gfield_error input[type=checkbox] ~ label, body .gform_wrapper .ginput_container .gfield_radio li .gfield_error input[type=checkbox] ~ label, body .gform_wrapper .gfield_error .ginput_container .gfield_radio li input[type=checkbox] ~ label, body .gform_wrapper .ginput_container .gfield_radio li.gfield.gfield_error input.form-check-input ~ label, body .gform_wrapper .ginput_container .gfield_radio li.gfield.gfield_error select.form-check-input ~ label, body .gform_wrapper .ginput_container .gfield_radio li.gfield.gfield_error textarea.form-check-input ~ label, body .gform_wrapper .gfield_error .ginput_container .gfield_radio li input.form-check-input ~ label, body .gform_wrapper .ginput_container .gfield_radio li .gfield_error input.form-check-input ~ label, body .gform_wrapper .gfield_error .ginput_container .gfield_radio li select.form-check-input ~ label, body .gform_wrapper .ginput_container .gfield_radio li .gfield_error select.form-check-input ~ label, body .gform_wrapper .gfield_error .ginput_container .gfield_radio li textarea.form-check-input ~ label, body .gform_wrapper .ginput_container .gfield_radio li .gfield_error textarea.form-check-input ~ label {
   color: #eb3000; }
 
-.was-validated .form-check-input:invalid ~ .invalid-feedback,
-.was-validated .form-check-input:invalid ~ .invalid-tooltip, .form-check-input.is-invalid ~ .invalid-feedback, body .gform_wrapper .gfield_error input.form-check-input ~ .invalid-feedback, body .gform_wrapper .gfield_error select.form-check-input ~ .invalid-feedback, body .gform_wrapper .gfield_error textarea.form-check-input ~ .invalid-feedback,
+.was-validated .form-check-input:invalid ~ .invalid-feedback, .was-validated body .gform_wrapper .ginput_container .gfield_radio li input:invalid[type=checkbox] ~ .invalid-feedback, body .gform_wrapper .ginput_container .gfield_radio li .was-validated input:invalid[type=checkbox] ~ .invalid-feedback,
+.was-validated .form-check-input:invalid ~ .invalid-tooltip,
+.was-validated body .gform_wrapper .ginput_container .gfield_radio li input:invalid[type=checkbox] ~ .invalid-tooltip,
+body .gform_wrapper .ginput_container .gfield_radio li .was-validated input:invalid[type=checkbox] ~ .invalid-tooltip, .form-check-input.is-invalid ~ .invalid-feedback, body .gform_wrapper .ginput_container .gfield_radio li input.is-invalid[type=checkbox] ~ .invalid-feedback, body .gform_wrapper .ginput_container .gfield_radio li.gfield.gfield_error input[type=checkbox] ~ .invalid-feedback, body .gform_wrapper .ginput_container .gfield_radio li .gfield_error input[type=checkbox] ~ .invalid-feedback, body .gform_wrapper .gfield_error .ginput_container .gfield_radio li input[type=checkbox] ~ .invalid-feedback, body .gform_wrapper .gfield_error input.form-check-input ~ .invalid-feedback, body .gform_wrapper .gfield_error select.form-check-input ~ .invalid-feedback, body .gform_wrapper .gfield_error textarea.form-check-input ~ .invalid-feedback,
 .form-check-input.is-invalid ~ .invalid-tooltip,
+body .gform_wrapper .ginput_container .gfield_radio li input.is-invalid[type=checkbox] ~ .invalid-tooltip,
+body .gform_wrapper .ginput_container .gfield_radio li.gfield.gfield_error input[type=checkbox] ~ .invalid-tooltip,
+body .gform_wrapper .ginput_container .gfield_radio li .gfield_error input[type=checkbox] ~ .invalid-tooltip,
+body .gform_wrapper .gfield_error .ginput_container .gfield_radio li input[type=checkbox] ~ .invalid-tooltip,
 body .gform_wrapper .gfield_error input.form-check-input ~ .invalid-tooltip,
 body .gform_wrapper .gfield_error select.form-check-input ~ .invalid-tooltip,
 body .gform_wrapper .gfield_error textarea.form-check-input ~ .invalid-tooltip {
@@ -2876,7 +2885,7 @@ body .gform_wrapper .gfield_error textarea.custom-file-input ~ .invalid-tooltip 
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center; }
-  .form-inline .form-check {
+  .form-inline .form-check, .form-inline body .gform_wrapper .ginput_container .gfield_radio li, body .gform_wrapper .ginput_container .gfield_radio .form-inline li {
     width: 100%; }
   @media (min-width: 576px) {
     .form-inline label {
@@ -2935,7 +2944,7 @@ body .gform_wrapper .gfield_error textarea.custom-file-input ~ .invalid-tooltip 
     .form-inline .input-group,
     .form-inline .custom-select {
       width: auto; }
-    .form-inline .form-check {
+    .form-inline .form-check, .form-inline body .gform_wrapper .ginput_container .gfield_radio li, body .gform_wrapper .ginput_container .gfield_radio .form-inline li {
       display: -webkit-box;
       display: -ms-flexbox;
       display: flex;
@@ -2947,7 +2956,7 @@ body .gform_wrapper .gfield_error textarea.custom-file-input ~ .invalid-tooltip 
               justify-content: center;
       width: auto;
       padding-left: 0; }
-    .form-inline .form-check-input {
+    .form-inline .form-check-input, .form-inline body .gform_wrapper .ginput_container .gfield_radio li input[type=checkbox], body .gform_wrapper .ginput_container .gfield_radio li .form-inline input[type=checkbox] {
       position: relative;
       margin-top: 0;
       margin-right: 0.25rem;
@@ -12519,21 +12528,6 @@ body .gform_wrapper .ginput_container {
   /*&:not(.ginput_complex) {
                 @extend .col-xscol-xs-12
             }*/ }
-  body .gform_wrapper .ginput_container .gfield_radio li {
-    margin-bottom: 0;
-    float: none; }
-    body .gform_wrapper .ginput_container .gfield_radio li input[type=radio] {
-      vertical-align: middle; }
-      body .gform_wrapper .ginput_container .gfield_radio li input[type=radio] + label {
-        padding-left: 20px;
-        vertical-align: middle; }
-    body .gform_wrapper .ginput_container .gfield_radio li input[value=gf_other_choice] {
-      float: left; }
-    body .gform_wrapper .ginput_container .gfield_radio li input[value=Other][type=text] {
-      float: left;
-      width: 35%;
-      margin-left: 20px;
-      vertical-align: middle; }
   body .gform_wrapper .ginput_container textarea {
     height: auto; }
   body .gform_wrapper .ginput_container.ginput_complex {
