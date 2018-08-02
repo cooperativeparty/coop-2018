@@ -244,7 +244,6 @@
                         @extend .is-invalid;
                     }
                 }
-
                 div.validation_error,
                 .validation_error {
                     @extend .alert;
@@ -405,7 +404,11 @@
             .ginput_container_radio {
                 li {
                     input[type=radio] {
-                        &+label {}
+                        &+label {
+                            h2 {
+                                @extend .mb-0;
+                            }
+                        }
                         &:checked+label {
                             @extend .bg-info;
                         }
