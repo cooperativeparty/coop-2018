@@ -3,7 +3,7 @@
  * @package understrap
  */
 ?>
-    <article id="post-<?php the_ID(); ?>" <?php post_class(); ?> data-spy="affix" data-offset-top="106" data-offset-bottom="200">
+    <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
         <!-- .entry-header -->
         <div class="row">
             <?php if ( has_post_thumbnail() ) { ?>

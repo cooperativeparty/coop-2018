@@ -10,7 +10,7 @@
 get_header(); ?>
     <?php get_template_part( 'partials/banner', 'archive' ); ?>
         <div class="wrapper" id="archive-wrapper">
-            <div id="content" class="container">
+            <div id="content" class="container py-5">
                 <div class="row">
                     <div id="primary" class="col content-area">
                         <main id="main" class="site-main card-deck-wrapper" role="main">
