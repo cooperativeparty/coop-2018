@@ -387,7 +387,7 @@
             @extend .my-2;
             .ginput_container_radio {
                 li {
-                    @extend .my-3;
+                    @extend .my-2;
                     @extend .card;
                     input[type=radio] {
                         @extend .sr-only;
@@ -396,6 +396,7 @@
                             @extend .text-dark;
                             cursor: pointer;
                             white-space: normal!important;
+                            @extend .mb-0;
                             .small {
                                 margin-bottom: 0;
                             }

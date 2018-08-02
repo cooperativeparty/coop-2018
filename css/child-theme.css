@@ -8074,7 +8074,7 @@ body .gform_wrapper ul.gform_fields li.gfield.gform_validation_container, .big-b
 .mx-0 {
   margin-right: 0 !important; }
 
-.mb-0, body .gform_wrapper form, .card-header h1, .panel .panel-heading h1,
+.mb-0, body .gform_wrapper form, .big-blocks .ginput_container_radio li input[type=radio] + label, .card-header h1, .panel .panel-heading h1,
 .card-header h2,
 .panel .panel-heading h2,
 .card-header h3,
@@ -8142,7 +8142,8 @@ body .gform_wrapper ul.gform_fields li.gfield.gform_validation_container, .big-b
 
 .mt-2, body .gform_page_footer,
 .my-2,
-.big-blocks {
+.big-blocks,
+.big-blocks .ginput_container_radio li {
   margin-top: 0.5rem !important; }
 
 .mr-2, body .gform_wrapper .gfield_total .gfield_label,
@@ -8151,7 +8152,8 @@ body .gform_wrapper ul.gform_fields li.gfield.gform_validation_container, .big-b
 
 .mb-2, .accordion > .card, .big-blocks .ginput_container_radio .accordion > li, .accordion > .panel, .accordion > .card:last-child, .accordion > .panel:last-child, ol.numbering li,
 .my-2,
-.big-blocks {
+.big-blocks,
+.big-blocks .ginput_container_radio li {
   margin-bottom: 0.5rem !important; }
 
 .ml-2,
@@ -8162,8 +8164,7 @@ body .gform_wrapper ul.gform_fields li.gfield.gform_validation_container, .big-b
   margin: 1rem !important; }
 
 .mt-3,
-.my-3,
-.big-blocks .ginput_container_radio li {
+.my-3 {
   margin-top: 1rem !important; }
 
 .mr-3,
@@ -8171,8 +8172,7 @@ body .gform_wrapper ul.gform_fields li.gfield.gform_validation_container, .big-b
   margin-right: 1rem !important; }
 
 .mb-3, .accordion,
-.my-3,
-.big-blocks .ginput_container_radio li {
+.my-3 {
   margin-bottom: 1rem !important; }
 
 .ml-3,
