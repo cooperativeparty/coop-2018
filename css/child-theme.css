@@ -7153,7 +7153,7 @@ body .gform_wrapper .gfield_checkbox::after {
 .d-none, body .gform_wrapper .gf_hidden,
 body .gform_wrapper .gform_hidden,
 body .gform_wrapper input.gform_hidden,
-body .gform_wrapper input[type=hidden] {
+body .gform_wrapper input[type=hidden], .gfield_visibility_hidden {
   display: none !important; }
 
 .d-inline {

@@ -399,7 +399,9 @@
                 }
             }
         }
-        
+.gfield_visibility_hidden {
+    @extend .d-none;
+}
         .big-blocks-info {
             .ginput_container_radio {
                 li {
