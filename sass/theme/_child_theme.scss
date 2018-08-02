@@ -621,7 +621,7 @@ ol.numbering {
         clear: both;
     }
     padding: 1em 1em 0;
-    border: 1px solid lighten($teal, 40);
+    border: 1px solid lighten($teal, 30);
     ul {
         margin-left: 2.13286em;
         margin-bottom: 1em;
@@ -793,6 +793,7 @@ ol.numbering {
         @extend .mb-0;
     }
 }
+
 .card.align-left {
     flex-direction: row;
     -webkit-box-align: start;
