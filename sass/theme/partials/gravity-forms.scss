@@ -14,10 +14,12 @@ body {
         @extend .text-muted;
     }
     .gfield:not(.big-blocks) {
-        .gfield_checkbox, .gfield_radio  {
+        .gfield_checkbox,
+        .gfield_radio {
             li {
                 @extend .form-check;
-                input[type=radio],input[type=checkbox] {
+                input[type=radio],
+                input[type=checkbox] {
                     @extend .form-check-input;
                 }
                 label {
@@ -230,6 +232,9 @@ body {
             select,
             textarea {
                 @extend .is-invalid;
+            }
+            .validation_message {
+                @extend .invalid-feedback;
             }
         }
         div.validation_error,
