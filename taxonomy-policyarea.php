@@ -16,7 +16,7 @@ get_header();
     <?php get_template_part( 'partials/banner', 'microsite' ); ?>
         <?php get_template_part( 'partials/featured', 'publication' ); ?>
             <div class="wrapper" id="archive-wrapper">
-                <div id="content" class="container">
+                <div id="content" class="container py-5">
                     <div class="row">
                         <div id="primary" class="col-lg-8 content-area">
                             <?php get_template_part( 'partials/featured', 'campaign' ); ?>
