@@ -18,7 +18,7 @@ get_header();
             <div class="wrapper" id="archive-wrapper">
                 <div id="content" class="container">
                     <div class="row">
-                        <div id="primary" class="col-md-8 content-area">
+                        <div id="primary" class="col-lg-8 content-area">
                             <?php get_template_part( 'partials/featured', 'campaign' ); ?>
                                 <main id="main" class="site-main" role="main">
                                     <?php if ( have_posts() ) : ?>
