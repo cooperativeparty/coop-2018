@@ -13,6 +13,19 @@ body {
         @extend .small;
         @extend .text-muted;
     }
+    .gfield:not(.big-blocks) {
+        .gfield_radio {
+            li {
+                @extend .form-check;
+                input[type=checkbox] {
+                    @extend .form-check-input;
+                }
+                label {
+                    @extend .form-check-label;
+                }
+            }
+        }
+    }
     .gform_wrapper {
         .gf_hidden,
         .gform_hidden,
@@ -25,11 +38,6 @@ body {
         .gform_body ul.gform_fields li.gfield.gform_validation_container,
         ul.gform_fields li.gfield.gform_validation_container {
             @extend .sr-only;
-        }
-        .gfield_radio,
-        .gfield_checkbox {
-            @extend .clearfix;
-            &>li {}
         }
         .gf_scroll_text {
             height: 18em;
@@ -154,17 +162,6 @@ body {
             textarea {
                 @extend .form-control;
                 @extend .form-control-lg;
-            }
-            .gfield_radio {
-                li {
-                    @extend .form-check;
-                    input[type=checkbox] {
-                        @extend .form-check-input;
-                    }
-                    label {
-                        @extend .form-check-label;
-                    }
-                }
             }
             textarea {
                 height: auto;
