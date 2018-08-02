@@ -13357,6 +13357,26 @@ body {
   margin-left: -0.642855em;
   margin-right: 0.3214275em; }
 
+.footer-widget a {
+  color: #fff; }
+
+.footer-widget .list-group .list-group-item {
+  border-width: 1px 0;
+  border-color: rgba(255, 255, 255, 0.125);
+  color: #fff;
+  -webkit-transition: all 0.5s ease;
+  transition: all 0.5s ease; }
+  @media screen and (prefers-reduced-motion: reduce) {
+    .footer-widget .list-group .list-group-item {
+      -webkit-transition: none;
+      transition: none; } }
+  .footer-widget .list-group .list-group-item:first-child {
+    border-top: none; }
+  .footer-widget .list-group .list-group-item:last-child {
+    border-bottom: none; }
+  .footer-widget .list-group .list-group-item:hover {
+    background-color: #601a79; }
+
 @media print {
   #fb-root {
     display: none; }
