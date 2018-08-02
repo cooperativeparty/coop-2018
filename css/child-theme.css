@@ -7056,7 +7056,7 @@ button.bg-dark:hover,
 button.bg-dark:focus {
   background-color: #1d2124 !important; }
 
-.bg-white {
+.bg-white, .big-blocks-info .ginput_container_radio li input[type=radio]:checked + label .badge, .big-blocks-info .ginput_container_radio li input[type=radio]:checked + label select.gfield_select + .chosen-container-multi .chosen-choices li.search-choice, select.gfield_select + .chosen-container-multi .chosen-choices .big-blocks-info .ginput_container_radio li input[type=radio]:checked + label li.search-choice {
   background-color: #fff !important; }
 
 .bg-transparent {
@@ -9659,10 +9659,10 @@ a.text-secondary:hover, a.text-secondary:focus {
 a.text-success:hover, a.text-success:focus {
   color: #67911d !important; }
 
-.text-info {
+.text-info, .big-blocks-info .ginput_container_radio li input[type=radio]:checked + label .badge, .big-blocks-info .ginput_container_radio li input[type=radio]:checked + label select.gfield_select + .chosen-container-multi .chosen-choices li.search-choice, select.gfield_select + .chosen-container-multi .chosen-choices .big-blocks-info .ginput_container_radio li input[type=radio]:checked + label li.search-choice {
   color: #10c2ff !important; }
 
-a.text-info:hover, a.text-info:focus {
+a.text-info:hover, .big-blocks-info .ginput_container_radio li input[type=radio]:checked + label a.badge:hover, a.text-info:focus, .big-blocks-info .ginput_container_radio li input[type=radio]:checked + label a.badge:focus {
   color: #00a4dc !important; }
 
 .text-warning {
@@ -14077,12 +14077,14 @@ button.bg-cyan:hover,
 button.bg-cyan:focus {
   background-color: #00a4dc !important; }
 
-.bg-white {
+.bg-white, .big-blocks-info .ginput_container_radio li input[type=radio]:checked + label .badge, .big-blocks-info .ginput_container_radio li input[type=radio]:checked + label select.gfield_select + .chosen-container-multi .chosen-choices li.search-choice, select.gfield_select + .chosen-container-multi .chosen-choices .big-blocks-info .ginput_container_radio li input[type=radio]:checked + label li.search-choice {
   background-color: #fff !important; }
 
-a.bg-white:hover, a.bg-white:focus,
+a.bg-white:hover, .big-blocks-info .ginput_container_radio li input[type=radio]:checked + label a.badge:hover, a.bg-white:focus, .big-blocks-info .ginput_container_radio li input[type=radio]:checked + label a.badge:focus,
 button.bg-white:hover,
-button.bg-white:focus {
+.big-blocks-info .ginput_container_radio li input[type=radio]:checked + label button.badge:hover,
+button.bg-white:focus,
+.big-blocks-info .ginput_container_radio li input[type=radio]:checked + label button.badge:focus {
   background-color: #e6e6e6 !important; }
 
 .bg-gray {

@@ -411,6 +411,10 @@
                         }
                         &:checked+label {
                             @extend .bg-info;
+                            .badge {
+                                @extend .bg-white;
+                                @extend .text-info;
+                            }
                         }
                     }
                 }
