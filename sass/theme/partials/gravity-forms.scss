@@ -387,7 +387,7 @@
             @extend .my-2;
             .ginput_container_radio {
                 li {
-                    @extend .my-2;
+                    @extend .my-3;
                     @extend .card;
                     input[type=radio] {
                         @extend .sr-only;
@@ -395,15 +395,18 @@
                             @extend .card-body;
                             @extend .text-dark;
                             cursor: pointer;
-                            white-space: normal!important;
                             @extend .mb-0;
                             .small {
-                                margin-bottom: 0;
+                                @extend .mb-0;
+                                color: rgba($dark, 30);
                             }
                         }
                         &:checked+label {
                             @extend .bg-primary;
                             @extend .text-white;
+                            .small {
+                                color: rgba($white, 30);
+                            }
                         }
                     }
                 }
@@ -416,7 +419,7 @@
                     input[type=radio] {
                         &+label {}
                         &:checked+label {
-                            @extend .btn-info;
+                            @extend .bg-info;
                         }
                     }
                 }
