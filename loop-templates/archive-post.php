@@ -18,23 +18,21 @@
                     <div class="mx-md-2">
                         <header class="entry-header">
                             <div class="entry-meta py-1 small text-primary">
-                                        <?php get_meta_date(); ?>
-                                    </div>
-                            <?php the_title( sprintf( '<h3 class="entry-title mb-4 balance-text"><a href="%s" rel="bookmark">', esc_url( get_permalink() ) ), '</a></h3>' ); ?>
+                                <?php get_meta_date(); ?>
+                            </div>
+                            <?php the_title( sprintf( '<h3 class="entry-title mb-2 mb-md-4 balance-text"><a href="%s" rel="bookmark">', esc_url( get_permalink() ) ), '</a></h3>' ); ?>
                                 <?php if ( 'post' == get_post_type() ) : ?>
                                     <div class="pb-3">
                                         <?php 	get_meta_author(); ?>
                                     </div>
-                        </header>  
-                            <?php if($post->post_excerpt):
+                        </header>
+                        <?php if($post->post_excerpt):
             echo '<div class="entry-content d-none d-md-block"><p class="text-muted mb-0 balance-text">'.$post->post_excerpt.'</p></div>';
-            endif;?> 
-                                    <!-- .entry-meta -->
-                                    <?php endif; ?>
-                        
-                        <!-- .entry-header -->
-                        
-                        <!-- .entry-content -->
+            endif;?>
+                            <!-- .entry-meta -->
+                            <?php endif; ?>
+                                <!-- .entry-header -->
+                                <!-- .entry-content -->
                     </div>
                 </div>
             </div>
