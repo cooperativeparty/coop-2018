@@ -244,9 +244,7 @@
                         @extend .is-invalid;
                     }
                 }
-                .validation-message {
-                    @extend .invalid-feedback;
-                }
+
                 div.validation_error,
                 .validation_error {
                     @extend .alert;
