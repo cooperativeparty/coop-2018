@@ -23,7 +23,7 @@ foreach ( $upcoming_events as $post ) :
     setup_postdata( $post );
  get_template_part( 'loop-templates/card', 'small-event' );
 endforeach;
-echo '<a class="btn btn-outline-secondary btn-block" href="' . get_term_link($term, $term->slug ) . '">See all<a>';  
+echo '<a class="btn btn-outline-secondary btn-block" href="' . get_term_link($term, $term->slug ) . '">See all</a>';  
 echo '</div>';
 endif;/*
 if($prev_events):
