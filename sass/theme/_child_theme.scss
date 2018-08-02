@@ -14,6 +14,8 @@
 @import "theme/partials/panels-legacy";
 // Flexgrid (legacy)
 @import "theme/partials/flex-grid";
+// Accordions
+@import "theme/partials/accordions";
 // Generate `.bg-*` color utilities
 @each $color,
 $value in $colors {
@@ -40,18 +42,6 @@ body {
 .wrapper {
     width: 100%;
     padding: 0;
-}
-
-// Cards
-.card-header {
-    h1,
-    h2,
-    h3,
-    h4,
-    h5,
-    h6 {
-        @extend .mb-0;
-    }
 }
 
 //Articles
@@ -94,9 +84,11 @@ body {
         color: rgba($black, 0.7)!important;
     }
 }
+
 .login-button {
     text-overflow: inherit;
 }
+
 ///////////////////////////////
 // LEGACY
 //////////////////////////////
@@ -720,10 +712,6 @@ ol.numbering {
     }
 }
 
-// Infinite scroll
-
-/* Hides navigation links and site footer when infinite scroll is active */
-
 // Calendar
 .tribe-events-calendar th {
     background-color: $teal;
@@ -795,6 +783,16 @@ ol.numbering {
 ///////////////////////////
 // Vertical cards
 //////////////////////////
+.card-header {
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6 {
+        @extend .mb-0;
+    }
+}
 .card.align-left {
     flex-direction: row;
     -webkit-box-align: start;
@@ -804,8 +802,8 @@ ol.numbering {
     flex-wrap: wrap;
     &.card-flush {
         .card-body {
-                    padding-top: 0;
-        padding-right: 0;
+            padding-top: 0;
+            padding-right: 0;
         }
     }
     .card-body {
@@ -839,80 +837,6 @@ ol.numbering {
     border: none;
     .card-footer {
         border-top: 0;
-    }
-}
-
-///////////////////////////
-// Accordion 
-//////////////////////////
-.accordion {
-    @extend .mb-3;
-    &.acccordion-sticky {
-        >.card {
-            .card-header {
-                position: sticky;
-                top: 0px;
-                z-index: 30;
-            }
-        }
-    }
-    >.card {
-        background-color: $white;
-        border-bottom: none;
-        margin-bottom: 0;
-        border: none;
-        margin: 0;
-        @extend .mb-2;
-        .card-header {
-            display: flex;
-            flex-direction: row;
-            cursor: pointer;
-            border-bottom: $hr-border-width $gray-300 solid;
-            background-color: $gray-300;
-            @extend .px-3;
-            @include transition(all 1s ease);
-            color: darken($info, 20);
-            &:after {
-                font-family: 'FontAwesome';
-                margin-right: 0.5em;
-                margin-left: auto;
-                content: "\f054";
-                @include transition(transform 500ms ease);
-            }
-            &:hover {
-                color: darken($info, 30);
-                background-color: darken($gray-300, 10);
-            }
-            &[aria-expanded^="true"] {
-                background-color: $info;
-                color: $white;
-                &:after {
-                    transform: rotate(90deg);
-                }
-            }
-            h5 {
-                font-weight: 600;
-                display: inline-block;
-                text-decoration: none;
-                margin-right: 20px;
-                overflow: hidden;
-                white-space: nowrap;
-                text-overflow: ellipsis;
-            }
-        }
-        &:last-child {
-            @extend .mb-2;
-        }
-        .card-body {
-            padding-left: 0;
-            padding-right: 0;
-            @extend .my-1;
-            @extend .my-md-2;
-            .lead {
-                font-size: 1.2rem;
-                color: darken($blue, 20);
-            }
-        }
     }
 }
 

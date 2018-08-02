@@ -1,0 +1,73 @@
+///////////////////////////
+// Accordion 
+//////////////////////////
+.accordion {
+    @extend .mb-3;
+    &.acccordion-sticky {
+        >.card {
+            .card-header {
+                position: sticky;
+                top: 0px;
+                z-index: 30;
+            }
+        }
+    }
+    >.card {
+        background-color: $white;
+        border-bottom: none;
+        margin-bottom: 0;
+        border: none;
+        margin: 0;
+        @extend .mb-2;
+        .card-header {
+            display: flex;
+            flex-direction: row;
+            cursor: pointer;
+            border-bottom: $hr-border-width $gray-300 solid;
+            background-color: $gray-300;
+            @extend .px-3;
+            @include transition(all 1s ease);
+            color: darken($info, 20);
+            &:after {
+                font-family: 'FontAwesome';
+                margin-right: 0.5em;
+                margin-left: auto;
+                content: "\f054";
+                @include transition(transform 500ms ease);
+            }
+            &:hover {
+                color: darken($info, 30);
+                background-color: darken($gray-300, 10);
+            }
+            &[aria-expanded^="true"] {
+                background-color: $info;
+                color: $white;
+                &:after {
+                    transform: rotate(90deg);
+                }
+            }
+            h5 {
+                font-weight: 600;
+                display: inline-block;
+                text-decoration: none;
+                margin-right: 20px;
+                overflow: hidden;
+                white-space: nowrap;
+                text-overflow: ellipsis;
+            }
+        }
+        &:last-child {
+            @extend .mb-2;
+        }
+        .card-body {
+            padding-left: 0;
+            padding-right: 0;
+            @extend .my-1;
+            @extend .my-md-2;
+            .lead {
+                font-size: 1.2rem;
+                color: darken($blue, 20);
+            }
+        }
+    }
+}
