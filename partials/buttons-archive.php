@@ -1,0 +1,3 @@
+<div class="btn-group" role="group" aria-label="Share buttons"><a class="btn btn-outline-info" href="<?php 
+                     $category = get_category( get_query_var('cat') );
+                echo get_category_feed_link($category->cat_ID); ?> "><i class="fa fa-rss fa-fw" aria-hidden="true"></i><span class="d-none d-sm-inline">RSS</span></a> <a href="#top" class="btn btn-outline-info"><i class="fa fa-chevron-up fa-fw" aria-hidden="true"></i><span class="sr-only">Top of page</span></a><div class="btn-group" role="group" aria-label="Share buttons">

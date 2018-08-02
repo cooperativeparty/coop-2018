@@ -1,0 +1,98 @@
+.nav-primary {
+    position: static;
+    .navbar-brand {
+        letter-spacing: -.08em;
+        font-weight: 700;
+        margin-bottom: 0;
+        white-space: nowrap;
+        text-transform: lowercase;
+        padding: ($spacer * 0.5) ($spacer * 0.25);
+        font-size: 1.5rem;
+        a {
+            color: $primary;
+            &:hover {
+                color: $primary;
+                text-decoration: none
+            }
+        }
+    }
+    .navbar-nav {
+        .menu-item {
+            .nav-link {
+                color: $purple;
+                font-size: $font-size-lg;
+                padding: ($spacer) ($spacer * 1.5);
+                @include transition(all 0.5s ease);
+                &:hover {
+                    color: $white;
+                    background-color: $purple
+                }
+            }
+        }
+        .menu-item.dropdown {
+            position: unset;
+            .dropdown-menu {
+                width: 100%;
+                @include transition(all 0.7s ease);
+                left: 0;
+                margin-top: -1px;
+                background-color: $purple;
+                border-color: darken($purple, 5);
+                border-top: none;
+                padding: $spacer 0;
+                .container {
+                    display: flex;
+                    flex-wrap: wrap;
+                    .menu-item {
+                        flex: 1 0 50%;
+                        box-sizing: border-box;
+                        .nav-link {
+                            color: $white;
+                            font-size: $font-size-base;
+                            @include transition(all 0.5s ease);
+                            &:hover {
+                                background-color: lighten($purple, 20);
+                            }
+                            &:focus {
+                                background-color: darken($purple, 10);
+                            }
+                        }
+                        &.current-menu-item {
+                            .nav-link {
+                                background-color: $teal;
+                                &:hover {
+                                    background-color: lighten($teal, 20);
+                                    color: $purple;
+                                }
+                            }
+                        }
+                        &[title~="special"] {
+                            border: 1px solid lighten($purple, 10);
+                            @extend .fa-chevron-right;
+                            &:before {
+                                font-family: 'FontAwesome';
+                                margin-right: 0.5em;
+                                color: lighten($purple, 20);
+                            }
+                            &:hover {
+                                &:before {
+                                color: $purple;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+            }
+        .menu-item.current-menu-item,
+        .current-page-ancestor,
+        .menu-item.current-menu-ancestor,
+        .menu-item.current-menu-parent,
+        .menu-item.current-post-parent {
+            .nav-link {
+                background-color: $blue;
+                color: $white;
+            }
+        }
+    }
+}

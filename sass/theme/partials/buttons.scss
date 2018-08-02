@@ -1,0 +1,18 @@
+.btn-facebook {
+  @include button-variant($facebook, $white, darken($facebook,10));
+}
+.btn-twitter {
+  @include button-variant($twitter, $white, darken($twitter,10));
+}
+.btn-whatsapp {
+  @include button-variant($whatsapp, $white, darken($whatsapp,10));
+}
+@include media-breakpoint-down(sm) {
+    .btn {
+        width:100%;
+        display: block;
+        margin-bottom: $btn-block-spacing-y;
+        overflow: hidden;
+  text-overflow: ellipsis;
+    }
+}

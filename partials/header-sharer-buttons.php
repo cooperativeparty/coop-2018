@@ -1,0 +1,1 @@
+<a class="btn btn-outline-info" href="#"><i class="fa fa-facebook" aria-hidden="true"></i> Share this page</a> <a href="#" class="btn btn-outline-info"><i class="fa fa-twitter" aria-hidden="true"></i> Tweet about it</a>

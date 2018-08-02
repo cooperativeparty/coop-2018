@@ -1,0 +1,30 @@
+[05-Jul-2017 01:03:14 UTC] PHP Fatal error:  Call to undefined function dynamic_sidebar() in /home/coop/public_html/wp-content/themes/coop-2017/sidebar-templates/sidebar-page.php on line 2
+[05-Jul-2017 01:07:36 UTC] PHP Fatal error:  Call to undefined function dynamic_sidebar() in /home/coop/public_html/wp-content/themes/coop-2017/sidebar-templates/sidebar.php on line 2
+[05-Jul-2017 14:29:46 UTC] PHP Fatal error:  Call to undefined function jetpackme_custom_related() in /home/coop/public_html/wp-content/themes/coop-2017/sidebar-templates/sidebar-single.php on line 2
+[05-Jul-2017 14:29:46 UTC] PHP Fatal error:  Call to undefined function get_template_part() in /home/coop/public_html/wp-content/themes/coop-2017/sidebar-templates/sidebar-events.php on line 2
+[05-Jul-2017 14:30:07 UTC] PHP Fatal error:  Call to undefined function dynamic_sidebar() in /home/coop/public_html/wp-content/themes/coop-2017/sidebar-templates/sidebar-archive.php on line 3
+[05-Jul-2017 14:30:51 UTC] PHP Fatal error:  Call to undefined function dynamic_sidebar() in /home/coop/public_html/wp-content/themes/coop-2017/sidebar-templates/sidebar-woocommerce.php on line 2
+[05-Jul-2017 14:32:34 UTC] PHP Fatal error:  Call to undefined function dynamic_sidebar() in /home/coop/public_html/wp-content/themes/coop-2017/sidebar-templates/sidebar-taxonomy-role.php on line 3
+[05-Jul-2017 14:35:51 UTC] PHP Fatal error:  Class 'WP_Query' not found in /home/coop/public_html/wp-content/themes/coop-2017/sidebar-templates/sidebar-single-person.php on line 6
+[05-Jul-2017 15:02:20 UTC] PHP Fatal error:  Call to undefined function get_template_part() in /home/coop/public_html/wp-content/themes/coop-2017/sidebar-templates/sidebar-taxonomy-policyarea.php on line 3
+[05-Jul-2017 15:13:41 UTC] PHP Fatal error:  Call to undefined function get_template_part() in /home/coop/public_html/wp-content/themes/coop-2017/sidebar-templates/sidebar-taxonomy-devolved_region.php on line 2
+[05-Jul-2017 15:25:02 UTC] PHP Fatal error:  Call to undefined function dynamic_sidebar() in /home/coop/public_html/wp-content/themes/coop-2017/sidebar-templates/sidebar-taxonomy-publication_type.php on line 2
+[05-Jul-2017 17:14:34 UTC] PHP Fatal error:  Class 'WP_Query' not found in /home/coop/public_html/wp-content/themes/coop-2017/sidebar-templates/sidebar-single-person.php on line 6
+[05-Jul-2017 18:24:46 UTC] PHP Fatal error:  Call to undefined function get_template_part() in /home/coop/public_html/wp-content/themes/coop-2017/sidebar-templates/sidebar-taxonomy-policyarea.php on line 3
+[05-Jul-2017 20:20:40 UTC] PHP Fatal error:  Call to undefined function dynamic_sidebar() in /home/coop/public_html/wp-content/themes/coop-2017/sidebar-templates/sidebar-archive.php on line 3
+[05-Jul-2017 23:22:05 UTC] PHP Fatal error:  Call to undefined function jetpackme_custom_related() in /home/coop/public_html/wp-content/themes/coop-2017/sidebar-templates/sidebar-single.php on line 2
+[05-Jul-2017 23:33:26 UTC] PHP Fatal error:  Call to undefined function get_template_part() in /home/coop/public_html/wp-content/themes/coop-2017/sidebar-templates/sidebar-events.php on line 2
+[06-Jul-2017 00:00:41 UTC] PHP Fatal error:  Call to undefined function dynamic_sidebar() in /home/coop/public_html/wp-content/themes/coop-2017/sidebar-templates/sidebar-woocommerce.php on line 2
+[06-Jul-2017 00:02:58 UTC] PHP Fatal error:  Call to undefined function dynamic_sidebar() in /home/coop/public_html/wp-content/themes/coop-2017/sidebar-templates/sidebar-taxonomy-role.php on line 3
+[06-Jul-2017 00:15:05 UTC] PHP Fatal error:  Call to undefined function get_template_part() in /home/coop/public_html/wp-content/themes/coop-2017/sidebar-templates/sidebar-taxonomy-devolved_region.php on line 2
+[06-Jul-2017 00:18:52 UTC] PHP Fatal error:  Call to undefined function dynamic_sidebar() in /home/coop/public_html/wp-content/themes/coop-2017/sidebar-templates/sidebar-taxonomy-publication_type.php on line 2
+[06-Jul-2017 01:42:10 UTC] PHP Fatal error:  Call to undefined function dynamic_sidebar() in /home/coop/public_html/wp-content/themes/coop-2017/sidebar-templates/sidebar-woocommerce.php on line 2
+[06-Jul-2017 01:49:44 UTC] PHP Fatal error:  Call to undefined function dynamic_sidebar() in /home/coop/public_html/wp-content/themes/coop-2017/sidebar-templates/sidebar-taxonomy-role.php on line 3
+[09-Jul-2017 11:27:25 UTC] PHP Fatal error:  Call to undefined function dynamic_sidebar() in /home/coop/public_html/wp-content/themes/coop-2017/sidebar-templates/sidebar.php on line 2
+[09-Jul-2017 12:31:44 UTC] PHP Fatal error:  Call to undefined function dynamic_sidebar() in /home/coop/public_html/wp-content/themes/coop-2017/sidebar-templates/sidebar-page.php on line 2
+[09-Jul-2017 12:50:39 UTC] PHP Fatal error:  Call to undefined function jetpackme_custom_related() in /home/coop/public_html/wp-content/themes/coop-2017/sidebar-templates/sidebar-single.php on line 2
+[09-Jul-2017 12:54:26 UTC] PHP Fatal error:  Call to undefined function get_template_part() in /home/coop/public_html/wp-content/themes/coop-2017/sidebar-templates/sidebar-events.php on line 2
+[09-Jul-2017 13:20:55 UTC] PHP Fatal error:  Call to undefined function dynamic_sidebar() in /home/coop/public_html/wp-content/themes/coop-2017/sidebar-templates/sidebar-woocommerce.php on line 2
+[09-Jul-2017 13:28:29 UTC] PHP Fatal error:  Call to undefined function dynamic_sidebar() in /home/coop/public_html/wp-content/themes/coop-2017/sidebar-templates/sidebar-taxonomy-role.php on line 3
+[09-Jul-2017 13:43:38 UTC] PHP Fatal error:  Call to undefined function get_template_part() in /home/coop/public_html/wp-content/themes/coop-2017/sidebar-templates/sidebar-taxonomy-devolved_region.php on line 2
+[09-Jul-2017 13:51:11 UTC] PHP Fatal error:  Call to undefined function dynamic_sidebar() in /home/coop/public_html/wp-content/themes/coop-2017/sidebar-templates/sidebar-taxonomy-publication_type.php on line 2

@@ -1,0 +1,43 @@
+//Table of content 
+#toc_container {
+    display: none!important;
+    &[style] {
+        display: none!important;
+    }
+}
+
+.toc-container {
+    .toc-title {
+        color: darken($teal, 20);
+        font-weight: 600;
+        letter-spacing: -.05em;
+    }
+    padding: 1.25rem 1rem;
+    background-color: #f7f7f9;
+    position: sticky;
+    top: 60px;
+    max-height: calc(100vh - 100px);
+    overflow-y: auto;
+    &>.toc-body {
+        margin-bottom: 0;
+        padding-left: 0;
+        li {
+            list-style-type: none;
+            margin-top: $spacer;
+            a {
+                font-weight: 700;
+                color: darken($teal, 20);
+            }
+            &>ul {
+                padding-left: 1rem;
+                li {
+                    margin: 0.25em 0;
+                    a {
+                        font-weight: 400;
+                        color: darken($teal, 10);
+                    }
+                }
+            }
+        }
+    }
+}

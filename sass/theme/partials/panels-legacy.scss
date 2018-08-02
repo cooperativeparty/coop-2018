@@ -1,0 +1,10 @@
+// Panels variant mix in
+.panel {
+@extend .card;
+    .panel-body {
+       @extend .card-body;
+    }
+    .panel-heading {
+        @extend .card-header;
+    }
+}

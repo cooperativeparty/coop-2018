@@ -1,0 +1,13 @@
+[06-Jul-2017 04:48:07 UTC] PHP Fatal error:  Call to undefined function get_option() in /home/coop/public_html/wp-content/themes/coop-2017/tribe-events/modules/meta/details.php on line 12
+[06-Jul-2017 18:47:29 UTC] PHP Fatal error:  Call to undefined function tribe_get_organizer_ids() in /home/coop/public_html/wp-content/themes/coop-2017/tribe-events/modules/meta/organizer.php on line 12
+[06-Jul-2017 19:36:40 UTC] PHP Fatal error:  Call to undefined function tribe_get_venue_id() in /home/coop/public_html/wp-content/themes/coop-2017/tribe-events/modules/meta/venue.php on line 11
+[07-Jul-2017 01:13:02 UTC] PHP Fatal error:  Call to undefined function tribe_get_embedded_map() in /home/coop/public_html/wp-content/themes/coop-2017/tribe-events/modules/meta/map.php on line 12
+[07-Jul-2017 07:31:44 UTC] PHP Fatal error:  Call to undefined function tribe_get_organizer_ids() in /home/coop/public_html/wp-content/themes/coop-2017/tribe-events/modules/meta/organizer.php on line 12
+[07-Jul-2017 07:54:26 UTC] PHP Fatal error:  Call to undefined function tribe_get_venue_id() in /home/coop/public_html/wp-content/themes/coop-2017/tribe-events/modules/meta/venue.php on line 11
+[08-Jul-2017 09:31:27 UTC] PHP Fatal error:  Call to undefined function tribe_get_organizer_ids() in /home/coop/public_html/wp-content/themes/coop-2017/tribe-events/modules/meta/organizer.php on line 12
+[08-Jul-2017 09:31:39 UTC] PHP Fatal error:  Call to undefined function tribe_get_venue_id() in /home/coop/public_html/wp-content/themes/coop-2017/tribe-events/modules/meta/venue.php on line 11
+[08-Jul-2017 19:47:12 UTC] PHP Fatal error:  Call to undefined function get_option() in /home/coop/public_html/wp-content/themes/coop-2017/tribe-events/modules/meta/details.php on line 12
+[09-Jul-2017 01:40:58 UTC] PHP Fatal error:  Call to undefined function get_option() in /home/coop/public_html/wp-content/themes/coop-2017/tribe-events/modules/meta/details.php on line 12
+[09-Jul-2017 07:40:25 UTC] PHP Fatal error:  Call to undefined function get_option() in /home/coop/public_html/wp-content/themes/coop-2017/tribe-events/modules/meta/details.php on line 12
+[09-Jul-2017 13:47:24 UTC] PHP Fatal error:  Call to undefined function get_option() in /home/coop/public_html/wp-content/themes/coop-2017/tribe-events/modules/meta/details.php on line 12
+[09-Jul-2017 19:50:36 UTC] PHP Fatal error:  Call to undefined function get_option() in /home/coop/public_html/wp-content/themes/coop-2017/tribe-events/modules/meta/details.php on line 12

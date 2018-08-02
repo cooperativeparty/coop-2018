@@ -1,0 +1,4 @@
+[06-Jul-2017 22:18:31 UTC] PHP Fatal error:  Class 'WP_Widget' not found in /home/coop/public_html/wp-content/themes/coop-2017/inc/widgets/custom-widgets.php on line 1
+[09-Jul-2017 21:36:32 UTC] PHP Fatal error:  Class 'WP_Widget' not found in /home/coop/public_html/wp-content/themes/coop-2017/inc/widgets/custom-widgets.php on line 1
+[10-Jul-2017 04:44:05 UTC] PHP Fatal error:  Class 'WP_Widget' not found in /home/coop/public_html/wp-content/themes/coop-2017/inc/widgets/custom-widgets.php on line 1
+[10-Jul-2017 23:20:19 UTC] PHP Fatal error:  Class 'WP_Widget' not found in /home/coop/public_html/wp-content/themes/coop-2017/inc/widgets/custom-widgets.php on line 1

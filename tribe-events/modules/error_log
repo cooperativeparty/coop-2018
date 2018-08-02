@@ -1,0 +1,6 @@
+[06-Jul-2017 04:55:47 UTC] PHP Fatal error:  Call to undefined function do_action() in /home/coop/public_html/wp-content/themes/coop-2017/tribe-events/modules/meta.php on line 11
+[07-Jul-2017 05:58:06 UTC] PHP Fatal error:  Call to undefined function tribe_events_get_filters() in /home/coop/public_html/wp-content/themes/coop-2017/tribe-events/modules/bar.php on line 20
+[09-Jul-2017 18:08:27 UTC] PHP Fatal error:  Call to undefined function tribe_events_get_filters() in /home/coop/public_html/wp-content/themes/coop-2017/tribe-events/modules/bar.php on line 20
+[10-Jul-2017 01:46:14 UTC] PHP Fatal error:  Call to undefined function tribe_events_get_filters() in /home/coop/public_html/wp-content/themes/coop-2017/tribe-events/modules/bar.php on line 20
+[10-Jul-2017 07:38:07 UTC] PHP Fatal error:  Call to undefined function tribe_events_get_filters() in /home/coop/public_html/wp-content/themes/coop-2017/tribe-events/modules/bar.php on line 20
+[10-Jul-2017 14:15:21 UTC] PHP Fatal error:  Call to undefined function tribe_events_get_filters() in /home/coop/public_html/wp-content/themes/coop-2017/tribe-events/modules/bar.php on line 20
