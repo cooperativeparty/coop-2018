@@ -5,6 +5,6 @@
                 echo '<span rel="role" class="small text-muted ">' . get_field('job_title') . '</span>';
 }
                 else {
-                    echo '<span rel="role" class="small text-muted">' . get_the_excerpt('') . '</span>';
+                    echo '<span rel="role" class="small text-muted d-none d-sm-inline">' . get_the_excerpt('') . '</span>';
                 }?>
             </address> </div>

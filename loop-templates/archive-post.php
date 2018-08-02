@@ -8,7 +8,7 @@
                             $this_month = get_the_time('F');
                             if( $this_month!=$current_month ):
                                 $current_month = $this_month;
-                            echo '<h6 class="month-spacer py-1 mb-5 mt-lg-5"><a href="'. get_month_link('', '') . '">' . $current_month . ' ' . get_the_time('Y') . '</a></h6>';
+                            echo '<h6 class="month-spacer py-1 my-2 mt-lg-5"><a href="'. get_month_link('', '') . '">' . $current_month . ' ' . get_the_time('Y') . '</a></h6>';
                             endif;  ?>
         <article id="post-<?php the_ID(); ?>" <?php post_class( 'border-bottom border-light pb-md-4 pb-2 mb-2 mb-md-4'); ?>>
             <div class="row">
