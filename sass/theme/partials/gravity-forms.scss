@@ -247,10 +247,11 @@
                     textarea {
                         @extend .is-invalid;
                     }
-                    .validation-message {
+
+                }
+                                    .validation-message {
                         @extend .invalid-feedback;
                     }
-                }
                 div.validation_error,
                 .validation_error {
                     @extend .alert;
