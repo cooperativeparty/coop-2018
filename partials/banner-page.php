@@ -3,7 +3,7 @@
         <div class="container">
             <div class="d-flex">
                 <div class="mr-lg-5">
-                    <h2 class="display-3 page-title">
+                    <h2 class="page-title display-3 balance-text">
                             <?php if(get_field('banner_headline') &&  get_field('heading_options') == 'custom')  { 
     echo get_field('banner_headline');
 }                        else { 

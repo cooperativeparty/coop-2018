@@ -17,9 +17,9 @@ if(get_field('show_banner', $queried_object) && get_field('show_banner', $querie
                                              echo $alpha * 0.01;?>;position:absolute;top:0;left:0;width:100%;height:100%"></div>
             <div class="container">
                 <div class="col-sm-12">
-                    <?php if(get_field('banner_headline', $queried_object)) { echo '<h1 class="display-4">' . get_field('banner_headline', $queried_object) . '</h1>'; }
+                    <?php if(get_field('banner_headline', $queried_object)) { echo '<h2 class="display-3 page-title">' . get_field('banner_headline', $queried_object) . '</h2>'; }
                     else {
-                        echo '<h1 class="display-3 page-title mb-0">' . get_the_archive_title() . '</h1>';
+                        echo '<h2 class="page-title display-3 balance-text">' . get_the_archive_title() . '</h2>';
                     }
                     ?>
                         <div class="lead affix-hide">
@@ -37,7 +37,7 @@ if(get_field('show_banner', $queried_object) && get_field('show_banner', $querie
         <?php else: ?>
             <header class="jumbotron jumbotron-fluid bg-primary text-white" data-spy="affix" data-offset-top="166">
                 <div class="container">
-                    <?php echo '<h1 class="display-3 page-title">' . $term->name . '</h1>';
+                    <?php echo '<h2 class="page-title display-3 balance-text">' . $term->name . '</h2>';
       the_archive_description( '<div class="lead affix-hide">', '</div>' );?> </div>
                 <div class="pull-right">
                     <?php get_template_part( 'partials/buttons', 'archive' ); ?>

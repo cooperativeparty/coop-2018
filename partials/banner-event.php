@@ -9,12 +9,12 @@ if(get_field('heading_options') !== 'none'): ?>
             <div class="d-flex">
                 <?php if(is_singular()):?>
                     <div class="mr-lg-5">
-                        <h1 class="display-3 page-title">
+                        <h2 class="page-title display-3 balance-text">
                             <?php if(get_field('banner_headline') &&  get_field('heading_options') == 'custom')  { 
     echo get_field('banner_headline');
 }                        else { 
                                 echo get_the_title();
-                            }?></h1>
+                            }?></h2>
                         <?php if(get_field('banner_content') &&  get_field('heading_options') == 'custom') { 
                             echo '<p class="lead">'. get_field('banner_content') . '</p>'; 
                                                               } else {
@@ -34,7 +34,7 @@ if(get_field('heading_options') !== 'none'): ?>
                     </div>
                     <?php else:?>
                         <div class="mr-lg-5">
-                            <h1 class="display-3 page-title"><?php echo tribe_get_event_label_plural();?></h1> </div>
+                            <h2 class="page-title display-3 balance-text"><?php echo tribe_get_event_label_plural();?></h2> </div>
                         <div class="ml-auto mt-auto hidden-sm-down d-flex flex-no-wrap"><a href="<?php echo tribe_get_ical_link ();?>" class="btn btn-lg btn-outline-primary"><i class="fa fa-rss"></i> iCal Feed</a></div>
                         <?php endif;?>
             </div>

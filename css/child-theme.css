@@ -365,7 +365,7 @@ body .gform_wrapper .ginput_container_creditcard label,
 body .gform_wrapper .gf_progressbar_wrapper .gf_progressbar_title,
 body .gform_wrapper .gfield.gsection.field_sublabel_above.field_description_above .gsection_description,
 body .gform_wrapper .gfield_description label,
-body .gform_wrapper .ginput_full label,
+body .gform_wrapper .ginput_full label label,
 body .gform_wrapper .ginput_complex label,
 body .gform_wrapper .ginput_complex.gf_name_has_3 .name_first label,
 body .gform_wrapper .ginput_complex.gf_name_has_3 .name_prefix label,
@@ -2089,7 +2089,7 @@ body .gform_wrapper .ginput_container_date textarea {
   margin-bottom: 1rem; }
 
 .form-text, body .gform_wrapper .ginput_container_creditcard label, body .gform_wrapper .gfield.gsection.field_sublabel_above.field_description_above .gsection_description, body .gform_wrapper .gfield_description label,
-body .gform_wrapper .ginput_full label,
+body .gform_wrapper .ginput_full label label,
 body .gform_wrapper .ginput_complex label, body .gform_wrapper .ginput_complex.gf_name_has_3 .name_first label,
 body .gform_wrapper .ginput_complex.gf_name_has_3 .name_prefix label,
 body .gform_wrapper .ginput_complex.gf_name_has_3 .name_last label, body .gform_wrapper .ginput_container_date label {
@@ -8309,7 +8309,7 @@ body .gform_wrapper ul.gform_fields li.gfield.gform_validation_container, .big-b
   margin-right: 0 !important; }
 
 .mb-0, body .gform_wrapper form, .big-blocks .ginput_container_radio li input[type=radio] + label, .big-blocks .ginput_container_radio li input[type=radio] + label .small, .big-blocks .ginput_container_radio li input[type=radio] + label body .gform_wrapper .ginput_container_creditcard label, body .gform_wrapper .ginput_container_creditcard .big-blocks .ginput_container_radio li input[type=radio] + label label, .big-blocks .ginput_container_radio li input[type=radio] + label body .gform_wrapper .gf_progressbar_wrapper .gf_progressbar_title, body .gform_wrapper .gf_progressbar_wrapper .big-blocks .ginput_container_radio li input[type=radio] + label .gf_progressbar_title, .big-blocks .ginput_container_radio li input[type=radio] + label body .gform_wrapper .gfield.gsection.field_sublabel_above.field_description_above .gsection_description, body .gform_wrapper .gfield.gsection.field_sublabel_above.field_description_above .big-blocks .ginput_container_radio li input[type=radio] + label .gsection_description, .big-blocks .ginput_container_radio li input[type=radio] + label body .gform_wrapper .gfield_description label, body .gform_wrapper .gfield_description .big-blocks .ginput_container_radio li input[type=radio] + label label,
-.big-blocks .ginput_container_radio li input[type=radio] + label body .gform_wrapper .ginput_full label, body .gform_wrapper .ginput_full .big-blocks .ginput_container_radio li input[type=radio] + label label,
+.big-blocks .ginput_container_radio li body .gform_wrapper .ginput_full input[type=radio] + label label, body .gform_wrapper .ginput_full .big-blocks .ginput_container_radio li input[type=radio] + label label,
 .big-blocks .ginput_container_radio li input[type=radio] + label body .gform_wrapper .ginput_complex label, body .gform_wrapper .ginput_complex .big-blocks .ginput_container_radio li input[type=radio] + label label, .big-blocks .ginput_container_radio li input[type=radio] + label body .gform_wrapper .ginput_container_date label, body .gform_wrapper .ginput_container_date .big-blocks .ginput_container_radio li input[type=radio] + label label, .big-blocks .ginput_container_radio li input[type=radio] + label .wp-caption-text, .card-header h1, .panel .panel-heading h1,
 .card-header h2,
 .panel .panel-heading h2,
@@ -9693,7 +9693,7 @@ a.text-dark:hover, a.text-dark:focus {
   color: #212529 !important; }
 
 .text-muted, body .gform_wrapper .ginput_container_creditcard label, body .gform_wrapper .gf_progressbar_wrapper .gf_progressbar_title, body .gform_wrapper .gfield.gsection.field_sublabel_above.field_description_above .gsection_description, body .gform_wrapper .gfield_description label,
-body .gform_wrapper .ginput_full label,
+body .gform_wrapper .ginput_full label label,
 body .gform_wrapper .ginput_complex label, body .gform_wrapper .ginput_complex.gf_name_has_3 .name_first label,
 body .gform_wrapper .ginput_complex.gf_name_has_3 .name_prefix label,
 body .gform_wrapper .ginput_complex.gf_name_has_3 .name_last label, body .gform_wrapper .ginput_container_date label, .wp-caption-text {
@@ -12625,12 +12625,12 @@ body .gform_wrapper .ui-datepicker {
 .big-blocks .ginput_container_radio li input[type=radio] + label {
   cursor: pointer; }
   .big-blocks .ginput_container_radio li input[type=radio] + label .small, .big-blocks .ginput_container_radio li input[type=radio] + label body .gform_wrapper .ginput_container_creditcard label, body .gform_wrapper .ginput_container_creditcard .big-blocks .ginput_container_radio li input[type=radio] + label label, .big-blocks .ginput_container_radio li input[type=radio] + label body .gform_wrapper .gf_progressbar_wrapper .gf_progressbar_title, body .gform_wrapper .gf_progressbar_wrapper .big-blocks .ginput_container_radio li input[type=radio] + label .gf_progressbar_title, .big-blocks .ginput_container_radio li input[type=radio] + label body .gform_wrapper .gfield.gsection.field_sublabel_above.field_description_above .gsection_description, body .gform_wrapper .gfield.gsection.field_sublabel_above.field_description_above .big-blocks .ginput_container_radio li input[type=radio] + label .gsection_description, .big-blocks .ginput_container_radio li input[type=radio] + label body .gform_wrapper .gfield_description label, body .gform_wrapper .gfield_description .big-blocks .ginput_container_radio li input[type=radio] + label label,
-  .big-blocks .ginput_container_radio li input[type=radio] + label body .gform_wrapper .ginput_full label, body .gform_wrapper .ginput_full .big-blocks .ginput_container_radio li input[type=radio] + label label,
+  .big-blocks .ginput_container_radio li body .gform_wrapper .ginput_full input[type=radio] + label label, body .gform_wrapper .ginput_full .big-blocks .ginput_container_radio li input[type=radio] + label label,
   .big-blocks .ginput_container_radio li input[type=radio] + label body .gform_wrapper .ginput_complex label, body .gform_wrapper .ginput_complex .big-blocks .ginput_container_radio li input[type=radio] + label label, .big-blocks .ginput_container_radio li input[type=radio] + label body .gform_wrapper .ginput_container_date label, body .gform_wrapper .ginput_container_date .big-blocks .ginput_container_radio li input[type=radio] + label label, .big-blocks .ginput_container_radio li input[type=radio] + label .wp-caption-text {
     color: #343a40; }
 
 .big-blocks .ginput_container_radio li input[type=radio]:checked + label .small, .big-blocks .ginput_container_radio li input[type=radio]:checked + label body .gform_wrapper .ginput_container_creditcard label, body .gform_wrapper .ginput_container_creditcard .big-blocks .ginput_container_radio li input[type=radio]:checked + label label, .big-blocks .ginput_container_radio li input[type=radio]:checked + label body .gform_wrapper .gf_progressbar_wrapper .gf_progressbar_title, body .gform_wrapper .gf_progressbar_wrapper .big-blocks .ginput_container_radio li input[type=radio]:checked + label .gf_progressbar_title, .big-blocks .ginput_container_radio li input[type=radio]:checked + label body .gform_wrapper .gfield.gsection.field_sublabel_above.field_description_above .gsection_description, body .gform_wrapper .gfield.gsection.field_sublabel_above.field_description_above .big-blocks .ginput_container_radio li input[type=radio]:checked + label .gsection_description, .big-blocks .ginput_container_radio li input[type=radio]:checked + label body .gform_wrapper .gfield_description label, body .gform_wrapper .gfield_description .big-blocks .ginput_container_radio li input[type=radio]:checked + label label,
-.big-blocks .ginput_container_radio li input[type=radio]:checked + label body .gform_wrapper .ginput_full label, body .gform_wrapper .ginput_full .big-blocks .ginput_container_radio li input[type=radio]:checked + label label,
+.big-blocks .ginput_container_radio li body .gform_wrapper .ginput_full input[type=radio]:checked + label label, body .gform_wrapper .ginput_full .big-blocks .ginput_container_radio li input[type=radio]:checked + label label,
 .big-blocks .ginput_container_radio li input[type=radio]:checked + label body .gform_wrapper .ginput_complex label, body .gform_wrapper .ginput_complex .big-blocks .ginput_container_radio li input[type=radio]:checked + label label, .big-blocks .ginput_container_radio li input[type=radio]:checked + label body .gform_wrapper .ginput_container_date label, body .gform_wrapper .ginput_container_date .big-blocks .ginput_container_radio li input[type=radio]:checked + label label, .big-blocks .ginput_container_radio li input[type=radio]:checked + label .wp-caption-text {
   color: white; }
 
@@ -14127,7 +14127,7 @@ body {
     color: #501664; }
 
 .primary .text-muted, .primary body .gform_wrapper .ginput_container_creditcard label, body .gform_wrapper .ginput_container_creditcard .primary label, .primary body .gform_wrapper .gf_progressbar_wrapper .gf_progressbar_title, body .gform_wrapper .gf_progressbar_wrapper .primary .gf_progressbar_title, .primary body .gform_wrapper .gfield.gsection.field_sublabel_above.field_description_above .gsection_description, body .gform_wrapper .gfield.gsection.field_sublabel_above.field_description_above .primary .gsection_description, .primary body .gform_wrapper .gfield_description label, body .gform_wrapper .gfield_description .primary label,
-.primary body .gform_wrapper .ginput_full label, body .gform_wrapper .ginput_full .primary label,
+.primary body .gform_wrapper .ginput_full label label, body .gform_wrapper .ginput_full label .primary label,
 .primary body .gform_wrapper .ginput_complex label, body .gform_wrapper .ginput_complex .primary label, .primary body .gform_wrapper .ginput_complex.gf_name_has_3 .name_first label, body .gform_wrapper .ginput_complex.gf_name_has_3 .name_first .primary label,
 .primary body .gform_wrapper .ginput_complex.gf_name_has_3 .name_prefix label, body .gform_wrapper .ginput_complex.gf_name_has_3 .name_prefix .primary label,
 .primary body .gform_wrapper .ginput_complex.gf_name_has_3 .name_last label, body .gform_wrapper .ginput_complex.gf_name_has_3 .name_last .primary label, .primary body .gform_wrapper .ginput_container_date label, body .gform_wrapper .ginput_container_date .primary label, .primary .wp-caption-text {
@@ -14140,8 +14140,8 @@ body {
   color: rgba(255, 255, 255, 0.7); }
 
 .text-white .text-muted, .big-blocks .ginput_container_radio li input[type=radio]:checked + label .text-muted, .text-white body .gform_wrapper .ginput_container_creditcard label, body .gform_wrapper .ginput_container_creditcard .text-white label, .big-blocks .ginput_container_radio li input[type=radio]:checked + label body .gform_wrapper .ginput_container_creditcard label, body .gform_wrapper .ginput_container_creditcard .big-blocks .ginput_container_radio li input[type=radio]:checked + label label, .text-white body .gform_wrapper .gf_progressbar_wrapper .gf_progressbar_title, body .gform_wrapper .gf_progressbar_wrapper .text-white .gf_progressbar_title, .big-blocks .ginput_container_radio li input[type=radio]:checked + label body .gform_wrapper .gf_progressbar_wrapper .gf_progressbar_title, body .gform_wrapper .gf_progressbar_wrapper .big-blocks .ginput_container_radio li input[type=radio]:checked + label .gf_progressbar_title, .text-white body .gform_wrapper .gfield.gsection.field_sublabel_above.field_description_above .gsection_description, body .gform_wrapper .gfield.gsection.field_sublabel_above.field_description_above .text-white .gsection_description, .big-blocks .ginput_container_radio li input[type=radio]:checked + label body .gform_wrapper .gfield.gsection.field_sublabel_above.field_description_above .gsection_description, body .gform_wrapper .gfield.gsection.field_sublabel_above.field_description_above .big-blocks .ginput_container_radio li input[type=radio]:checked + label .gsection_description, .text-white body .gform_wrapper .gfield_description label, body .gform_wrapper .gfield_description .text-white label, .big-blocks .ginput_container_radio li input[type=radio]:checked + label body .gform_wrapper .gfield_description label, body .gform_wrapper .gfield_description .big-blocks .ginput_container_radio li input[type=radio]:checked + label label,
-.text-white body .gform_wrapper .ginput_full label, body .gform_wrapper .ginput_full .text-white label,
-.big-blocks .ginput_container_radio li input[type=radio]:checked + label body .gform_wrapper .ginput_full label, body .gform_wrapper .ginput_full .big-blocks .ginput_container_radio li input[type=radio]:checked + label label,
+.text-white body .gform_wrapper .ginput_full label label, body .gform_wrapper .ginput_full label .text-white label,
+.big-blocks .ginput_container_radio li body .gform_wrapper .ginput_full input[type=radio]:checked + label label, body .gform_wrapper .ginput_full .big-blocks .ginput_container_radio li input[type=radio]:checked + label label,
 .text-white body .gform_wrapper .ginput_complex label, body .gform_wrapper .ginput_complex .text-white label,
 .big-blocks .ginput_container_radio li input[type=radio]:checked + label body .gform_wrapper .ginput_complex label, body .gform_wrapper .ginput_complex .big-blocks .ginput_container_radio li input[type=radio]:checked + label label, .text-white body .gform_wrapper .ginput_complex.gf_name_has_3 .name_first label, body .gform_wrapper .ginput_complex.gf_name_has_3 .name_first .text-white label,
 .text-white body .gform_wrapper .ginput_complex.gf_name_has_3 .name_prefix label, body .gform_wrapper .ginput_complex.gf_name_has_3 .name_prefix .text-white label,
@@ -14658,7 +14658,7 @@ body {
     .publication-shortcode h6 a {
       color: #18401e; }
   .publication-shortcode .text-muted, .publication-shortcode body .gform_wrapper .ginput_container_creditcard label, body .gform_wrapper .ginput_container_creditcard .publication-shortcode label, .publication-shortcode body .gform_wrapper .gf_progressbar_wrapper .gf_progressbar_title, body .gform_wrapper .gf_progressbar_wrapper .publication-shortcode .gf_progressbar_title, .publication-shortcode body .gform_wrapper .gfield.gsection.field_sublabel_above.field_description_above .gsection_description, body .gform_wrapper .gfield.gsection.field_sublabel_above.field_description_above .publication-shortcode .gsection_description, .publication-shortcode body .gform_wrapper .gfield_description label, body .gform_wrapper .gfield_description .publication-shortcode label,
-  .publication-shortcode body .gform_wrapper .ginput_full label, body .gform_wrapper .ginput_full .publication-shortcode label,
+  .publication-shortcode body .gform_wrapper .ginput_full label label, body .gform_wrapper .ginput_full label .publication-shortcode label,
   .publication-shortcode body .gform_wrapper .ginput_complex label, body .gform_wrapper .ginput_complex .publication-shortcode label, .publication-shortcode body .gform_wrapper .ginput_complex.gf_name_has_3 .name_first label, body .gform_wrapper .ginput_complex.gf_name_has_3 .name_first .publication-shortcode label,
   .publication-shortcode body .gform_wrapper .ginput_complex.gf_name_has_3 .name_prefix label, body .gform_wrapper .ginput_complex.gf_name_has_3 .name_prefix .publication-shortcode label,
   .publication-shortcode body .gform_wrapper .ginput_complex.gf_name_has_3 .name_last label, body .gform_wrapper .ginput_complex.gf_name_has_3 .name_last .publication-shortcode label, .publication-shortcode body .gform_wrapper .ginput_container_date label, body .gform_wrapper .ginput_container_date .publication-shortcode label, .publication-shortcode .wp-caption-text,
@@ -14666,7 +14666,7 @@ body {
   .publication-shortcode a {
     color: #43ae51; }
     .publication-shortcode .text-muted:hover, .publication-shortcode body .gform_wrapper .ginput_container_creditcard label:hover, body .gform_wrapper .ginput_container_creditcard .publication-shortcode label:hover, .publication-shortcode body .gform_wrapper .gf_progressbar_wrapper .gf_progressbar_title:hover, body .gform_wrapper .gf_progressbar_wrapper .publication-shortcode .gf_progressbar_title:hover, .publication-shortcode body .gform_wrapper .gfield.gsection.field_sublabel_above.field_description_above .gsection_description:hover, body .gform_wrapper .gfield.gsection.field_sublabel_above.field_description_above .publication-shortcode .gsection_description:hover, .publication-shortcode body .gform_wrapper .gfield_description label:hover, body .gform_wrapper .gfield_description .publication-shortcode label:hover,
-    .publication-shortcode body .gform_wrapper .ginput_full label:hover, body .gform_wrapper .ginput_full .publication-shortcode label:hover,
+    .publication-shortcode body .gform_wrapper .ginput_full label label:hover, body .gform_wrapper .ginput_full label .publication-shortcode label:hover,
     .publication-shortcode body .gform_wrapper .ginput_complex label:hover, body .gform_wrapper .ginput_complex .publication-shortcode label:hover, .publication-shortcode body .gform_wrapper .ginput_container_date label:hover, body .gform_wrapper .ginput_container_date .publication-shortcode label:hover, .publication-shortcode .wp-caption-text:hover,
     .publication-shortcode .card-link:hover,
     .publication-shortcode a:hover {
