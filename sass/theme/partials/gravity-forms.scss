@@ -7,6 +7,15 @@
                 border-top: $hr-border-width $gray-300 solid;
                 @extend .mt-2
             }
+                            .gfield_description,
+                .ginput_full label,
+                .ginput_complex {
+                    label {
+                        @extend .form-text;
+                        @extend .small;
+                        @extend .text-muted;
+                    }
+                }
             .gform_wrapper {
                 .gf_hidden,
                 .gform_hidden,
@@ -175,15 +184,6 @@
                     }
                     &.ginput_complex {
                         overflow: visible;
-                    }
-                }
-                .gfield_description,
-                .ginput_full label,
-                .ginput_complex {
-                    label {
-                        @extend .form-text;
-                        @extend .small;
-                        @extend .text-muted;
                     }
                 }
                 .ginput_complex {
