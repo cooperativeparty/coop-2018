@@ -49,11 +49,12 @@ get_template_part( 'partials/show', 'subpages-pills' ); ?>
                             <div class="card bg-light campaign-sticky">
                                 <?php
                             $gforms_options = get_field('campaign_cta_gravityforms');	
-                            if($gforms_options): 
-                               echo '<h3 class="card-header">' . $gforms_options['tags'] . '</h3>';
+                            
+                                if(get_field('campaign_cta')):
+                               echo '<h3 class="card-header">' . get_field('campaign_cta') . '</h3>';
                                endif;
-                            if(get_field('campaign_tags')):
-                               $campaign_tags = 'act:' . $post->post_name . ',' . get_field('campaign_tags');
+                            if($gforms_options): 
+                               $campaign_tags = 'act:' . $post->post_name . ',' . $gforms_options['tags'];
                             else:
                                $campaign_tags = 'act : ' . $post->post_name;
                             endif;
