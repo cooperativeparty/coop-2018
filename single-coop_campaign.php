@@ -86,7 +86,10 @@ get_template_part( 'partials/show', 'subpages-pills' ); ?>
                                 echo '<h4>' .  $display_number . ' People have signed ' . $bar_percentage . '% ' . $goal_count .' to go!</h4>';    ?>
                                     <div class="progress">
                                         <div class="progress-bar" role="progressbar" style="width: <?php echo $bar_percentage;?>%;" aria-valuenow="<?php echo $bar_percentage;?>" aria-valuemin="0" aria-valuemax="100">
-                                            <?php echo $display_number;?> People signed </div> <span class="goal ml-auto"><?php echo $goal_count;?> Goal</span></div>
+                                            <?php echo $display_number;?> People signed </div>
+                                        <div class="goal ml-auto p-1">
+                                            <?php echo $goal_count;?> Goal</div>
+                                    </div>
                                     <?php endif;
                                 //Gravity form itself
                                                                 $shortcode = sprintf(
