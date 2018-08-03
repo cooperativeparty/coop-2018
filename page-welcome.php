@@ -139,12 +139,12 @@ EOT;
 
           // Stats with buttons linked to respective details page
           $allMemberStats = <<<EOT
-          <a href="/branch-member-details?members=all{$hiddenFilter}" class="gform_button button center btn btn-outline-info">
+          <a href="/branch-member-details?members=all{$hiddenFilter}" class="gform_button button center btn btn-outline-secondary">
             All Branch Members  <span class="badge badge-pill badge-info badge-default">{$allBranchMembers}</span>
           </a>
 EOT;
           $newMemberStats = <<<EOT
-          <a href="/branch-member-details?members=new{$hiddenFilter}" class="gform_button button center btn btn-info">
+          <a href="/branch-member-details?members=new{$hiddenFilter}" class="gform_button button center btn btn-secondary">
             New Branch Members  <span class="badge badge-pill badge-light badge-default">{$newBranchMembers}</span>
           </a>
 EOT;
