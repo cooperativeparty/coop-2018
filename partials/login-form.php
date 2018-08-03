@@ -7,12 +7,9 @@
                     <?php echo get_avatar( $current_user->user_email, 38 );?>
                 </a>
             </div> <a href="<?php if (function_exists('bp_loggedin_user_domain')) { echo bp_loggedin_user_domain();} ?>" class="btn btn-skinny btn-info dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><i class="hidden-sm-up fa fa-lock fa-fw" aria-hidden="true"></i> <span class="d-none d-md-inline">Hi <?php echo $current_user->display_name ?></span></a>
-            <div class="dropdown-menu dropdown-menu-right">
-                <div class="p-2">
-                    <?php bootstrap_dropdowns('logged-in-user')
-    ?>
-                        <div class="dropdown-divider"></div> <a href="<?php echo wp_logout_url( home_url() ); ?>" class="btn btn-danger btn-skinny btn-block"> Logout</a> </div>
-            </div>
+            <div class="dropdown-menu">
+                <?php bootstrap_dropdowns('logged-in-user'); ?>
+                    <div class="dropdown-divider"></div> <a href="<?php echo wp_logout_url( home_url() ); ?>" class="btn btn-danger btn-skinny btn-block"> Logout</a> </div>
         </div>
         <?php else :?>
             <div class="btn-group pull-right mr-2 mr-sm-0"> <a class="btn btn-warning mr-1 d-none d-md-inline" href="<?php echo get_page_link('4252');?>"><i class="fa fa-phone fa-fw"></i><span class="d-none d-lg-inline">Contact us</span></a> <a class="btn btn-danger mr-2 d-none d-md-inline" href="<?php echo get_page_link('11217');?>"><i class="fa fa-plus fa-fw"></i> Join <span class="d-none d-lg-inline">the Party</span></a>
