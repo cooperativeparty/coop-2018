@@ -268,7 +268,7 @@ EOT;
 
           <div class="branch-box text-center row">
             <div class="card my-2">
-              <div class="card-heading">
+              <div class="card-header">
                 <h3 class="card-title">{$party['display_name']}</h3>
               </div>
               <div class="branch-box row py-2">
