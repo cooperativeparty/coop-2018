@@ -13,7 +13,7 @@
                     <h6 class="dropdown-header">Officers</h6>
                     <?php bootstrap_dropdowns('logged-in-officer'); ?>
                         <div class="dropdown-divider"></div>
-                        <div class="p-2"><a href="<?php echo wp_logout_url( home_url() ); ?>" class="btn btn-danger btn-skinny mr-auto"> Logout</a></div>
+                        <div class="p-2"> <a class="btn" href="<?php echo wp_lostpassword_url( get_permalink() ); ?>" title="Lost Password">Lost Password</a> <a href="<?php echo wp_logout_url( home_url() ); ?>" class="btn btn-danger btn-skinny mr-auto"> Logout</a></div>
             </div>
         </div>
         <?php else :?>
