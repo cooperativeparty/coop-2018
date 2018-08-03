@@ -80,7 +80,7 @@ get_template_part( 'partials/show', 'subpages-pills' ); ?>
                                 $starting_number = $petition_info['starting_number'];
                                 $goal_count = $petition_info['goal_number'];
                                 $submissions_number = do_shortcode(sprintf('[gravitywp_count formid="%1$s" filter_field="4" filter_value="%2$s" thousands_sep="," ]', $gform_id, $campaign_tags));            
-                                $display_number = ($submissions_number);
+                                $display_number = ($submissions_number + $starting_number);
                                 $bar_percentage = ($display_number / $goal_count * 100);?>
                                     <div class="progress-wrapper mb-2 pb-2 border-bottom">
                                         <label class="float-left h5 mb-0 text-purple-10">
