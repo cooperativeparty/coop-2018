@@ -76,11 +76,14 @@ get_template_part( 'partials/show', 'subpages-pills' ); ?>
                                 ///counter bar                         
                             
                                 if(get_field('campaign_petition_enable')):
-                                $petition_info = get_field('campaign_petition');	
+                                $petition_info = get_field('campaign_petition');
+                                $starting_number = $petition_info['starting_number'];
                                 $goal_count = $petition_info['goal_number'];
-                                $counterbar = sprintf('[gravitywp_count formid="%1$s" filter_field="4" filter_value="%2$s" thousands_sep="," ]', $gform_id, $campaign_tags);
+                                $submissions_number = do_shortcode(sprintf('[gravitywp_count formid="%1$s" filter_field="4" filter_value="%2$s" thousands_sep="," ]', $gform_id, $campaign_tags));
                                 
-                                echo '<h4>' . do_shortcode( $counterbar ) . 'People have signed. ' . $goal_count .' to go!</h4>';    
+                                $display_number = ($starting_number + $submissions_number);
+                                
+                                echo '<h4>' .  $display_number . 'People have signed. ' . $goal_count .' to go!</h4>';    
                                 
                                 endif;
                                 //Gravity form itself
