@@ -83,7 +83,7 @@ get_template_part( 'partials/show', 'subpages-pills' ); ?>
                                 $display_number = ($starting_number + $submissions_number);
                                 $bar_percentage = ($display_number / $goal_count * 100);?>
                                     <div class="progress-wrapper mb-2 pb-2 border-bottom">
-                                        <label class="float-left h5 text-purple-10">
+                                        <label class="float-left h5 mb-0 text-purple-10">
                                             <?php echo $display_number;?> Signatures</label>
                                         <div class="progress-bar-goal text-right text-muted p-1 small">
                                             <?php echo $goal_count;?> needed</div>
