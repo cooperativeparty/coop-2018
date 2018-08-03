@@ -23,11 +23,8 @@
                     <!-- .entry-meta -->
                     <hr/> </header>
         <?php if(get_field('campaign_video_url')) {
-$embed_code = wp_oembed_get(get_field('campaign_video_url'));
-//$aspect = (get_field('campaign_video_aspect') ? get_field('campaign_video_aspect') : '16by9');
-//    echo '<div class="embed-responsive embed-responsive-' . $aspect . '">';
-    echo $embed_code;
-//    echo '</div>';
+
+    get_field('campaign_video_url');
 }
                 elseif ( has_post_thumbnail() ) { ?>
             <figure class="figure pb-2 img-max post-thumb-wrap">
