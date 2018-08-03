@@ -50,7 +50,7 @@ get_template_part( 'partials/show', 'subpages-pills' ); ?>
                                 <?php
                             $gforms_options = get_field('campaign_cta_gravityforms');	
                             if(get_field('campaign_cta_gravityforms')): 
-                               echo '<h3 class="card-header">' . $gforms_options['tags']; . '</h3>';
+                               echo '<h3 class="card-header">' . $gforms_options['tags'] . '</h3>';
                                endif;
                             if(get_field('campaign_tags')):
                                $campaign_tags = 'act:' . $post->post_name . ',' . get_field('campaign_tags');
