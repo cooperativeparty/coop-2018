@@ -304,7 +304,7 @@ template {
   display: none !important; }
 
 h1, h2, h3, h4, h5, h6,
-.h1, .h2, .h3, body .gform_wrapper .gfield_total .ginput_total, .h4, body .gform_wrapper .gf_progressbar_title, .h5, body .gform_wrapper .gfield.gsection.field_sublabel_above.field_description_above h2, .h6 {
+.h1, .h2, .h3, body .gform_wrapper .gfield_total .ginput_total, .h4, body .gsection_title, body .gform_wrapper .gf_progressbar_title, .h5, body .gform_wrapper .gfield.gsection.field_sublabel_above.field_description_above h2, .h6 {
   margin-bottom: 1.5rem;
   font-family: inherit;
   font-weight: 700;
@@ -320,7 +320,7 @@ h2, .h2 {
 h3, .h3, body .gform_wrapper .gfield_total .ginput_total {
   font-size: 1.75rem; }
 
-h4, .h4, body .gform_wrapper .gf_progressbar_title {
+h4, .h4, body .gsection_title, body .gform_wrapper .gf_progressbar_title {
   font-size: 1.5rem; }
 
 h5, .h5, body .gform_wrapper .gfield.gsection.field_sublabel_above.field_description_above h2 {
@@ -8686,6 +8686,7 @@ body .gform_wrapper ul.gform_fields li.gfield.gform_validation_container, .big-b
 
 .mt-3,
 .my-3,
+body .gsection_title,
 .big-blocks .ginput_container_radio li {
   margin-top: 1rem !important; }
 
@@ -8695,6 +8696,7 @@ body .gform_wrapper ul.gform_fields li.gfield.gform_validation_container, .big-b
 
 .mb-3, .accordion,
 .my-3,
+body .gsection_title,
 .big-blocks .ginput_container_radio li {
   margin-bottom: 1rem !important; }
 
@@ -8782,11 +8784,12 @@ body .gform_wrapper .gf_progressbar_wrapper {
 .px-1 {
   padding-left: 0.25rem !important; }
 
-.p-2, body .gform_heading {
+.p-2 {
   padding: 0.5rem !important; }
 
 .pt-2, body .gform_page_footer,
 .py-2,
+body .gform_heading,
 body .gform_wrapper .gf_progressbar_wrapper {
   padding-top: 0.5rem !important; }
 
@@ -8796,6 +8799,7 @@ body .gform_wrapper .gf_progressbar_wrapper {
 
 .pb-2,
 .py-2,
+body .gform_heading,
 body .gform_wrapper .gf_progressbar_wrapper {
   padding-bottom: 0.5rem !important; }
 
@@ -12712,7 +12716,7 @@ h2, .h2 {
 h3, .h3, body .gform_wrapper .gfield_total .ginput_total {
   font-size: 1.21477rem; }
 
-h4, .h4, body .gform_wrapper .gf_progressbar_title {
+h4, .h4, body .gsection_title, body .gform_wrapper .gf_progressbar_title {
   font-size: 1.13849rem; }
 
 h5, .h5, body .gform_wrapper .gfield.gsection.field_sublabel_above.field_description_above h2 {
@@ -12740,7 +12744,7 @@ h6, .h6 {
     font-size: 2.0736rem; }
   h3, .h3, body .gform_wrapper .gfield_total .ginput_total {
     font-size: 1.728rem; }
-  h4, .h4, body .gform_wrapper .gf_progressbar_title {
+  h4, .h4, body .gsection_title, body .gform_wrapper .gf_progressbar_title {
     font-size: 1.44rem; }
   h5, .h5, body .gform_wrapper .gfield.gsection.field_sublabel_above.field_description_above h2 {
     font-size: 1.2rem; }

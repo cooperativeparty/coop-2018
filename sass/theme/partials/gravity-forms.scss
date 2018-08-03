@@ -1,6 +1,6 @@
 body {
     .gform_heading {
-        @extend .p-2;
+        @extend .py-2;
     }
     .gform_page_footer {
         @extend .pt-2;
@@ -27,6 +27,10 @@ body {
                 }
             }
         }
+    }
+    .gsection_title {
+        @extend .h4;
+        @extend .my-3;
     }
     .gform_wrapper {
         .gf_hidden,
