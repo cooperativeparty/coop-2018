@@ -173,7 +173,7 @@ EOT;
             <div class="card-header">
               <h3 class="card-title">{$branch['display_name']}</h3>
             </div>
-            <div class="branch-box row">
+            <div class="branch-box row py-2">
               <div class="col-md-6">
                 {$allMemberStats}
               </div>
@@ -271,7 +271,7 @@ EOT;
               <div class="card-heading">
                 <h3 class="card-title">{$party['display_name']}</h3>
               </div>
-              <div class="branch-box row">
+              <div class="branch-box row py-2">
                 <div class="col-md-6">
                   {$allPartyMemberStats}
                 </div>
@@ -347,6 +347,7 @@ EOT;
 
         .card-title {
           font-size: 21px;
+          margin-bottom:0;
         }
 
         .card-heading {
