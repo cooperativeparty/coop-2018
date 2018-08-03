@@ -371,17 +371,17 @@ EOT;
 
       </style>
                  
-      <div class="jumbotron text-white bg-primary mb-md-3">
+      <div class="jumbotron text-white bg-primary">
         <div class="container">
             <div class="d-flex">
                 <div class="mr-lg-5">
                     <h2 class="page-title display-3 balance-text" style="">
                             Officer dashboard</h2>
-                    <p class="lead d-lg-block d-none">Welcome {$greeting}</p>                </div>
+                    <p class="lead d-lg-block d-none"><strong>Welcome {$greeting}</strong><br/>As a Party officer, your access to the Officer Dashboard enables you to view and access membership data and download lists of members. Your access to this data is governed by the <a href="https://party.coop/briefing/protecting-our-members-data/">Party's Guidance on data protection</a> and our <a href="https://party.coop/privacy">privacy policy</a>. If you have any questions or issues with using this service, contact <a href="mailto:membership@party.coop">Membership</a></p>                </div>
                             </div>
         </div>
     </div> <div class="fullwidth" id="main">
-                <div class="container">
+                <div class="container py-5">
                     <div class="row">
                         <div class="col-md-12 content">
       <div class='row veda-crm'>
