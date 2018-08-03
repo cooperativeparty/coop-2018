@@ -134,9 +134,9 @@ EOT;
         // create stats panel for each branch
         $branchDetails = <<<EOT
         <div class="branch-box text-center row">
-          <div class="panel panel-default">
-            <div class="panel-heading">
-              <h3 class="panel-title"><strong>{$branch['display_name']}</strong></h3>
+          <div class="card">
+            <div class="card-header">
+              <h3 class="card-title"><strong>{$branch['display_name']}</strong></h3>
             </div>
             <div class="branch-box row">
               <div class="col-md-6">
@@ -215,9 +215,9 @@ EOT;
 					// create stats panel for each party
 					$partyDetails = <<<EOT
 					<div class="branch-box text-center row">
-						<div class="panel panel-default">
-							<div class="panel-heading">
-								<h3 class="panel-title"><strong>{$party['display_name']}</strong></h3>
+						<div class="card">
+							<div class="card-header">
+								<h3 class="card-title"><strong>{$party['display_name']}</strong></h3>
 							</div>
 							<div class="branch-box row">
 								<div class="col-md-6">
