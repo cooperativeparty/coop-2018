@@ -57,15 +57,20 @@ get_template_part( 'partials/show', 'subpages-pills' ); ?>
                                 else :
                                 echo '<h3 class="card-header">Sign the petition</h3>';
                                 endif;                                
-                            if($gforms_options): 
-                               $campaign_tags = 'act:' . $post->post_name . ',' . $gforms_options['tags'];
-                            else:
-                               $campaign_tags = 'act : ' . $post->post_name;
-                            endif;
-                            if($gforms_options) :
+                            if(get_field('campaign_gravityforms_option')):
+                            if($gforms_options) {
                                $gform_id = $gforms_options['gformid'];
-                            else:
+                            } else {
                                $gform_id = '92';
+                            };
+                            if($gforms_options){ 
+                               $campaign_tags = 'act:' . $post->post_name . ',' . $gforms_options['tags'];
+                            } else {
+                               $campaign_tags = 'act : ' . $post->post_name;
+                            };    
+                            else:
+                                    $gform_id = '92';
+                                 $campaign_tags = 'act : ' . $post->post_name;
                             endif;
                             echo '<div class="card-body">';  
                            $counterbar = sprintf(
