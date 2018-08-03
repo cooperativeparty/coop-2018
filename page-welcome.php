@@ -216,12 +216,12 @@ EOT;
 					if ($isAdmin) {
 						$allPartyMemberStats = <<<EOT
 						<span>
-							All Members  <span class="badge badge-pill badge-default">{$allPartyMembers}</span>
+							All Members  <span class="badge badge-pill badge-default badge-secondary">{$allPartyMembers}</span>
 						</span>
 EOT;
 						$newPartyMemberStats = <<<EOT
 						<span>
-							New Members  <span class="badge badge-pill badge-default">{$newPartyMembers}</span>
+							New Members  <span class="badge badge-pill badge-default badge-info">{$newPartyMembers}</span>
 						</span>
 EOT;
 					} else {
