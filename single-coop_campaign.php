@@ -45,7 +45,7 @@ get_template_part( 'partials/show', 'subpages-pills' ); ?>
                             <!-- #main -->
                         </div>
                         <div class="col-md-6 col-lg-5 push-lg-1 ml-lg-auto"><a id="sign-campaign" />
-                            <div class="card bg-light">
+                            <div class="card bg-light campaign-sticky">
                                 <?php
                             if(get_field('campaign_cta')): 
                                echo '<h3 class="card-header">' . get_field('campaign_cta') . '</h3>';
