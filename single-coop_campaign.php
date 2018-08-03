@@ -81,14 +81,15 @@ get_template_part( 'partials/show', 'subpages-pills' ); ?>
                                 $goal_count = $petition_info['goal_number'];
                                 $submissions_number = do_shortcode(sprintf('[gravitywp_count formid="%1$s" filter_field="4" filter_value="%2$s" thousands_sep="," ]', $gform_id, $campaign_tags));            
                                 $display_number = ($starting_number + $submissions_number);
-                                $bar_percentage = ($display_number / $goal_count * 100);
-                                
-                                echo '<h4 class="mb-3">' .  $display_number . ' Signatures</h4>';    ?>
-                                    <div class="progress-bar-goal text-right text-muted p-1 small">
-                                        <?php echo $goal_count;?> needed</div>
-                                    <div class="progress">
-                                        <div class="progress-bar" role="progressbar" style="width: <?php echo $bar_percentage;?>%;" aria-valuenow="<?php echo $bar_percentage;?>" aria-valuemin="0" aria-valuemax="100">
-                                            <?php echo $bar_percentage;?>% </div>
+                                $bar_percentage = ($display_number / $goal_count * 100);?>
+                                    <div class="progress-wrapper">
+                                        <h4 class="mb-0"><?php echo $display_number;?> Signatures</h4>
+                                        <div class="progress-bar-goal text-right text-muted p-1 small">
+                                            <?php echo $goal_count;?> needed</div>
+                                        <div class="progress">
+                                            <div class="progress-bar" role="progressbar" style="width: <?php echo $bar_percentage;?>%;" aria-valuenow="<?php echo $bar_percentage;?>" aria-valuemin="0" aria-valuemax="100">
+                                                <?php echo $bar_percentage;?>% </div>
+                                        </div>
                                     </div>
                                     <?php endif;
                                 //Gravity form itself
