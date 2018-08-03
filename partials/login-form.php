@@ -9,9 +9,9 @@
             </div> <a href="<?php if (function_exists('bp_loggedin_user_domain')) { echo bp_loggedin_user_domain();} ?>" class="btn btn-skinny btn-info dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><i class="hidden-sm-up fa fa-lock fa-fw" aria-hidden="true"></i> <span class="d-none d-md-inline">Hi <?php echo $current_user->display_name ?></span></a>
             <div class="dropdown-menu dropdown-menu-right">
                 <h6 class="dropdown-header">Members</h6>
-                <?php bootstrap_dropdowns('logged-in-member'); ?>
+                <?php bootstrap_dropdowns('logged-in-user'); ?>
                     <h6 class="dropdown-header">Officers</h6>
-                    <?php bootstrap_dropdowns('logged-in-officers'); ?>
+                    <?php bootstrap_dropdowns('logged-in-officer'); ?>
                         <div class="dropdown-divider"></div>
                         <div class="p-2"><a href="<?php echo wp_logout_url( home_url() ); ?>" class="btn btn-danger btn-skinny mr-auto"> Logout</a></div>
             </div>
