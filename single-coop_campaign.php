@@ -48,7 +48,7 @@ get_template_part( 'partials/show', 'subpages-pills' ); ?>
                             <div class="card">
                                 <?php
                             if(get_field('campaign_cta')): 
-                               echo '<h3 class="card-header">Featured</h5>' . get_field('campaign_cta') . '</h3>';
+                               echo '<h3 class="card-header">' . get_field('campaign_cta') . '</h3>';
                                endif;
                                 echo '<div class="card-body">';
                             if(get_field('campaign_tags')):
