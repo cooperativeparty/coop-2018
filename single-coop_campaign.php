@@ -44,23 +44,30 @@ get_template_part( 'partials/show', 'subpages-pills' ); ?>
                             </main>
                             <!-- #main -->
                         </div>
-                        <div class="col-md-6 col-lg-5 push-lg-1 ml-lg-auto"><a id="sign-campaign" />
+                        <div class="col-md-6 col-lg-5 push-lg-1 ml-lg-auto">
+                            <a id="sign-campaign"></a>
                             <div class="card bg-light campaign-sticky">
                                 <?php
                             if(get_field('campaign_cta')): 
                                echo '<h3 class="card-header">' . get_field('campaign_cta') . '</h3>';
                                endif;
-                                echo '<div class="card-body">';
                             if(get_field('campaign_tags')):
-                               $campaign_tags = 'act:' . $post->post_name . ',' . get_field('campaign_tags');
+                               $campaign_tags = get_field('campaign_tags');
                             else:
-                               $campaign_tags = 'act : ' . $post->post_name;
+                               $campaign_tags = $post->post_name;
                             endif;
                             if(get_field('campaign_gform_id')) :
                                $gform_id = get_field('campaign_gform_id');
                             else:
-                               $gform_id = '64';
-                            endif; 
+                               $gform_id = '92';
+                            endif;
+                            echo '<div class="card-body">';  
+                           $counterbar = sprintf(
+                                '[gravitywp_count formid="%1$s" filter_field="4" filter_value="%2$s" thousands_sep="," ]',
+                                $gform_id,
+                                $campaign_tags                           
+                           );
+                                  echo do_shortcode( $counterbar );                                
                             $shortcode = sprintf(
                                 '[gravityform id="%1$s" title="false" description="false" field_values="tags=%2$s&parameter_name2=value2"]',
                                 $gform_id,
