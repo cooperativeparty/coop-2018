@@ -10,25 +10,25 @@
   $leftcol =8;
   $rightcol =4;
   }?>
-<?php if(have_posts()):while(have_posts()):the_post();?>
-<?php get_template_part( 'includes/page', 'banner' ); ?>
-
-<div class="fullwidth" id="main">
-  <div class="container">
-    <div class="row">
-   <div class="col-md-<?php echo $fullwidth;?> content">
-        <!-- Print Dashboard details if user logged in -->
-        <?php
+    <?php if(have_posts()):while(have_posts()):the_post();?>
+        <?php get_template_part( 'includes/page', 'banner' ); ?>
+            <div class="fullwidth" id="main">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-<?php echo $fullwidth;?> content">
+                            <!-- Print Dashboard details if user logged in -->
+                            <?php
           if (is_user_logged_in()) {
             echo dashBoardDetails();
           }
         ?>
-    <?php if($post->post_excerpt) echo '<p class="lead">'.get_the_excerpt().'</p>'; ?><?php the_content(); ?>
-    </div>
-    <?php endwhile; ?>
-    <?php endif; ?>
-    <div class="sidebar col-md-<?php echo $rightcol;?>">
-    <?php
+                                <?php if($post->post_excerpt) echo '<p class="lead">'.get_the_excerpt().'</p>'; ?>
+                                    <?php the_content(); ?>
+                        </div>
+                        <?php endwhile; ?>
+                            <?php endif; ?>
+                                <div class="sidebar col-md-<?php echo $rightcol;?>">
+                                    <?php
     if (post_have_children($post->ID)) :
     echo '<div class="row">';
     $pr = new WP_Query(array(
@@ -40,53 +40,47 @@
     ));
     while($pr->have_posts()) : $pr->the_post();
     ?>
-
-      <div class="hentry media col-md-12">
-<?php if(has_post_thumbnail()) {
+                                        <div class="hentry media col-md-12">
+                                            <?php if(has_post_thumbnail()) {
         $img = get_post_meta(get_the_ID(), 'wp_custom_attachment', true);
         echo '<a class="pull-left" href="' . $img['url'] . '">';
         the_post_thumbnail('large-square-thumb', array('class' => 'media-object', 'data-src' => "holder.js/138x138",));
         echo '</a>';
         }
-      ?><div class="media-body">
-      <h4 class="media-heading"><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h4>
-      <div class="media">
-      <?php if($post->post_excerpt) echo '<p class="excerpt">'.get_the_excerpt().'</p>'; ?>
-      </div>
-            </div>
-            </div>
-
-    <?php
+      ?>
+                                                <div class="media-body">
+                                                    <h4 class="media-heading"><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h4>
+                                                    <div class="media">
+                                                        <?php if($post->post_excerpt) echo '<p class="excerpt">'.get_the_excerpt().'</p>'; ?>
+                                                    </div>
+                                                </div>
+                                        </div>
+                                        <?php
 
     endwhile;
     if (is_page('5993')):?>
-    <div class="hentry media col-md-12">
-<a class="pull-left" href="https://my.party.coop/civicrm/event/register?id=13&reset=1"><?php echo wp_get_attachment_image( '6121', 'large-square-thumb', array('class' => 'media-object', 'data-src' => "holder.js/138x138")); ?>
+                                            <div class="hentry media col-md-12"> <a class="pull-left" href="https://my.party.coop/civicrm/event/register?id=13&reset=1"><?php echo wp_get_attachment_image( '6121', 'large-square-thumb', array('class' => 'media-object', 'data-src' => "holder.js/138x138")); ?>
         </a>
-      <div class="media-body">
-      <h4 class="media-heading"><a href="https://my.party.coop/civicrm/event/register?id=13&reset=1">Registration</a></h4>
-      <div class="media">
-      <p class="excerpt">Register online as a delegate or visitor</p>
-      </div>
-            </div>
-            </div>
-    <?php endif;
+                                                <div class="media-body">
+                                                    <h4 class="media-heading"><a href="https://my.party.coop/civicrm/event/register?id=13&reset=1">Registration</a></h4>
+                                                    <div class="media">
+                                                        <p class="excerpt">Register online as a delegate or visitor</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <?php endif;
     echo '</div>';
     else :
     get_sidebar();
     endif;?>
-
-
-      </div>
-    </div>
-      </div>
-    </div>
-  </div>
-
-<?php get_footer(); ?>
-
-<!-- Get logged in users Contact Details -->
-<?php
+                                </div>
+                    </div>
+                </div>
+            </div>
+            </div>
+            <?php get_footer(); ?>
+                <!-- Get logged in users Contact Details -->
+                <?php
 
   /*
   Function to print user dashboard details
@@ -180,9 +174,9 @@ EOT;
         </div>-->
 
         <div class="branch-box text-center row">
-          <div class="card card-default">
-            <div class="card-heading">
-              <h3 class="card-title"><strong>{$branch['display_name']}</strong></h3>
+          <div class="card">
+            <div class="card-header">
+              <h3 class="card-title">{$branch['display_name']}</h3>
             </div>
             <div class="branch-box row">
               <div class="col-md-6">
@@ -381,9 +375,16 @@ EOT;
         }
 
       </style>
-      <h1 id="title-entry">
-          Welcome {$greeting}
-      </h1>
+      <div class="jumbotron text-white bg-primary mb-md-3">
+        <div class="container">
+            <div class="d-flex">
+                <div class="mr-lg-5">
+                    <h2 class="page-title display-3 balance-text" style="">
+                            Officer dashboard</h2>
+                    <p class="lead d-lg-block d-none">Welcome {$greeting}</p>                </div>
+                            </div>
+        </div>
+    </div>
       <div class='row veda-crm'>
         <div class='col-md-6'>
           <div class="list-group">
