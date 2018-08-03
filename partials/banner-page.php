@@ -15,7 +15,7 @@
                             echo '<p class="lead d-lg-block d-none balance-text">'. get_the_excerpt() . '</p>';
 } ?>
                 </div>
-                <?php if(get_field('banner_sharers') == false &&  get_field('heading_options') == 'custom') { ?>
+                <?php if(get_field('banner_sharers') !== false || get_field('heading_options') !== 'custom') { ?>
                     <div class="ml-auto mt-auto hidden-sm-down d-flex flex-no-wrap">
                         <?php get_template_part( 'partials/buttons', 'share' ); ?>
                     </div>
