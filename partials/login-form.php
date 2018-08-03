@@ -10,7 +10,7 @@
             <div class="dropdown-menu dropdown-menu-right">
                 <?php bootstrap_dropdowns('logged-in-user'); ?>
                     <div class="dropdown-divider"></div>
-                    <div class="py2"><a href="<?php echo wp_logout_url( home_url() ); ?>" class="btn btn-danger btn-skinny btn-block"> Logout</a></div>
+                    <div class="p-2"><a href="<?php echo wp_logout_url( home_url() ); ?>" class="btn btn-danger btn-skinny mr-auto"> Logout</a></div>
             </div>
         </div>
         <?php else :?>

@@ -398,7 +398,8 @@ add_action( 'after_setup_theme', 'remove_parent_filters' );
 	add_theme_support( 'title-tag' );
 	// This theme uses wp_nav_menu() in one location.
 	register_nav_menus( array(
-        'logged-in-user' => __( 'Logged In User Menu', 'understrap' ),
+        'logged-in-user' => __( 'Logged In Member Menu', 'understrap' ),
+        'logged-in-officer' => __( 'Logged In Officer Menu', 'understrap' ),
         'site-switcher' => __( 'Microsite Switcher', 'understrap' )
 	) );
 
