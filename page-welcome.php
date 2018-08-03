@@ -140,11 +140,11 @@ EOT;
           // Stats with buttons linked to respective details page
           $allMemberStats = <<<EOT
           <a href="/branch-member-details?members=all{$hiddenFilter}" class="gform_button button center btn btn-outline-secondary">
-            All Branch Members  <span class="badge badge-pill badge-info badge-default">{$allBranchMembers}</span>
+            All Branch Members  <span class="badge badge-pill badge-secondary badge-default">{$allBranchMembers}</span>
           </a>
 EOT;
           $newMemberStats = <<<EOT
-          <a href="/branch-member-details?members=new{$hiddenFilter}" class="gform_button button center btn btn-secondary">
+          <a href="/branch-member-details?members=new{$hiddenFilter}" class="gform_button button center btn btn-info">
             New Branch Members  <span class="badge badge-pill badge-light badge-default">{$newBranchMembers}</span>
           </a>
 EOT;
@@ -237,13 +237,13 @@ EOT;
 						
 						// Stats with buttons linked to respective details page
 						$allPartyMemberStats = <<<EOT
-						<a href="/party-member-details?members=all{$hiddenFilter}" class="gform_button button center" type="button">
-							All Members  <span class="badge badge-pill badge-default">{$allPartyMembers}</span>
+						<a href="/party-member-details?members=all{$hiddenFilter}" class="gform_button button center btn btn-outline-secondary">
+							All Members  <span class="badge badge-pill badge-secondary badge-default">{$allPartyMembers}</span>
 						</a>
 EOT;
 						$newPartyMemberStats = <<<EOT
-						<a href="/party-member-details?members=new{$hiddenFilter}" class="gform_button button center" type="button">
-							New Members  <span class="badge badge-pill badge-default">{$newPartyMembers}</span>
+						<a href="/party-member-details?members=new{$hiddenFilter}" class="gform_button button center btn btn-info">
+							New Members  <span class="badge badge-pill badge-light badge-default">{$newPartyMembers}</span>
 						</a>
 EOT;
 					}
