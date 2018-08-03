@@ -83,7 +83,7 @@ get_template_part( 'partials/show', 'subpages-pills' ); ?>
                                 $display_number = ($starting_number + $submissions_number);
                                 $bar_percentage = ($display_number / $goal_count * 100);
                                 
-                                echo '<h4>' .  $display_number . ' Signatures';    ?>
+                                echo '<h4>' .  $display_number . ' Signatures</h4>';    ?>
                                     <div class="progress">
                                         <div class="progress-bar" role="progressbar" style="width: <?php echo $bar_percentage;?>%;" aria-valuenow="<?php echo $bar_percentage;?>" aria-valuemin="0" aria-valuemax="100">
                                             <?php echo $bar_percentage;?>% </div> <span class="goal ml-auto p-1">
