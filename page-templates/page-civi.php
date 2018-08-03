@@ -282,8 +282,8 @@ EOT;
             <div class="d-flex">
                 <div class="mr-lg-5">
                     <h2 class="page-title display-3 balance-text" style="">
-                            Welcome {$greeting}</h2>
-                    <p class="lead d-lg-block d-none"></p>                </div>
+                            Officer dashboard </h2>
+                    <p class="lead d-lg-block d-none">Welcome {$greeting}</p>                </div>
                             </div>
         </div>
     </div>
