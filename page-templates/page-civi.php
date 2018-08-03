@@ -277,9 +277,16 @@ EOT;
         }
 
       </style>
-      <h1 id="title-entry">
-          Welcome {$greeting}
-      </h1>
+      <div  class="jumbotron text-white bg-primary mb-md-3">
+        <div class="container">
+            <div class="d-flex">
+                <div class="mr-lg-5">
+                    <h2 class="page-title display-3 balance-text" style="">
+                            Welcome {$greeting}</h2>
+                    <p class="lead d-lg-block d-none"></p>                </div>
+                            </div>
+        </div>
+    </div>
       <div class='row veda-crm'>
         <div class='col-md-6'>
           <div class="list-group">
