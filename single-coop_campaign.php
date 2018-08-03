@@ -73,13 +73,20 @@ get_template_part( 'partials/show', 'subpages-pills' ); ?>
                                  $campaign_tags = 'act : ' . $post->post_name;
                             endif;
                             echo '<div class="card-body">';  
-                           $counterbar = sprintf(
+                                ///counter bar                         
+                            
+                                if(get_field('campaign_petition_enable')):
+                                
+                                $counterbar = sprintf(
                                 '[gravitywp_count formid="%1$s" filter_field="4" filter_value="%2$s" thousands_sep="," ]',
                                 $gform_id,
                                 $campaign_tags                           
                            );
-                                  echo '<h3>' . do_shortcode( $counterbar ) . 'People have signed</h3>';                                
-                            $shortcode = sprintf(
+                                  echo '<h3>' . do_shortcode( $counterbar ) . 'People have signed</h3>';    
+                                
+                                endif;
+                                //Gravity form itself
+                                                                $shortcode = sprintf(
                                 '[gravityform id="%1$s" title="false" description="false" field_values="tags=%2$s&parameter_name2=value2"]',
                                 $gform_id,
                                 $campaign_tags);
