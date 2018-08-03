@@ -52,7 +52,9 @@ body {
         top: 10vh;
     }
 }
-
+.text-purple-30 {
+    color: darken($purple,30)!important;
+}
 //Articles
 .entry-title {
     color: darken($purple, 10);

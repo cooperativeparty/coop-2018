@@ -14425,6 +14425,9 @@ body {
     position: sticky;
     top: 10vh; } }
 
+.text-purple-30 {
+  color: #0d0410 !important; }
+
 .entry-title {
   color: #501664;
   letter-spacing: -.08em;
