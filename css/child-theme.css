@@ -8811,7 +8811,8 @@ body .gform_wrapper .gf_progressbar_wrapper {
   padding: 1rem !important; }
 
 .pt-3,
-.py-3 {
+.py-3,
+body .gform_wrapper .gform_body {
   padding-top: 1rem !important; }
 
 .pr-3,
@@ -8827,7 +8828,8 @@ body .gform_wrapper .gf_progressbar_wrapper {
   padding-right: 1rem !important; }
 
 .pb-3,
-.py-3 {
+.py-3,
+body .gform_wrapper .gform_body {
   padding-bottom: 1rem !important; }
 
 .pl-3,

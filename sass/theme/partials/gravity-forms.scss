@@ -69,6 +69,7 @@ body {
             }
         }
         .gform_body {
+            @extend .py-3;
             @extend .form-horizontal !optional;
         }
         ul {
