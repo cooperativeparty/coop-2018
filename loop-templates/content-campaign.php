@@ -24,7 +24,7 @@
                     <hr/> </header>
         <?php if(get_field('campaign_video_url')) {
 
-    get_field('campaign_video_url');
+    echo get_field('campaign_video_url');
 }
                 elseif ( has_post_thumbnail() ) { ?>
             <figure class="figure pb-2 img-max post-thumb-wrap">
