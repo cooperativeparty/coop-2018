@@ -5,14 +5,14 @@
 ?>
     <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
         <!-- .entry-header -->
-        <header class="entry-header pt-2">
-            <?php the_title( '<h2 class="entry-title display-4 align-bottom ">', '</h2>' ); ?>
+        <header class="entry-header">
+            <?php the_title( '<h2 class="entry-title display-4">', '</h2>' ); ?>
                 <?php
             if($post->post_excerpt):
             echo '<p class="lead">'.$post->post_excerpt.'</p>';
             endif;
             ?>
-                    <div class="pt-1 mt-3 mb-5 hidden-sm-up">
+                    <div class="pt-1 mt-3 mb-5 d-block d-sm-none">
                         <a href="#sign-campaign" class="btn btn-block btn-lg btn-danger">
                             <?php echo get_field('campaign_cta',$post->ID);?>
                         </a>
