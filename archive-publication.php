@@ -11,7 +11,7 @@ get_header();
 ?>
     <header class="jumbotron jumbotron-fluid bg-primary text-white" data-spy="affix" data-offset-top="166">
         <div class="container">
-            <?php the_archive_title( '<h1 class="page-title display-3 mb-0">', '</h1>' );
+            <?php the_archive_title( '<h2 class="page-title display-3">', '</h2>' );
             the_archive_description( '<p class="lead">', '</p>' ); ?> </div>
         <div class="wrapper" id="archive-wrapper">
             <div class="container">
