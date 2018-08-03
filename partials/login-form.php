@@ -40,7 +40,7 @@
                                         <input name="rememberme" id="rememberme" type="checkbox" class="form-check-input" checked="checked" value="forever"> Remember me </label>
                                 </div>
                             </div>
-                            <div class="modal-footer"><a class="btn" href="<?php echo wp_lostpassword_url( get_permalink() ); ?>" title="Lost Password">Lost Password</a> <a href="<?php bloginfo( 'url' ); ?>/officers/register" class="btn btn-default btn-secondary">Not registered?</a>
+                            <div class="modal-footer"><a class="btn" href="<?php echo wp_lostpassword_url( get_permalink() ); ?>" title="Lost Password">Lost Password</a> <a href="<?php bloginfo( 'url' ); ?>/officers/register" class="btn btn-default btn-secondary">Register</a>
                                 <button type="submit" name="wp-submit" class="btn btn-primary">Login</button>
                             </div>
                         </form>
