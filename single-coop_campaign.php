@@ -52,9 +52,9 @@ get_template_part( 'partials/show', 'subpages-pills' ); ?>
                                echo '<h3 class="card-header">' . get_field('campaign_cta') . '</h3>';
                                endif;
                             if(get_field('campaign_tags')):
-                               $campaign_tags = get_field('campaign_tags');
+                               $campaign_tags = 'act:' . $post->post_name . ',' . get_field('campaign_tags');
                             else:
-                               $campaign_tags = $post->post_name;
+                               $campaign_tags = 'act : ' . $post->post_name;
                             endif;
                             if(get_field('campaign_gform_id')) :
                                $gform_id = get_field('campaign_gform_id');
