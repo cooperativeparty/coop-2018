@@ -30,7 +30,7 @@ get_header('none');
         <?php
 get_header('min');
 get_template_part( 'partials/show', 'subpages-pills' ); ?>
-            <div class="wrapper" id="page-wrapper" style="background-attachment:fixed; background-position:bottom;background-image: url('<?php echo get_field('coop_background_image') ?>');">
+            <div class="wrapper" id="page-wrapper">
                 <div class="container py-5" id="content" tabindex="-1">
                     <div class="row">
                         <!-- Do the left sidebar check -->
@@ -48,16 +48,17 @@ get_template_part( 'partials/show', 'subpages-pills' ); ?>
                             <a id="sign-campaign"></a>
                             <div class="card bg-light campaign-sticky">
                                 <?php
-                            if(get_field('campaign_cta')): 
-                               echo '<h3 class="card-header">' . get_field('campaign_cta') . '</h3>';
+                            $gforms_options = get_field('campaign_cta_gravityforms');	
+                            if(get_field('campaign_cta_gravityforms')): 
+                               echo '<h3 class="card-header">' . $gforms_options['tags']; . '</h3>';
                                endif;
                             if(get_field('campaign_tags')):
                                $campaign_tags = 'act:' . $post->post_name . ',' . get_field('campaign_tags');
                             else:
                                $campaign_tags = 'act : ' . $post->post_name;
                             endif;
-                            if(get_field('campaign_gform_id')) :
-                               $gform_id = get_field('campaign_gform_id');
+                            if($gforms_options) :
+                               $gform_id = $gforms_options['gformid'];
                             else:
                                $gform_id = '92';
                             endif;
