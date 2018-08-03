@@ -36,13 +36,15 @@ get_template_part( 'partials/show', 'subpages-pills' ); ?>
                         <!-- Do the left sidebar check -->
                         <div id="primary" class="content-area col-md-6">
                             <main class="site-main" id="main">
-                                <?php while ( have_posts() ) : the_post(); ?>
-                                    <?php get_template_part( 'loop-templates/content', 'campaign' ); ?>
-                                        <?php endwhile; // end of the loop. ?>
+                                <div class="entry-content">
+                                    <?php while ( have_posts() ) : the_post(); ?>
+                                        <?php get_template_part( 'loop-templates/content', 'campaign' ); ?>
+                                            <?php endwhile; // end of the loop. ?>
+                                </div>
                             </main>
                             <!-- #main -->
                         </div>
-                        <div class="col-md-6 entry-content"><a id="sign-campaign" />
+                        <div class="col-md-6 col-lg-5 push-lg-1 ml-lg-auto"><a id="sign-campaign" />
                             <div class="panel panel-default">
                                 <div class="panel-body">
                                     <?php
