@@ -46,6 +46,13 @@ body {
     padding: 0;
 }
 
+@include media-breakpoint-up(md) {
+    .campaign-sticky {
+        position: sticky;
+        top: 10vh;
+    }
+}
+
 //Articles
 .entry-title {
     color: darken($purple, 10);
