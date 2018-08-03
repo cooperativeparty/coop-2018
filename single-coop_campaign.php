@@ -83,9 +83,13 @@ get_template_part( 'partials/show', 'subpages-pills' ); ?>
                                 $display_number = ($starting_number + $submissions_number);
                                 $bar_percentage = ($display_number / $goal_count * 100);
                                 
-                                echo '<h4>' .  $display_number . ' People have signed ' . $bar_percentage . '% ' . $goal_count .' to go!</h4>';    
-                                
-                                endif;
+                                echo '<h4>' .  $display_number . ' People have signed ' . $bar_percentage . '% ' . $goal_count .' to go!</h4>';    ?>
+                                    <div class="progress">
+                                        <div class="progress-bar" role="progressbar" style="width: <?php echo $bar_percentage;?>%;" aria-valuenow="<?php echo $bar_percentage;?>" aria-valuemin="0" aria-valuemax="100">
+                                            <?php echo $display_number;?>
+                                        </div>
+                                    </div>
+                                    <?php endif;
                                 //Gravity form itself
                                                                 $shortcode = sprintf(
                                 '[gravityform id="%1$s" title="false" description="false" field_values="tags=%2$s&parameter_name2=value2"]',
@@ -93,7 +97,8 @@ get_template_part( 'partials/show', 'subpages-pills' ); ?>
                                 $campaign_tags);
                                   echo do_shortcode( $shortcode );
                                 echo '</div>';
-                                ?> </div>
+                                ?>
+                            </div>
                         </div>
                     </div>
                     <!-- #primary -->
