@@ -12,7 +12,7 @@
                     <?php if(get_field('banner_content') &&  get_field('heading_options') == 'custom') { 
                             echo '<p class="lead d-none d-lg-block">'. get_field('banner_content') . '</p>'; 
                                                               } else {
-                            echo '<p class="lead d-lg-block d-none balance-text">'. get_the_excerpt() . '</p>';
+                            echo '<p class="lead d-lg-block d-none">'. get_the_excerpt() . '</p>';
 } ?>
                 </div>
                 <?php if(get_field('banner_sharers') !== false || get_field('heading_options') !== 'custom') { ?>

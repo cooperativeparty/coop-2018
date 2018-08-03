@@ -30,8 +30,8 @@ get_header('none');
         <?php
 get_header('min');
 get_template_part( 'partials/show', 'subpages-pills' ); ?>
-            <div class="wrapper" id="page-wrapper" data-spy="affix" data-offset-top="166" style="background-attachment:fixed; background-position:bottom;background-image: url('<?php echo get_field('coop_background_image') ?>');">
-                <div class="container" id="content" tabindex="-1">
+            <div class="wrapper" id="page-wrapper" style="background-attachment:fixed; background-position:bottom;background-image: url('<?php echo get_field('coop_background_image') ?>');">
+                <div class="container py-5" id="content" tabindex="-1">
                     <div class="row">
                         <!-- Do the left sidebar check -->
                         <div id="primary" class="content-area col-md-6">
