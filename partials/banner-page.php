@@ -1,5 +1,5 @@
 <?php if(get_field('heading_options') !== 'none'): ?>
-    <div id="featured" class="jumbotron text-white bg-primary mb-md-3" style="background:<?php if(get_field('banner_colour') &&  get_field('heading_options') == 'custom') echo get_field('banner_colour');?>!important;">
+    <div id="featured" class="jumbotron text-white bg-primary" style="background:<?php if(get_field('banner_colour') &&  get_field('heading_options') == 'custom') echo get_field('banner_colour');?>!important;">
         <div class="container">
             <div class="d-flex">
                 <div class="mr-lg-5">

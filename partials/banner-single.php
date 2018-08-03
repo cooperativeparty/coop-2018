@@ -1,4 +1,4 @@
-<header id="banner" class="jumbotron banner jumbotron-fluid bg-primary text-white sr-only" data-spy="affix" data-offset-top="560">
+<header id="banner" class="jumbotron banner jumbotron-fluid bg-primary text-white sr-only">
     <div class="container">
         <div class="d-flex align-items-center">
             <div class="mr-3">

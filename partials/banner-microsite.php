@@ -11,7 +11,7 @@ if(get_field('show_banner', $queried_object) && get_field('show_banner', $querie
                                         background-position:center;
                                                                               position:relative;
                                         background-size:<?php echo get_field('background-size', $queried_object);?>;
-                                        " data-spy="affix" data-offset-top="166">
+                                        ">
             <div class="banner-inner" style="background:<?php echo get_field('banner_colour', $queried_object);?>;
                                              opacity:<?php $alpha = get_field('banner_alpha', $queried_object);
                                              echo $alpha * 0.01;?>;position:absolute;top:0;left:0;width:100%;height:100%"></div>
@@ -35,7 +35,7 @@ if(get_field('show_banner', $queried_object) && get_field('show_banner', $querie
             </div>
         </div>
         <?php else: ?>
-            <header class="jumbotron jumbotron-fluid bg-primary text-white" data-spy="affix" data-offset-top="166">
+            <header class="jumbotron jumbotron-fluid bg-primary text-white">
                 <div class="container">
                     <?php echo '<h2 class="page-title display-3 balance-text">' . $term->name . '</h2>';
       the_archive_description( '<div class="lead affix-hide">', '</div>' );?> </div>
