@@ -122,12 +122,12 @@
         if ($isAdmin) {
           $allMemberStats = <<<EOT
           <span>
-            All Members  <span class="badge">{$allBranchMembers}</span>
+            All Members  <span class="badge badge-secondary">{$allBranchMembers}</span>
           </span>
 EOT;
           $newMemberStats = <<<EOT
           <span>
-            New Members  <span class="badge">{$newBranchMembers}</span>
+            New Members  <span class="badge badge-info">{$newBranchMembers}</span>
           </span>
 EOT;
         } else {
