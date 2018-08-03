@@ -45,12 +45,12 @@ get_template_part( 'partials/show', 'subpages-pills' ); ?>
                             <!-- #main -->
                         </div>
                         <div class="col-md-6 col-lg-5 push-lg-1 ml-lg-auto"><a id="sign-campaign" />
-                            <div class="panel panel-default">
-                                <div class="panel-body">
-                                    <?php
+                            <div class="card">
+                                <?php
                             if(get_field('campaign_cta')): 
-                               echo '<h2>' . get_field('campaign_cta') . '</h2>';
+                               echo '<h3 class="card-header">Featured</h5>' . get_field('campaign_cta') . '</h3>';
                                endif;
+                                echo '<div class="card-body">';
                             if(get_field('campaign_tags')):
                                $campaign_tags = 'act:' . $post->post_name . ',' . get_field('campaign_tags');
                             else:
@@ -65,13 +65,14 @@ get_template_part( 'partials/show', 'subpages-pills' ); ?>
                                 '[gravityform id="%1$s" title="false" description="false" field_values="tags=%2$s&parameter_name2=value2"]',
                                 $gform_id,
                                 $campaign_tags);
-                                  echo do_shortcode( $shortcode );?> </div>
-                            </div>
+                                  echo do_shortcode( $shortcode );
+                                echo '<div class="card-body">';
+                                ?> </div>
                         </div>
-                        <!-- #primary -->
                     </div>
-                    <!-- .row -->
+                    <!-- #primary -->
                 </div>
+                <!-- .row -->
                 <!-- Container end -->
             </div>
             <!-- Wrapper end -->
