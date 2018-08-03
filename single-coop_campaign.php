@@ -79,11 +79,11 @@ get_template_part( 'partials/show', 'subpages-pills' ); ?>
                                 $petition_info = get_field('campaign_petition');
                                 $starting_number = $petition_info['starting_number'];
                                 $goal_count = $petition_info['goal_number'];
-                                $submissions_number = do_shortcode(sprintf('[gravitywp_count formid="%1$s" filter_field="4" filter_value="%2$s" thousands_sep="," ]', $gform_id, $campaign_tags));
-                                
+                                $submissions_number = do_shortcode(sprintf('[gravitywp_count formid="%1$s" filter_field="4" filter_value="%2$s" thousands_sep="," ]', $gform_id, $campaign_tags));            
                                 $display_number = ($starting_number + $submissions_number);
+                                $bar_percentage = ($display_number / $goal_count * 100);
                                 
-                                echo '<h4>' .  $display_number . 'People have signed. ' . $goal_count .' to go!</h4>';    
+                                echo '<h4>' .  $display_number . ' People have signed ' . $bar_percentage . '% ' . $goal_count .' to go!</h4>';    
                                 
                                 endif;
                                 //Gravity form itself
