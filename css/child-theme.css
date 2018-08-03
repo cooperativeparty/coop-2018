@@ -2086,7 +2086,7 @@ body .gform_wrapper .ginput_container textarea,
 body .gform_wrapper .ginput_container_date textarea {
   height: auto; }
 
-.form-group, .wpcf7 .wpcf7-form p, body .gform_wrapper li {
+.form-group, .wpcf7 .wpcf7-form p, body .gform_wrapper .gfield {
   margin-bottom: 1rem; }
 
 .form-text, body .gform_wrapper .ginput_container_creditcard label, body .gform_wrapper .gfield.gsection.field_sublabel_above.field_description_above .gsection_description, body .gform_wrapper .ginput_complex.gf_name_has_3 .name_first label,
@@ -3175,7 +3175,7 @@ body .gform_wrapper .gfield_error textarea.custom-file-input ~ .invalid-tooltip 
           -ms-flex-pack: center;
               justify-content: center;
       margin-bottom: 0; }
-    .form-inline .form-group, .form-inline .wpcf7 .wpcf7-form p, .wpcf7 .wpcf7-form .form-inline p, .form-inline body .gform_wrapper li, body .gform_wrapper .form-inline li {
+    .form-inline .form-group, .form-inline .wpcf7 .wpcf7-form p, .wpcf7 .wpcf7-form .form-inline p, .form-inline body .gform_wrapper .gfield, body .gform_wrapper .form-inline .gfield {
       display: -webkit-box;
       display: -ms-flexbox;
       display: flex;
@@ -12772,7 +12772,7 @@ body .gform_wrapper .gf_scroll_text {
   font-size: 0.85em;
   border: 1px solid #eceeef; }
 
-body .gform_wrapper li {
+body .gform_wrapper .gfield {
   clear: both; }
 
 body .gform_wrapper .ginput_container_creditcard {

@@ -75,7 +75,7 @@ body {
         ul {
             @extend .list-unstyled;
         }
-        li {
+        .gfield {
             @extend .form-group;
             clear: both;
         }
