@@ -12735,25 +12735,25 @@ h6, .h6 {
 
 @media (min-width: 992px) {
   h1, .h1 {
-    font-size: 3.05176rem; }
+    font-size: 2.48832rem; }
   h2, .h2 {
-    font-size: 2.44141rem; }
+    font-size: 2.0736rem; }
   h3, .h3, body .gform_wrapper .gfield_total .ginput_total {
-    font-size: 1.95313rem; }
+    font-size: 1.728rem; }
   h4, .h4, body .gform_wrapper .gf_progressbar_title {
-    font-size: 1.5625rem; }
+    font-size: 1.44rem; }
   h5, .h5, body .gform_wrapper .gfield.gsection.field_sublabel_above.field_description_above h2 {
-    font-size: 1.25rem; }
+    font-size: 1.2rem; }
   h6, .h6 {
     font-size: 1rem; }
   .display-4 {
-    font-size: 4.05176rem; }
+    font-size: 3.48832rem; }
   .display-3 {
-    font-size: 5.40099rem; }
+    font-size: 4.3604rem; }
   .display-2 {
-    font-size: 7.19952rem; }
+    font-size: 5.4505rem; }
   .display-1 {
-    font-size: 9.59697rem; } }
+    font-size: 6.81312rem; } }
 
 body .gform_page_footer {
   border-top: 1px #dee2e6 solid; }

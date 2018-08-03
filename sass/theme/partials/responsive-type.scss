@@ -105,6 +105,6 @@ $display-type-scale-base : major-second;
 // At the Bootstrap md breakpoint, adjust the heading font sizes.
 
 @include media-breakpoint-up(lg) {
-@include create-heading-type-scale(major-third);
-@include create-display-type-scale(perfect-fourth);
+@include create-heading-type-scale(minor-third);
+@include create-display-type-scale(major-third);
 }
