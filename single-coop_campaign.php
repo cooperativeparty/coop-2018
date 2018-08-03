@@ -50,9 +50,13 @@ get_template_part( 'partials/show', 'subpages-pills' ); ?>
                                 <?php
                             $gforms_options = get_field('campaign_cta_gravityforms');	
                             
-                                if(get_field('campaign_cta')):
+                                if(get_field('campaign_cta_custom')):
+                                if(get_field('campaign_cta')){
                                echo '<h3 class="card-header">' . get_field('campaign_cta') . '</h3>';
-                               endif;
+                                };
+                                else :
+                                echo '<h3 class="card-header">Sign the petition</h3>';
+                                endif;                                
                             if($gforms_options): 
                                $campaign_tags = 'act:' . $post->post_name . ',' . $gforms_options['tags'];
                             else:
