@@ -370,10 +370,7 @@ EOT;
         }
 
       </style>
-                  <div class="fullwidth" id="main">
-                <div class="container">
-                    <div class="row">
-                        <div class="col-md-12 content">
+                 
       <div class="jumbotron text-white bg-primary mb-md-3">
         <div class="container">
             <div class="d-flex">
@@ -383,7 +380,10 @@ EOT;
                     <p class="lead d-lg-block d-none">Welcome {$greeting}</p>                </div>
                             </div>
         </div>
-    </div>
+    </div> <div class="fullwidth" id="main">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-12 content">
       <div class='row veda-crm'>
         <div class='col-md-6'>
           <div class="list-group">
