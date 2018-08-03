@@ -67,7 +67,7 @@ get_template_part( 'partials/show', 'subpages-pills' ); ?>
                                 $gform_id,
                                 $campaign_tags                           
                            );
-                                  echo do_shortcode( $counterbar );                                
+                                  echo '<h3>' . do_shortcode( $counterbar ) . 'People have signed</h3>';                                
                             $shortcode = sprintf(
                                 '[gravityform id="%1$s" title="false" description="false" field_values="tags=%2$s&parameter_name2=value2"]',
                                 $gform_id,
