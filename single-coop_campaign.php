@@ -64,7 +64,7 @@ get_template_part( 'partials/show', 'subpages-pills' ); ?>
                                $gform_id = '92';
                             };
                             if($gforms_options){ 
-                               $campaign_tags = 'act:' . $post->post_name . ',' . $gforms_options['tags'];
+                               $campaign_tags = 'act : ' . $post->post_name . ',' . $gforms_options['tags'];
                             } else {
                                $campaign_tags = 'act : ' . $post->post_name;
                             };    
