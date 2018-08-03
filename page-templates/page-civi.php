@@ -43,8 +43,6 @@ if ( class_exists( 'WooCommerce' ) ) {
           if (is_user_logged_in()) {
             echo dashBoardDetails();
           }
-        
-                                get_template_part('partials/cta', 'box') ;   
                                 ?>
                                         <?php endwhile; // end of the loop. ?>
                             </main>
@@ -257,13 +255,6 @@ EOT;
             min-height: 490px;
           }
         }
-
-        @media only screen and (max-device-width:960px){
-           .veda-crm{
-              text-align: center;
-           }
-        }
-
         .veda-crm .list-group{
           border: 1px solid #5b1973;
         }
