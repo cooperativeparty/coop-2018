@@ -169,7 +169,7 @@ EOT;
         </div>-->
 
         <div class="branch-box text-center row">
-          <div class="card">
+          <div class="card my-2">
             <div class="card-header">
               <h3 class="card-title">{$branch['display_name']}</h3>
             </div>
@@ -267,9 +267,9 @@ EOT;
 					</div>-->
 
           <div class="branch-box text-center row">
-            <div class="card card-default">
+            <div class="card my-2">
               <div class="card-heading">
-                <h3 class="card-title"><strong>{$party['display_name']}</strong></h3>
+                <h3 class="card-title">{$party['display_name']}</h3>
               </div>
               <div class="branch-box row">
                 <div class="col-md-6">
@@ -304,18 +304,6 @@ EOT;
       // user details to be printed on dashboard
       $userDetails =  <<<EOT
       <style>
-        @media only screen and (min-width:960px){
-          .veda-crm .list-group{
-            min-height: 490px;
-          }
-        }
-
-        @media only screen and (max-device-width:960px){
-           .veda-crm{
-              text-align: center;
-           }
-        }
-
         .veda-crm {
           font-family: "Open Sans";
         }
@@ -345,16 +333,15 @@ EOT;
         .list-group-item {
           display: block;
         }
-
+        .list-group-item p {
+        margin-bottom:0;
+        }
         .badge-default {
           border-radius: 10px;
           font-size: 16px;
         }
 
         .card {
-          margin: 5px 0;
-          padding: 5px;
-          box-shadow: 0 1px 1px rgba(0, 0, 0, 0.05);
           width: 100%;
         }
 
