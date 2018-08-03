@@ -72,6 +72,7 @@ body {
         }
         li {
             @extend .form-group;
+            clear: both;
         }
         form {
             @extend .mb-0;

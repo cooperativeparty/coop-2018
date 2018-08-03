@@ -12766,6 +12766,9 @@ body .gform_wrapper .gf_scroll_text {
   font-size: 0.85em;
   border: 1px solid #eceeef; }
 
+body .gform_wrapper li {
+  clear: both; }
+
 body .gform_wrapper .ginput_container_creditcard {
   border: 1px solid #dee2e6;
   padding: 0.5rem 0; }
