@@ -377,7 +377,7 @@ EOT;
                 <div class="mr-lg-5">
                     <h2 class="page-title display-3 balance-text" style="">
                             Officer dashboard</h2>
-                    <p class="lead d-lg-block d-none"><strong>Welcome {$greeting}</strong><br/>As a Party officer, your access to the Officer Dashboard enables you to view and access membership data and download lists of members. Your access to this data is governed by the <a href="https://party.coop/briefing/protecting-our-members-data/">Party's Guidance on data protection</a> and our <a href="https://party.coop/privacy">privacy policy</a>. If you have any questions or issues with using this service, contact <a href="mailto:membership@party.coop">Membership</a></p>                </div>
+                  <div class="d-lg-block d-none"><p class="lea"><strong>Welcome {$greeting}</strong><br/>As a Party officer, your access to the Officer Dashboard enables you to view and access membership data and download lists of members.</p><p>Your access to this data is governed by the <a href="https://party.coop/briefing/protecting-our-members-data/">Party's Guidance on data protection</a> and our <a href="https://party.coop/privacy">privacy policy</a>. If you have any questions or issues with using this service, contact <a href="mailto:membership@party.coop">Membership</a></p></div>                </div>
                             </div>
         </div>
     </div> <div class="fullwidth" id="main">
