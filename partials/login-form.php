@@ -13,7 +13,7 @@
                     <h6 class="dropdown-header">Officers</h6>
                     <?php bootstrap_dropdowns('logged-in-officer'); ?>
                         <div class="dropdown-divider"></div>
-                        <div class="p-2"> <a class="btn" href="<?php echo wp_lostpassword_url( get_permalink() ); ?>" title="Lost Password">Lost Password</a> <a href="<?php echo wp_logout_url( home_url() ); ?>" class="btn btn-danger btn-skinny mr-auto"> Logout</a></div>
+                        <div class="p-2"> <a href="<?php echo wp_logout_url( home_url() ); ?>" class="btn btn-danger btn-skinny mr-auto"> Logout</a></div>
             </div>
         </div>
         <?php else :?>
@@ -40,7 +40,7 @@
                                         <input name="rememberme" id="rememberme" type="checkbox" class="form-check-input" checked="checked" value="forever"> Remember me </label>
                                 </div>
                             </div>
-                            <div class="modal-footer"> <a href="<?php bloginfo( 'url' ); ?>/officers/register" class="btn btn-default btn-secondary">Not registered?</a>
+                            <div class="modal-footer"><a class="btn" href="<?php echo wp_lostpassword_url( get_permalink() ); ?>" title="Lost Password">Lost Password</a> <a href="<?php bloginfo( 'url' ); ?>/officers/register" class="btn btn-default btn-secondary">Not registered?</a>
                                 <button type="submit" name="wp-submit" class="btn btn-primary">Login</button>
                             </div>
                         </form>
