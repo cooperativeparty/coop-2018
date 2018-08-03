@@ -82,7 +82,7 @@ get_template_part( 'partials/show', 'subpages-pills' ); ?>
                                 $submissions_number = do_shortcode(sprintf('[gravitywp_count formid="%1$s" filter_field="4" filter_value="%2$s" thousands_sep="," ]', $gform_id, $campaign_tags));            
                                 $display_number = ($starting_number + $submissions_number);
                                 $bar_percentage = ($display_number / $goal_count * 100);?>
-                                    <div class="progress-wrapper">
+                                    <div class="progress-wrapper mb-2 pb-2 border-bottom">
                                         <h4 class="mb-0"><?php echo $display_number;?> Signatures</h4>
                                         <div class="progress-bar-goal text-right text-muted p-1 small">
                                             <?php echo $goal_count;?> needed</div>
