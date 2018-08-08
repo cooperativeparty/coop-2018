@@ -1,82 +1,32 @@
 <?php 
+$container   = get_theme_mod( 'understrap_container_type' );
   get_header();
-
-  $fullwidth = 12;
-  if (post_have_children($post->ID)) {
-  $leftcol = 6;
-  $rightcol = 6;
-  }
-  else {
-  $leftcol =8;
-  $rightcol =4;
-  }?>
-    <?php if(have_posts()):while(have_posts()):the_post();?>
-        <!-- Print Dashboard details if user logged in -->
-        <?php
-          if (is_user_logged_in()) {
+          if (is_user_logged_in()) :
             echo dashBoardDetails();
-          }
+          else :
         ?>
-            <?php if($post->post_excerpt) echo '<p class="lead">'.get_the_excerpt().'</p>'; ?>
-                <?php the_content(); ?>
-                    </div>
-                    <?php endwhile; ?>
-                        <?php endif; ?>
-                            <div class="sidebar col-md-<?php echo $rightcol;?>">
-                                <?php
-    if (post_have_children($post->ID)) :
-    echo '<div class="row">';
-    $pr = new WP_Query(array(
-    'post_type'      => 'page',
-    'posts_per_page' => -1,
-    'post_parent'    => $post->ID,
-    'order'          => 'ASC',
-    'orderby'        => 'menu_order'
-    ));
-    while($pr->have_posts()) : $pr->the_post();
-    ?>
-                                    <div class="hentry media col-md-12">
-                                        <?php if(has_post_thumbnail()) {
-        $img = get_post_meta(get_the_ID(), 'wp_custom_attachment', true);
-        echo '<a class="pull-left" href="' . $img['url'] . '">';
-        the_post_thumbnail('large-square-thumb', array('class' => 'media-object', 'data-src' => "holder.js/138x138",));
-        echo '</a>';
-        }
-      ?>
-                                            <div class="media-body">
-                                                <h4 class="media-heading"><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h4>
-                                                <div class="media">
-                                                    <?php if($post->post_excerpt) echo '<p class="excerpt">'.get_the_excerpt().'</p>'; ?>
-                                                </div>
-                                            </div>
-                                    </div>
-                                    <?php
-
-    endwhile;
-    if (is_page('5993')):?>
-                                        <div class="hentry media col-md-12"> <a class="pull-left" href="https://my.party.coop/civicrm/event/register?id=13&reset=1"><?php echo wp_get_attachment_image( '6121', 'large-square-thumb', array('class' => 'media-object', 'data-src' => "holder.js/138x138")); ?>
-        </a>
-                                            <div class="media-body">
-                                                <h4 class="media-heading"><a href="https://my.party.coop/civicrm/event/register?id=13&reset=1">Registration</a></h4>
-                                                <div class="media">
-                                                    <p class="excerpt">Register online as a delegate or visitor</p>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <?php endif;
-    echo '</div>';
-    else :
-    get_sidebar();
-    endif;?>
-                            </div>
-                            </div>
-                            </div>
-                            </div>
-                            </div>
-                            <?php get_footer(); ?>
-                                <!-- Get logged in users Contact Details -->
-                                <?php
-
+    <div class="wrapper" id="page-wrapper">
+        <div class="<?php echo esc_html( $container ); ?>" id="content" tabindex="-1">
+            <div class="row">
+                <!-- Do the left sidebar check -->
+                <div id="primary" class="content-area col py-5">
+                    <main class="site-main" id="main">
+                        <?php while ( have_posts() ) : the_post(); ?>
+                            <?php get_template_part( 'loop-templates/content', 'page' );
+                        get_template_part('partials/cta', 'box') ;   ?>
+                                <?php endwhile; // end of the loop. ?>
+                    </main>
+                    <!-- #main -->
+                </div>
+                <!-- #primary -->
+            </div>
+            <!-- .row -->
+        </div>
+        <!-- Container end -->
+    </div>
+    <?php 
+          endif;
+          get_footer();
   /*
   Function to print user dashboard details
   */
