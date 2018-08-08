@@ -26,8 +26,8 @@ $container   = get_theme_mod( 'understrap_container_type' );
                                                     <label class="sr-only" for="login-password">Password:</label>
                                                     <input type="password" class="login-password form-control" name="pwd" placeholder="Password" /> </div>
                                                 <div class="form-check small">
-                                                    <label for="rememberme" class="form-check-label">
-                                                        <input name="rememberme" id="rememberme" type="checkbox" class="form-check-input" checked="checked" value="forever"> Remember me </label>
+                                                    <label for="rememberme2" class="form-check-label">
+                                                        <input name="rememberme" id="rememberme2" type="checkbox" class="form-check-input" checked="checked" value="forever"> Remember me </label>
                                                 </div>
                                             </div>
                                             <div class="modal-footer"><a class="btn" href="<?php echo wp_lostpassword_url( get_permalink() ); ?>" title="Lost Password">Lost Password</a> <a href="<?php bloginfo( 'url' ); ?>/officers/register" class="btn btn-default btn-secondary">Register</a>
@@ -38,9 +38,8 @@ $container   = get_theme_mod( 'understrap_container_type' );
                                 </div>
                                 <script type="text/javascript">
                                     jQuery(window).on('load', function ($) {
-                                        jQuery('#loginprompt').modal({
+                                        jQuery('#loginprompt').modal('show' {
                                             backdrop: 'static'
-                                            , 'show'
                                         });
                                     });
                                 </script>
