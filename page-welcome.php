@@ -12,7 +12,7 @@ $container   = get_theme_mod( 'understrap_container_type' );
                 <div id="primary" class="content-area col py-5">
                     <main class="site-main" style="min-height:50vh" id="main">
                         <?php while ( have_posts() ) : the_post(); ?>
-                            <div class="modal" id="loginprompt" tabindex="-1" role="dialog" data-backdrop="static">
+                            <div class="modal" id="loginprompt" tabindex="-1" role="dialog">
                                 <div class="modal-dialog modal-dialog-centered" role="document">
                                     <div class="modal-content">
                                         <div class="modal-header bg-primary text-white">
@@ -38,8 +38,11 @@ $container   = get_theme_mod( 'understrap_container_type' );
                                 </div>
                                 <script type="text/javascript">
                                     jQuery(window).on('load', function ($) {
-                                                jQuery('#loginprompt').modal('show);
-                                                });
+                                        jQuery('#loginprompt').modal('show', {
+                                            backdrop: 'static'
+                                            , keyboard: false
+                                        });
+                                    });
                                 </script>
                             </div>
                             <?php endwhile; // end of the loop. ?>
