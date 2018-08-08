@@ -10,9 +10,9 @@ $container   = get_theme_mod( 'understrap_container_type' );
             <div class="row">
                 <!-- Do the left sidebar check -->
                 <div id="primary" class="content-area col py-5">
-                    <main class="site-main" id="main">
+                    <main class="site-main vh-50" id="main">
                         <?php while ( have_posts() ) : the_post(); ?> Test
-                            <div class="modal" tabindex="-1" role="dialog">
+                            <div class="modal" id="loginprompt" tabindex="-1" role="dialog">
                                 <div class="modal-dialog" role="document">
                                     <div class="modal-content">
                                         <div class="modal-header">
@@ -28,6 +28,11 @@ $container   = get_theme_mod( 'understrap_container_type' );
                                         </div>
                                     </div>
                                 </div>
+                                <script type="text/javascript">
+                                    jQuery(window).on('load', function ($) {
+                                        $('#loginprompt').modal('show');
+                                    });
+                                </script>
                             </div>
                             <?php endwhile; // end of the loop. ?>
                     </main>
