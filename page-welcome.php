@@ -11,7 +11,7 @@ $container   = get_theme_mod( 'understrap_container_type' );
                 <!-- Do the left sidebar check -->
                 <div id="primary" class="content-area col py-5">
                     <main class="site-main" id="main">
-                        <?php while ( have_posts() ) : the_post(); ?>
+                        <?php while ( have_posts() ) : the_post(); ?> Test
                             <?php get_template_part( 'loop-templates/content', 'page' );
                         get_template_part('partials/cta', 'box') ;   ?>
                                 <?php endwhile; // end of the loop. ?>
