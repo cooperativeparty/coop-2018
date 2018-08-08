@@ -10,10 +10,10 @@ $container   = get_theme_mod( 'understrap_container_type' );
             <div class="row">
                 <!-- Do the left sidebar check -->
                 <div id="primary" class="content-area col py-5">
-                    <main class="site-main" style="min-height:75vh" id="main">
-                        <?php while ( have_posts() ) : the_post(); ?> Test
+                    <main class="site-main" style="min-height:50vh" id="main">
+                        <?php while ( have_posts() ) : the_post(); ?>
                             <div class="modal" id="loginprompt" tabindex="-1" role="dialog">
-                                <div class="modal-dialog" role="document">
+                                <div class="modal-dialog modal-dialog-centered" role="document">
                                     <div class="modal-content">
                                         <div class="modal-header">
                                             <h5 class="modal-title">Please Log in</h5>
