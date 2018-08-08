@@ -30,7 +30,7 @@ $container   = get_theme_mod( 'understrap_container_type' );
                                 </div>
                                 <script type="text/javascript">
                                     jQuery(window).on('load', function ($) {
-                                        $('#loginprompt').modal('show');
+                                        jQuery('#loginprompt').modal('show');
                                     });
                                 </script>
                             </div>
