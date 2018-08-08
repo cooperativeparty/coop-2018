@@ -38,7 +38,10 @@ $container   = get_theme_mod( 'understrap_container_type' );
                                 </div>
                                 <script type="text/javascript">
                                     jQuery(window).on('load', function ($) {
-                                        jQuery('#loginprompt').modal('show');
+                                        jQuery('#loginprompt').modal({
+                                            backdrop: 'static'
+                                            , 'show'
+                                        });
                                     });
                                 </script>
                             </div>
