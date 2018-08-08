@@ -385,7 +385,7 @@ EOT;
             {$branchesDetails}
           </div>
         </div>
-      </div>
+      </div></div></div>
 EOT;
 
     return $userDetails;
