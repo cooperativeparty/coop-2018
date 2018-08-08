@@ -16,9 +16,7 @@ $container   = get_theme_mod( 'understrap_container_type' );
                                 <div class="modal-dialog modal-dialog-centered" role="document">
                                     <div class="modal-content">
                                         <div class="modal-header bg-primary text-white">
-                                            <h5 class="modal-title">Please log in to access this page</h5>
-                                            <button type="button" class="close" data-dismiss="modal" aria-label="Close"> <span aria-hidden="true">&times;</span> </button>
-                                        </div>
+                                            <h5 class="modal-title">Please log in to access this page</h5> </div>
                                         <form action="<?php bloginfo( 'url' ); ?>/wp-login.php" method="post" name="loginform">
                                             <div class="modal-body">
                                                 <div class="form-group">
