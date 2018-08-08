@@ -16,7 +16,7 @@ $container   = get_theme_mod( 'understrap_container_type' );
                                 <div class="modal-dialog modal-dialog-centered" role="document">
                                     <div class="modal-content">
                                         <div class="modal-header bg-primary text-white">
-                                            <h5 class="modal-title">Please Log in</h5>
+                                            <h5 class="modal-title">Please log in to access this page</h5>
                                             <button type="button" class="close" data-dismiss="modal" aria-label="Close"> <span aria-hidden="true">&times;</span> </button>
                                         </div>
                                         <form action="<?php bloginfo( 'url' ); ?>/wp-login.php" method="post" name="loginform">
@@ -36,10 +36,6 @@ $container   = get_theme_mod( 'understrap_container_type' );
                                                 <button type="submit" name="wp-submit" class="btn btn-primary">Login</button>
                                             </div>
                                         </form>
-                                        <div class="modal-footer">
-                                            <button type="button" class="btn btn-primary">Save changes</button>
-                                            <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-                                        </div>
                                     </div>
                                 </div>
                                 <script type="text/javascript">
