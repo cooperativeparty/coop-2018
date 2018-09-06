@@ -24,7 +24,7 @@
                                 </dd> <dt class="col-4">Last updated:</dt>
                                 <dd class="col-8">
                                     <?php the_modified_date(); ?>
-                                </dd> <dt class="col-4 visible-print-block">Printed:</dt>
+                                </dd> <dt class="col-4 d-none d-print-block">Printed:</dt>
                                 <dd class="col-8 visible-print-block">
                                     <?php echo date(get_option('date_format')); ?>
                                 </dd> <dt class="col-4 hidden-print">Other formats:</dt>
