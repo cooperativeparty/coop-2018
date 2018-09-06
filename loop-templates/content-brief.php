@@ -28,7 +28,7 @@
                                 <dd class="col-8 d-none d-print-block">
                                     <?php echo date(get_option('date_format')); ?>
                                 </dd> <dt class="col-4 hidden-print">Other formats:</dt>
-                                <dd class="col-8 hidden-print"><a class="pl-2" href="javascript:window.print()"><i class="fa fa-print" aria-hidden="true"></i> Print</a> </dd>
+                                <dd class="col-8 d-print-none"><a class="pl-2" href="javascript:window.print()"><i class="fa fa-print" aria-hidden="true"></i> Print</a> </dd>
                             </dl>
                         </div>
                         <!-- .entry-meta -->
