@@ -31,7 +31,7 @@ $more = false;
 			$post_parent = ' data-parent-post-id="' . absint( $post->post_parent ) . '"';
 		}
 		?>
-                                <article id="post-<?php the_ID() ?>" class="<?php tribe_events_event_classes(' py-1 my-1 clearfix') ?>" <?php echo $post_parent; ?>>
+                                <article id="post-<?php the_ID() ?>" class="<?php tribe_events_event_classes(' border-bottom border-light pb-md-4 pb-2 mb-2 mb-md-4') ?>" <?php echo $post_parent; ?>>
                                     <?php
 			$event_type = tribe( 'tec.featured_events' )->is_featured( $post->ID ) ? 'featured' : 'event';
 
