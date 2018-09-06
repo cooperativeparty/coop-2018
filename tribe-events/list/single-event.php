@@ -36,8 +36,8 @@ $organizer = tribe_get_organizer();
         <div class="col-md-6">
             <div class="mx-md-2 md-mr-3">
                 <!-- Event Cost -->
-                <?php if ( tribe_get_cost() ) : ?> <span class="badge badge-default"><?php echo tribe_get_cost( null, true ); ?></span>
-                    <?php endif; ?>
+                <?php /* if ( tribe_get_cost() ) : ?> <span class="badge badge-default"><?php echo tribe_get_cost( null, true ); ?></span>
+                    <?php endif; */ ?>
                         <!-- Location -->
                         <?php if ( $venue_details ) : ?>
                             <!-- Venue Display Info -->
@@ -60,7 +60,7 @@ $organizer = tribe_get_organizer();
                                             <div class="tribe-events-event-meta">
                                                 <div class="author <?php echo esc_attr( $has_venue_address ); ?>">
                                                     <!-- Schedule & Recurrence Details -->
-                                                    <div class="entry-meta pb-1 small text-muted"> <i class="fa fa-calendar-o"></i>
+                                                    <div class="entry-meta py-1 small text-primary">
                                                         <?php echo tribe_events_event_schedule_details() ?>
                                                     </div>
                                                 </div>
@@ -71,9 +71,6 @@ $organizer = tribe_get_organizer();
                                                 <?php do_action( 'tribe_events_before_the_content' ) ?>
                                                     <div class="entry-content hidden-sm-down"> </div>
                                                     <div class="small align-items-end">
-                                                        <a class="card-link" href="<?php echo esc_url( tribe_get_event_link() ); ?>" class="" rel="bookmark"> <i class="fa fa-info-circle" aria-hidden="true"></i>
-                                                            <?php esc_html_e( 'Event details', 'the-events-calendar' ) ?>
-                                                        </a>
                                                         <?php if ( tribe_get_map_link() ) { echo '<a class="card-link" href="' . tribe_get_map_link() .'"><i class="fa fa-map-o" aria-hidden="true"></i> Map</a>'; } ?>
                                                             <?php if ( tribe_get_single_ical_link() ) { echo '<a class="card-link" href="' . tribe_get_single_ical_link() .'"><i class="fa fa-calendar-plus-o" aria-hidden="true"></i> iCal</a>'; } ?> </div>
             </div>
