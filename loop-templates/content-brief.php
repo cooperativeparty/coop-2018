@@ -25,7 +25,7 @@
                                 <dd class="col-8">
                                     <?php the_modified_date(); ?>
                                 </dd> <dt class="col-4 d-none d-print-block">Printed:</dt>
-                                <dd class="col-8 visible-print-block">
+                                <dd class="col-8 d-none d-print-block">
                                     <?php echo date(get_option('date_format')); ?>
                                 </dd> <dt class="col-4 hidden-print">Other formats:</dt>
                                 <dd class="col-8 hidden-print"><a class="pl-2" href="javascript:window.print()"><i class="fa fa-print" aria-hidden="true"></i> Print</a> </dd>
