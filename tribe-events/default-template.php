@@ -18,7 +18,7 @@ get_header();
 get_template_part( 'partials/banner', 'event' ); ?>
     <div class="wrapper" id="archive-wrapper">
         <?php if ( is_single() && FLBuilderModel::is_builder_enabled() ) { $container_class = 'container-fluid'; } else { $container_class = 'container';}?>
-            <div id="content" class="<?php echo $container_class;?>">
+            <div id="content" class="<?php echo $container_class;?> py-5">
                 <div class="row">
                     <?php if(tribe_is_event() && is_single()) {
     $cols= 'col';

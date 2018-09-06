@@ -34,14 +34,14 @@ $event_id = get_the_ID();
                                 <!-- .tribe-events-single-event-description -->
                                 <?php  get_template_part( 'partials/listings', 'speakers' );?>
                                     <?php  get_template_part( 'partials/listings', 'organisers' );?>
+                                        <?php do_action( 'tribe_events_single_event_after_the_content' ) ?>
                     </div>
                     <?php if (!FLBuilderModel::is_builder_enabled() ) :?>
-                        <div id="secondary" class="col-md-6 pl-md-5 border-top">
+                        <div id="secondary" class="col-md-6 pl-md-5">
                             <!-- Event meta -->
-                            <?php do_action( 'tribe_events_single_event_after_the_content' ) ?>
-                                <?php do_action( 'tribe_events_single_event_before_the_meta' ) ?>
-                                    <?php tribe_get_template_part( 'modules/meta' ); ?>
-                                        <?php do_action( 'tribe_events_single_event_after_the_meta' ) ?>
+                            <?php do_action( 'tribe_events_single_event_before_the_meta' ) ?>
+                                <?php tribe_get_template_part( 'modules/meta' ); ?>
+                                    <?php do_action( 'tribe_events_single_event_after_the_meta' ) ?>
                         </div>
                         <?php endif;?>
                 </div>
