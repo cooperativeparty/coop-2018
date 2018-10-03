@@ -1,5 +1,5 @@
 <div class="<?php the_cc_css_classes( 'content_cards_card' ); ?>">
-    <?php if ( get_cc_data( 'image' ) ) : ?>
+    <?php if ( get_cc_data( 'image' ) ) : ?>TEST
         <div class="content_cards_image"> <a class="content_cards_image_link" href="<?php the_cc_data( 'url', 'esc_url' ); ?>" <?php the_cc_target(); ?>>
 					<?php the_cc_image( 'full' ); ?>
 				</a> </div>
