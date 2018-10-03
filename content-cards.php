@@ -4,12 +4,12 @@
 				</a>
         <?php endif; ?>
             <div class="card-body">
-                <h5 class="card-title"> <a class="content_cards_title_link" href="<?php the_cc_data( 'url', 'esc_url' ); ?>" <?php the_cc_target(); ?>>
+                <h5 class="card-title"> 
 			<?php the_cc_data( 'title' ); ?>
-		</a> </h5>
-                <p class="card-text"> <a class="content_cards_description_link" href="<?php the_cc_data( 'url', 'esc_url' ); ?>" <?php the_cc_target(); ?>>
-			<?php the_cc_data( 'description' ); ?>
-                </a> </p>
+		</h5>
+                <p class="card-text">
+                    <?php the_cc_data( 'description' ); ?>
+                </p>
             </div>
             <div class="card-footer">
                 <?php if ( get_cc_data('favicon') ) : ?><img src="<?php the_cc_data( 'favicon', 'esc_url' ); ?>" alt="<?php the_cc_data( 'site_name', 'esc_attr' ); ?>" class="content_cards_favicon" />
