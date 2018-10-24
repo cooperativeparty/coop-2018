@@ -84,12 +84,12 @@ $website = tribe_get_event_website_url();
                             </dd>
                             <?php endif ?>
                                 <?php
-		// Event Cost
-		if ( ! empty( $cost ) ) : ?> <dt class="col-sm-3"> <?php esc_html_e( 'Cost:', 'the-events-calendar' ) ?> </dt>
+		/* Event Cost
+	//	if ( ! empty( $cost ) ) : ?> <dt class="col-sm-3"> <?php esc_html_e( 'Cost:', 'the-events-calendar' ) ?> </dt>
                                     <dd class="tribe-events-event-cost col-sm-9">
-                                        <?php esc_html_e( $cost ); ?>
+                                        <?php // esc_html_e( $cost ); ?>
                                     </dd>
-                                    <?php endif ?>
+                                    <?php // endif */ ?>
                                         <?php
 		echo tribe_get_event_categories(
 			get_the_id(), array(
