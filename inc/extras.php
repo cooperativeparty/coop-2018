@@ -257,7 +257,7 @@ function custom_query_vars_filter($vars) {
   return $vars;
 }
 add_filter( 'query_vars', 'custom_query_vars_filter' );
-/* Facebook Pixel */
+/* Facebook Pixel 
 
 function facebook_pixel(){?>
             <!-- Facebook Pixel Code -->
@@ -333,7 +333,7 @@ echo "em: '".get_query_var('email')."',\n";
                 </script>
                 <?php endif;?>
                     <?php }
-add_action( 'wp_head', 'facebook_pixel', 15 );
+add_action( 'wp_head', 'facebook_pixel', 15 );*/
 /* 
 / Post body code
 */
