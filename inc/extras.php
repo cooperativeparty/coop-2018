@@ -244,6 +244,11 @@ function google_analytics(){?>
             ga('create', 'UA-24249851-1', 'auto');
             ga('send', 'pageview');
         </script>
+        <script id="mcjs">
+            ! function (c, h, i, m, p) {
+                m = c.createElement(h), p = c.getElementsByTagName(h)[0], m.async = 1, m.src = i, p.parentNode.insertBefore(m, p)
+            }(document, "script", "https://chimpstatic.com/mcjs-connected/js/users/f5fe9abc02e45a82afee6a4dd/1492834acc8f70a4377dd9275.js");
+        </script>
         <!-- End Google Analytics -->
         <?php }
 add_action( 'wp_head', 'google_analytics', 15 );
