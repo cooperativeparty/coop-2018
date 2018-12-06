@@ -130,10 +130,14 @@ function dequeue_gf_stylesheets() {
 add_action( 'pre_get_posts', 'coop_sort_people' ); function coop_sort_people( $query ) { if ( $query->is_main_query() && !is_admin() ) { if ( $query->is_post_type_archive('person') ) { $query->set('orderby', 'menu_order'); } } }
 // No indef?
 function coop_noindex() {
+    if ( function_exists('get_field') ) {
     global $post;
-if(get_field('norobots', $post->ID) && get_field('norobots', $post->ID) == true ) {
+
+    if(get_field('norobots', $post->ID) && get_field('norobots', $post->ID) == true ) {
     echo '<meta name="robots" content="noindex" />' . "\n";
-}}
+}} else {
+        exit;
+    }}
 add_action( 'wp_head', 'coop_noindex', 5 );
 //Lets add Open Graph Meta Info
 function insert_fb_in_head() {
