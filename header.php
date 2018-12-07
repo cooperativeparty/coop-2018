@@ -59,7 +59,7 @@ $container = get_theme_mod( 'understrap_container_type' );
                                         <?php wp_nav_menu(
 					array(
 						'theme_location'  => 'primary',
-						'containers' => false,
+						'container' => false,
 						'menu_class'      => 'navbar-nav ml-auto ml-md-0',
 						'fallback_cb'     => '',
 						'menu_id'         => 'main-menu',
