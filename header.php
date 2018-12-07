@@ -65,7 +65,7 @@ $container = get_theme_mod( 'understrap_container_type' );
 						'menu_id'         => 'main-menu',
 						'walker'          => new coopparty_WP_Bootstrap_Navwalker(),
 					)
-				); ?> <a class="btn btn-block btn-danger mb-5 d-block d-md-done" href="<?php echo get_page_link('11217');?>"><i class="fa fa-plus fa-fw"></i> Join <span class="d-none d-lg-inline">the Party</span></a> </div>
+				); ?> <a class="btn btn-block btn-danger mb-4 mt-3 d-block btn-lg d-md-done" href="<?php echo get_page_link('11217');?>"><i class="fa fa-plus fa-fw"></i> Join the Party</a> </div>
                                 </nav>
                                 <!-- .site-navigation -->
                                 <?php if ( 'container' == $container ) : ?>
