@@ -12,6 +12,7 @@
         .stripe-card-group {
             .wc-stripe-elements-field {
                 @extend .flex-grow-1;
+                @extend .col;
             }
         }
         .wc-stripe-elements-field {
