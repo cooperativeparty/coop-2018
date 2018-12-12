@@ -12525,6 +12525,9 @@ a.skip-link {
 .gallery-caption {
   display: block; }
 
+.woocommerce-input-wrapper {
+  width: 100%; }
+
 .nav-primary {
   position: static; }
   .nav-primary .navbar-brand {
