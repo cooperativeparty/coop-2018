@@ -11,12 +11,13 @@
         }
         .stripe-card-group {
             .wc-stripe-elements-field {
-                @extend .form-control-lg;
+                @extend .flex-grow-1;
             }
         }
         .stripe-card-group,
         .wc-stripe-elements-field {
-            @extend .flex-grow-1;
+            @extend .col-6;
+            @extend .col-md-2;
         }
     }
 }

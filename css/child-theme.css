@@ -507,7 +507,8 @@ pre {
     padding-right: 0;
     padding-left: 0; }
 
-.col-1, .col-2, .col-3, body .gform_wrapper .ginput_container_date .clear-multi .ginput_container_date, .col-4, .col-5, .col-6, .col-7, .col-8, .col-9, .col-10, .col-11, .col-12, body .gform_wrapper .ginput_complex .ginput_left,
+.col-1, .col-2, .col-3, body .gform_wrapper .ginput_container_date .clear-multi .ginput_container_date, .col-4, .col-5, .col-6, .wc-credit-card-form .form-row .stripe-card-group,
+.wc-credit-card-form .form-row .wc-stripe-elements-field, .col-7, .col-8, .col-9, .col-10, .col-11, .col-12, body .gform_wrapper .ginput_complex .ginput_left,
 body .gform_wrapper .ginput_complex .ginput_right,
 body .gform_wrapper .ginput_complex .name_first,
 body .gform_wrapper .ginput_complex .name_last, body .gform_wrapper .ginput_complex .ginput_full, body .gform_wrapper .ginput_complex.gf_name_has_3 .name_first,
@@ -570,7 +571,8 @@ body .gform_wrapper .ginput_complex.gf_name_has_3 .name_last, .col,
           flex: 0 0 41.66667%;
   max-width: 41.66667%; }
 
-.col-6 {
+.col-6, .wc-credit-card-form .form-row .stripe-card-group,
+.wc-credit-card-form .form-row .wc-stripe-elements-field {
   -webkit-box-flex: 0;
       -ms-flex: 0 0 50%;
           flex: 0 0 50%;
@@ -903,7 +905,8 @@ body .gform_wrapper .ginput_complex.gf_name_has_3 .name_last {
         -ms-flex: 0 0 8.33333%;
             flex: 0 0 8.33333%;
     max-width: 8.33333%; }
-  .col-md-2 {
+  .col-md-2, .wc-credit-card-form .form-row .stripe-card-group,
+  .wc-credit-card-form .form-row .wc-stripe-elements-field {
     -webkit-box-flex: 0;
         -ms-flex: 0 0 16.66667%;
             flex: 0 0 16.66667%;
@@ -2047,7 +2050,7 @@ body .gform_wrapper .ginput_container_date select:focus::-ms-value {
   background-color: transparent;
   border: solid transparent;
   border-width: 1px 0; }
-  .form-control-plaintext.form-control-sm, .form-control-plaintext.form-control-lg, .wc-credit-card-form .form-row .stripe-card-group .form-control-plaintext.wc-stripe-elements-field, body .gform_wrapper .ginput_container input.form-control-plaintext:not([type=checkbox]):not([type=radio]),
+  .form-control-plaintext.form-control-sm, .form-control-plaintext.form-control-lg, body .gform_wrapper .ginput_container input.form-control-plaintext:not([type=checkbox]):not([type=radio]),
   body .gform_wrapper .ginput_container select.form-control-plaintext,
   body .gform_wrapper .ginput_container textarea.form-control-plaintext, body .gform_wrapper .ginput_container_date input.form-control-plaintext:not([type=checkbox]):not([type=radio]),
   body .gform_wrapper .ginput_container_date select.form-control-plaintext,
@@ -2061,7 +2064,7 @@ body .gform_wrapper .ginput_container_date select:focus::-ms-value {
   font-size: 0.875rem;
   line-height: 1.5; }
 
-.form-control-lg, .wc-credit-card-form .form-row .stripe-card-group .wc-stripe-elements-field, body .gform_wrapper .ginput_container input:not([type=checkbox]):not([type=radio]),
+.form-control-lg, body .gform_wrapper .ginput_container input:not([type=checkbox]):not([type=radio]),
 body .gform_wrapper .ginput_container select,
 body .gform_wrapper .ginput_container textarea, body .gform_wrapper .ginput_container_date input:not([type=checkbox]):not([type=radio]),
 body .gform_wrapper .ginput_container_date select,
@@ -7695,8 +7698,7 @@ body .gform_wrapper input[type=hidden], .gfield_visibility_hidden {
       -ms-flex-positive: 0 !important;
           flex-grow: 0 !important; }
 
-.flex-grow-1, .wc-credit-card-form .form-row .stripe-card-group,
-.wc-credit-card-form .form-row .wc-stripe-elements-field {
+.flex-grow-1, .wc-credit-card-form .form-row .stripe-card-group .wc-stripe-elements-field {
   -webkit-box-flex: 1 !important;
       -ms-flex-positive: 1 !important;
           flex-grow: 1 !important; }
