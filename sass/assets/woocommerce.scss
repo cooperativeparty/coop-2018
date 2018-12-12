@@ -1,3 +1,17 @@
 .woocommerce-input-wrapper {
     width: 100%;
 }
+
+.wc-credit-card-form {
+    .form-row {
+        @extend .d-flex;
+        @extend .flex-row;
+        .stripe-card-group {
+            @extend .form-control-lg;
+        }
+        .stripe-card-group,
+        .wc-stripe-elements-field {
+            @extend .flex-grow-1;
+        }
+    }
+}
