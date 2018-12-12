@@ -3453,29 +3453,62 @@ body .gform_wrapper .button {
       -webkit-box-shadow: 0 0 0 0.2rem rgba(249, 165, 25, 0.5);
               box-shadow: 0 0 0 0.2rem rgba(249, 165, 25, 0.5); }
 
-.btn-danger, .tribe-button--rsvp {
+.btn-danger, .place-order .btn,
+.place-order .wpcf7 input[type=submit], .wpcf7 .place-order input[type=submit], .place-order body .gform_wrapper .gform_button, body .gform_wrapper .place-order .gform_button,
+.place-order body .gform_wrapper .button, body .gform_wrapper .place-order .button, .place-order body .gform_wrapper .gform_save_link, body .gform_wrapper .place-order .gform_save_link, .place-order .tribe-button--rsvp, .tribe-button--rsvp {
   color: #fff;
   background-color: #eb3000;
   border-color: #eb3000; }
-  .btn-danger:hover, .tribe-button--rsvp:hover {
+  .btn-danger:hover, .place-order .btn:hover, .place-order .wpcf7 input:hover[type=submit], .wpcf7 .place-order input:hover[type=submit], .place-order body .gform_wrapper .gform_button:hover, body .gform_wrapper .place-order .gform_button:hover,
+  .place-order body .gform_wrapper .button:hover, body .gform_wrapper .place-order .button:hover, .place-order body .gform_wrapper .gform_save_link:hover, body .gform_wrapper .place-order .gform_save_link:hover, .tribe-button--rsvp:hover {
     color: #fff;
     background-color: #c52800;
     border-color: #b82600; }
-  .btn-danger:focus, .tribe-button--rsvp:focus, .btn-danger.focus, .focus.tribe-button--rsvp {
+  .btn-danger:focus, .place-order .btn:focus,
+  .place-order .wpcf7 input:focus[type=submit], .wpcf7 .place-order input:focus[type=submit], .place-order body .gform_wrapper .gform_button:focus, body .gform_wrapper .place-order .gform_button:focus,
+  .place-order body .gform_wrapper .button:focus, body .gform_wrapper .place-order .button:focus, .place-order body .gform_wrapper .gform_save_link:focus, body .gform_wrapper .place-order .gform_save_link:focus, .tribe-button--rsvp:focus, .btn-danger.focus, .place-order .focus.btn, .place-order .wpcf7 input.focus[type=submit], .wpcf7 .place-order input.focus[type=submit], .place-order body .gform_wrapper .focus.gform_button, body .gform_wrapper .place-order .focus.gform_button,
+  .place-order body .gform_wrapper .focus.button, body .gform_wrapper .place-order .focus.button, .place-order body .gform_wrapper .focus.gform_save_link, body .gform_wrapper .place-order .focus.gform_save_link, .focus.tribe-button--rsvp {
     -webkit-box-shadow: 0 0 0 0.2rem rgba(235, 48, 0, 0.5);
             box-shadow: 0 0 0 0.2rem rgba(235, 48, 0, 0.5); }
-  .btn-danger.disabled, .disabled.tribe-button--rsvp, .btn-danger:disabled, .tribe-button--rsvp:disabled {
+  .btn-danger.disabled, .place-order .disabled.btn, .place-order .wpcf7 input.disabled[type=submit], .wpcf7 .place-order input.disabled[type=submit], .place-order body .gform_wrapper .disabled.gform_button, body .gform_wrapper .place-order .disabled.gform_button,
+  .place-order body .gform_wrapper .disabled.button, body .gform_wrapper .place-order .disabled.button, .place-order body .gform_wrapper .disabled.gform_save_link, body .gform_wrapper .place-order .disabled.gform_save_link, .disabled.tribe-button--rsvp, .btn-danger:disabled, .place-order .btn:disabled,
+  .place-order .wpcf7 input:disabled[type=submit], .wpcf7 .place-order input:disabled[type=submit], .place-order body .gform_wrapper .gform_button:disabled, body .gform_wrapper .place-order .gform_button:disabled,
+  .place-order body .gform_wrapper .button:disabled, body .gform_wrapper .place-order .button:disabled, .place-order body .gform_wrapper .gform_save_link:disabled, body .gform_wrapper .place-order .gform_save_link:disabled, .tribe-button--rsvp:disabled {
     color: #fff;
     background-color: #eb3000;
     border-color: #eb3000; }
-  .btn-danger:not(:disabled):not(.disabled):active, .tribe-button--rsvp:not(:disabled):not(.disabled):active, .btn-danger:not(:disabled):not(.disabled).active, .tribe-button--rsvp:not(:disabled):not(.disabled).active,
+  .btn-danger:not(:disabled):not(.disabled):active, .place-order .btn:not(:disabled):not(.disabled):active, .place-order .wpcf7 input:not(:disabled):not(.disabled):active[type=submit], .wpcf7 .place-order input:not(:disabled):not(.disabled):active[type=submit], .place-order body .gform_wrapper .gform_button:not(:disabled):not(.disabled):active, body .gform_wrapper .place-order .gform_button:not(:disabled):not(.disabled):active,
+  .place-order body .gform_wrapper .button:not(:disabled):not(.disabled):active, body .gform_wrapper .place-order .button:not(:disabled):not(.disabled):active, .place-order body .gform_wrapper .gform_save_link:not(:disabled):not(.disabled):active, body .gform_wrapper .place-order .gform_save_link:not(:disabled):not(.disabled):active, .tribe-button--rsvp:not(:disabled):not(.disabled):active, .btn-danger:not(:disabled):not(.disabled).active, .place-order .btn:not(:disabled):not(.disabled).active, .place-order .wpcf7 input:not(:disabled):not(.disabled).active[type=submit], .wpcf7 .place-order input:not(:disabled):not(.disabled).active[type=submit], .place-order body .gform_wrapper .gform_button:not(:disabled):not(.disabled).active, body .gform_wrapper .place-order .gform_button:not(:disabled):not(.disabled).active,
+  .place-order body .gform_wrapper .button:not(:disabled):not(.disabled).active, body .gform_wrapper .place-order .button:not(:disabled):not(.disabled).active, .place-order body .gform_wrapper .gform_save_link:not(:disabled):not(.disabled).active, body .gform_wrapper .place-order .gform_save_link:not(:disabled):not(.disabled).active, .tribe-button--rsvp:not(:disabled):not(.disabled).active,
   .show > .btn-danger.dropdown-toggle,
+  .place-order .show > .dropdown-toggle.btn,
+  .place-order .wpcf7 .show > input.dropdown-toggle[type=submit],
+  .wpcf7 .place-order .show > input.dropdown-toggle[type=submit],
+  .place-order body .gform_wrapper .show > .dropdown-toggle.gform_button,
+  body .gform_wrapper .place-order .show > .dropdown-toggle.gform_button,
+  .place-order body .gform_wrapper .show > .dropdown-toggle.button,
+  body .gform_wrapper .place-order .show > .dropdown-toggle.button,
+  .place-order body .gform_wrapper .show > .dropdown-toggle.gform_save_link,
+  body .gform_wrapper .place-order .show > .dropdown-toggle.gform_save_link,
+  .place-order .show > .dropdown-toggle.tribe-button--rsvp,
   .show > .dropdown-toggle.tribe-button--rsvp {
     color: #fff;
     background-color: #b82600;
     border-color: #ab2300; }
-    .btn-danger:not(:disabled):not(.disabled):active:focus, .tribe-button--rsvp:not(:disabled):not(.disabled):active:focus, .btn-danger:not(:disabled):not(.disabled).active:focus, .tribe-button--rsvp:not(:disabled):not(.disabled).active:focus,
+    .btn-danger:not(:disabled):not(.disabled):active:focus, .place-order .btn:not(:disabled):not(.disabled):active:focus, .place-order .wpcf7 input:not(:disabled):not(.disabled):active:focus[type=submit], .wpcf7 .place-order input:not(:disabled):not(.disabled):active:focus[type=submit], .place-order body .gform_wrapper .gform_button:not(:disabled):not(.disabled):active:focus, body .gform_wrapper .place-order .gform_button:not(:disabled):not(.disabled):active:focus,
+    .place-order body .gform_wrapper .button:not(:disabled):not(.disabled):active:focus, body .gform_wrapper .place-order .button:not(:disabled):not(.disabled):active:focus, .place-order body .gform_wrapper .gform_save_link:not(:disabled):not(.disabled):active:focus, body .gform_wrapper .place-order .gform_save_link:not(:disabled):not(.disabled):active:focus, .tribe-button--rsvp:not(:disabled):not(.disabled):active:focus, .btn-danger:not(:disabled):not(.disabled).active:focus, .place-order .btn:not(:disabled):not(.disabled).active:focus, .place-order .wpcf7 input:not(:disabled):not(.disabled).active:focus[type=submit], .wpcf7 .place-order input:not(:disabled):not(.disabled).active:focus[type=submit], .place-order body .gform_wrapper .gform_button:not(:disabled):not(.disabled).active:focus, body .gform_wrapper .place-order .gform_button:not(:disabled):not(.disabled).active:focus,
+    .place-order body .gform_wrapper .button:not(:disabled):not(.disabled).active:focus, body .gform_wrapper .place-order .button:not(:disabled):not(.disabled).active:focus, .place-order body .gform_wrapper .gform_save_link:not(:disabled):not(.disabled).active:focus, body .gform_wrapper .place-order .gform_save_link:not(:disabled):not(.disabled).active:focus, .tribe-button--rsvp:not(:disabled):not(.disabled).active:focus,
     .show > .btn-danger.dropdown-toggle:focus,
+    .place-order .show > .dropdown-toggle.btn:focus,
+    .place-order .wpcf7 .show > input.dropdown-toggle:focus[type=submit],
+    .wpcf7 .place-order .show > input.dropdown-toggle:focus[type=submit],
+    .place-order body .gform_wrapper .show > .dropdown-toggle.gform_button:focus,
+    body .gform_wrapper .place-order .show > .dropdown-toggle.gform_button:focus,
+    .place-order body .gform_wrapper .show > .dropdown-toggle.button:focus,
+    body .gform_wrapper .place-order .show > .dropdown-toggle.button:focus,
+    .place-order body .gform_wrapper .show > .dropdown-toggle.gform_save_link:focus,
+    body .gform_wrapper .place-order .show > .dropdown-toggle.gform_save_link:focus,
+    .place-order .show > .dropdown-toggle.tribe-button--rsvp:focus,
     .show > .dropdown-toggle.tribe-button--rsvp:focus {
       -webkit-box-shadow: 0 0 0 0.2rem rgba(235, 48, 0, 0.5);
               box-shadow: 0 0 0 0.2rem rgba(235, 48, 0, 0.5); }
@@ -3754,7 +3787,8 @@ body .gform_wrapper .button {
     pointer-events: none; }
 
 .btn-lg, .btn-group-lg > .btn,
-.wpcf7 .btn-group-lg > input[type=submit], .btn-group-lg > .tribe-button--rsvp, body .gform_wrapper .gform_button,
+.wpcf7 .btn-group-lg > input[type=submit], .btn-group-lg > .tribe-button--rsvp, .place-order .btn,
+.place-order .wpcf7 input[type=submit], .wpcf7 .place-order input[type=submit], .place-order .tribe-button--rsvp, body .gform_wrapper .gform_button,
 body .gform_wrapper .button, body .gform_wrapper .gform_save_link {
   padding: 0.5rem 1rem;
   font-size: 1.25rem;
@@ -4197,7 +4231,7 @@ body .gform_wrapper .btn-group > .button:first-child, body .gform_wrapper .btn-g
   padding-right: 0.375rem;
   padding-left: 0.375rem; }
 
-.btn-lg + .dropdown-toggle-split, .btn-group-lg > .btn + .dropdown-toggle-split, .wpcf7 .btn-group-lg > input[type=submit] + .dropdown-toggle-split, body .gform_wrapper .btn-group-lg > .gform_button + .dropdown-toggle-split, body .gform_wrapper .btn-group-lg > .button + .dropdown-toggle-split, body .gform_wrapper .btn-group-lg > .gform_save_link + .dropdown-toggle-split, .btn-group-lg > .tribe-button--rsvp + .dropdown-toggle-split, body .gform_wrapper .gform_button + .dropdown-toggle-split, body .gform_wrapper .button + .dropdown-toggle-split, body .gform_wrapper .gform_save_link + .dropdown-toggle-split {
+.btn-lg + .dropdown-toggle-split, .btn-group-lg > .btn + .dropdown-toggle-split, .wpcf7 .btn-group-lg > input[type=submit] + .dropdown-toggle-split, body .gform_wrapper .btn-group-lg > .gform_button + .dropdown-toggle-split, body .gform_wrapper .btn-group-lg > .button + .dropdown-toggle-split, body .gform_wrapper .btn-group-lg > .gform_save_link + .dropdown-toggle-split, .btn-group-lg > .tribe-button--rsvp + .dropdown-toggle-split, .place-order .btn + .dropdown-toggle-split, .place-order .wpcf7 input[type=submit] + .dropdown-toggle-split, .wpcf7 .place-order input[type=submit] + .dropdown-toggle-split, body .gform_wrapper .place-order .gform_button + .dropdown-toggle-split, body .gform_wrapper .place-order .button + .dropdown-toggle-split, body .gform_wrapper .place-order .gform_save_link + .dropdown-toggle-split, .place-order .tribe-button--rsvp + .dropdown-toggle-split, body .gform_wrapper .gform_button + .dropdown-toggle-split, body .gform_wrapper .button + .dropdown-toggle-split, body .gform_wrapper .gform_save_link + .dropdown-toggle-split {
   padding-right: 0.75rem;
   padding-left: 0.75rem; }
 
@@ -8899,7 +8933,9 @@ body .gform_wrapper .gform_body {
 .my-auto {
   margin-bottom: auto !important; }
 
-.ml-auto,
+.ml-auto, .place-order .btn,
+.place-order .wpcf7 input[type=submit], .wpcf7 .place-order input[type=submit], .place-order body .gform_wrapper .gform_button, body .gform_wrapper .place-order .gform_button,
+.place-order body .gform_wrapper .button, body .gform_wrapper .place-order .button, .place-order body .gform_wrapper .gform_save_link, body .gform_wrapper .place-order .gform_save_link, .place-order .tribe-button--rsvp,
 .mx-auto {
   margin-left: auto !important; }
 

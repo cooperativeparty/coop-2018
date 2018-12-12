@@ -26,3 +26,11 @@
         @extend .text-muted;
     }
 }
+
+.place-order {
+    .btn {
+        @extend .ml-auto;
+        @extend .btn-danger;
+        @extend .btn-lg;
+    }
+}
