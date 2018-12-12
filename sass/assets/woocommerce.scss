@@ -10,12 +10,17 @@
             @extend .pr-2;
         }
         .stripe-card-group {
-            .wc-stripe-elements-field {
-            }
+            .wc-stripe-elements-field {}
         }
         .stripe-card-group,
         .wc-stripe-elements-field {
             @extend .flex-grow-1;
         }
+    }
+}
+.woocommerce-privacy-policy-text {
+    p {
+        @extend .small;
+        @extend .text-muted;
     }
 }
