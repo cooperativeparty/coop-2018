@@ -18,7 +18,9 @@
         }
     }
 }
+
 .woocommerce-privacy-policy-text {
+    @extend .col;
     p {
         @extend .small;
         @extend .text-muted;
