@@ -2047,7 +2047,7 @@ body .gform_wrapper .ginput_container_date select:focus::-ms-value {
   background-color: transparent;
   border: solid transparent;
   border-width: 1px 0; }
-  .form-control-plaintext.form-control-sm, .form-control-plaintext.form-control-lg, .wc-credit-card-form .form-row .form-control-plaintext.stripe-card-group, body .gform_wrapper .ginput_container input.form-control-plaintext:not([type=checkbox]):not([type=radio]),
+  .form-control-plaintext.form-control-sm, .form-control-plaintext.form-control-lg, .wc-credit-card-form .form-row .stripe-card-group .form-control-plaintext.wc-stripe-elements-field, body .gform_wrapper .ginput_container input.form-control-plaintext:not([type=checkbox]):not([type=radio]),
   body .gform_wrapper .ginput_container select.form-control-plaintext,
   body .gform_wrapper .ginput_container textarea.form-control-plaintext, body .gform_wrapper .ginput_container_date input.form-control-plaintext:not([type=checkbox]):not([type=radio]),
   body .gform_wrapper .ginput_container_date select.form-control-plaintext,
@@ -2061,7 +2061,7 @@ body .gform_wrapper .ginput_container_date select:focus::-ms-value {
   font-size: 0.875rem;
   line-height: 1.5; }
 
-.form-control-lg, .wc-credit-card-form .form-row .stripe-card-group, body .gform_wrapper .ginput_container input:not([type=checkbox]):not([type=radio]),
+.form-control-lg, .wc-credit-card-form .form-row .stripe-card-group .wc-stripe-elements-field, body .gform_wrapper .ginput_container input:not([type=checkbox]):not([type=radio]),
 body .gform_wrapper .ginput_container select,
 body .gform_wrapper .ginput_container textarea, body .gform_wrapper .ginput_container_date input:not([type=checkbox]):not([type=radio]),
 body .gform_wrapper .ginput_container_date select,
@@ -8794,7 +8794,7 @@ body .gform_heading,
 body .gform_wrapper .gf_progressbar_wrapper {
   padding-top: 0.5rem !important; }
 
-.pr-2,
+.pr-2, .wc-credit-card-form .form-row label,
 .px-2 {
   padding-right: 0.5rem !important; }
 

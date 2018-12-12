@@ -6,8 +6,13 @@
     .form-row {
         @extend .d-flex;
         @extend .flex-row;
+        label {
+            @extend .pr-2;
+        }
         .stripe-card-group {
-            @extend .form-control-lg;
+            .wc-stripe-elements-field {
+                @extend .form-control-lg;
+            }
         }
         .stripe-card-group,
         .wc-stripe-elements-field {
