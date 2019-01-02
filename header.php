@@ -44,9 +44,16 @@ $container = get_theme_mod( 'understrap_container_type' );
                                 <?php esc_html_e( 'Skip to content', 'understrap' ); ?>
                             </a>
                             <div class="col-4 px-0 my-4 d-none d-lg-block">
-                                <a class="site-logo" href="<?php echo esc_url( home_url( '/' ) ); ?>" title="<?php echo esc_attr( get_bloginfo( 'name', 'display' ) ); ?>" rel="home">
-                                    <?php get_template_part( 'partials/dyn', 'logo' ); ?>
+                                <?php $custom_logo_id = get_theme_mod( 'custom_logo' );
+$logo = wp_get_attachment_image_src( $custom_logo_id , 'full' );
+if ( has_custom_logo() ) : ?> <a class="site-logo" href="<?php echo esc_url( home_url( '/' ) ); ?>" title="<?php echo esc_attr( get_bloginfo( 'name', 'display' ) ); ?>" rel="home">
+        <img src="<?php echo esc_url( $logo[0] ); ?>">
                                 </a>
+                                    <?php else:?>
+                                        <a class="site-logo" href="<?php echo esc_url( home_url( '/' ) ); ?>" title="<?php echo esc_attr( get_bloginfo( 'name', 'display' ) ); ?>" rel="home">
+                                            <?php get_template_part( 'partials/dyn', 'logo' ); ?>
+                                        </a>
+                                        <?php endif;?>
                             </div>
                             <!-- end custom logo -->
                             <?php get_template_part( 'partials/login', 'form' );?>
