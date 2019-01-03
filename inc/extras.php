@@ -586,16 +586,6 @@ if ( ! function_exists( 'coop_post_nav' ) ) :
                             <?php
 	}
 endif;
-//Unqueeue dashicons
-
-// remove dashicons in frontend to non-admin 
-    function wpdocs_dequeue_dashicon() {
-        if (current_user_can( 'update_core' )) {
-            return;
-        }
-        wp_deregister_style('dashicons');
-    }
-    add_action( 'wp_enqueue_scripts', 'wpdocs_dequeue_dashicon' );
 // Woocommerce
 add_action( 'wp_enqueue_scripts', 'dequeue_woocommerce_styles_scripts', 99 );
 function dequeue_woocommerce_styles_scripts() {
@@ -649,10 +639,6 @@ function cliff_all_tickets_default_quantity() {
                                 <?php
 }
 add_action( 'wp_footer', 'cliff_all_tickets_default_quantity' );
-function wp_visual_icon_fonts_remove(){
-   wp_dequeue_style( 'wpvi-font-css' );
-}
-add_action( 'wp_enqueue_scripts', 'wp_visual_icon_fonts_remove', 100 );
 /**
  * Remove the Tribe Customier css <script>
  */
