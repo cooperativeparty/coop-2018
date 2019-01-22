@@ -13,10 +13,6 @@
 /*All visitors to confirmation page should be redirected from the main join page. If they aren't, redirect.*/
 $referer = wp_get_referer();
 echo '<!--'.$referer.'-->';
-if (strpos($referer, 'party.coop/join') != true) {
-          wp_safe_redirect( get_permalink('11217') );
-          exit;    
-}
 get_header();
 
 $container   = get_theme_mod( 'understrap_container_type' );
